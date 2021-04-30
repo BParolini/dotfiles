@@ -3,8 +3,6 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Creates k8s alias for QA and prod contexts
 
-export GH_TOKEN="***REMOVED***"
-
 ## K8s setup ##
 alias k8s-qa='
 kubectl config set-cluster https://api.k8s.qa.vivareal.io --server=https://api.k8s.qa.vivareal.io --insecure-skip-tls-verify &&
