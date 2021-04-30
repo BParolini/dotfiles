@@ -19,7 +19,6 @@ snap install audible-for-linux
 snap install discord
 snap install telegram-desktop
 snap install slack --classic
-# snap install --classic skype
 
 # Dev Apps
 snap install insomnia

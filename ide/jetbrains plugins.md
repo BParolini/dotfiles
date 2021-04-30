@@ -1,5 +1,7 @@
 # Plugins
+
 ## JetBrains
+
 - .env files support
 - .ignore
 - AWS Toolkit
@@ -17,6 +19,7 @@
 - YouTrack Integration
 
 ## IntelliJ IDEA
+
 - Azure Toolkit for Intellij
 - Codota
 - IDEA Mind Map
@@ -26,24 +29,32 @@
 - Sonarlint
 
 ## WebStorm
+
 - Codota
 
 ## PyCharm
+
 - Big Data Tools
 
 ## DataGrip
+
 - Big Data Tools
 - Mongo Plugin
 
 ## CLion
+
 - Makefile support
 
 ## Android Studio
+
 - Codota
 - Flutter
 - Lombok Plugin
 
-# Themes
+---
+
+## Themes
+
 - Atom Material Icons
 - Dracula
 - Mario Progress Bar

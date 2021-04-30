@@ -4,4 +4,4 @@
 # description: Installs VIM and extensions
 
 echo "dnf install -y vim vim-filesystem vim-nerdtree"
-dnf install -y vim vim-filesystem vim-nerdtree #neovim
+dnf install -y vim vim-filesystem vim-nerdtree

@@ -34,13 +34,5 @@ docker create --name upsource-server \
     --link mysql:mysql \
     jetbrains/upsource:2018.2.1154
 
-#docker run -it --name youtrack-server-instance  \
-#    -v <path to data directory>:/opt/youtrack/data \
-#    -v <path to conf directory>:/opt/youtrack/conf  \
-#    -v <path to logs directory>:/opt/youtrack/logs  \
-#    -v <path to backups directory>:/opt/youtrack/backups  \
-#    -p <port on host>:8080 \
-#    jetbrains/youtrack:<version>
-
 docker start teamcity-server
 docker start upsource-server

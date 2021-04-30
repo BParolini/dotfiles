@@ -19,7 +19,3 @@ source $BASEDIR/cpp_libs.sh
 source $BASEDIR/vscode.sh
 source $BASEDIR/docker/docker.sh
 source $BASEDIR/virtualization.sh
-# source $BASEDIR/db.sh
-# source $BASEDIR/docker/docker_database.sh
-# source $BASEDIR/dotnet.sh
-# source $BASEDIR/kate.sh

@@ -26,11 +26,3 @@ echo
 
 echo "dnf install -y qtcurve qtcurve-qt5 qtcurve-gtk2"
 dnf install -y qtcurve qtcurve-qt5 qtcurve-gtk2
-
-#echo
-#echo "=============================="
-#echo
-
-#echo "dnf install -y kvantum kvantum-data"
-#dnf install -y kvantum kvantum-data
-

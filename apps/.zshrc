@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/bparolini/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -132,7 +132,6 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
   exec_time     # Execution time
   line_sep      # Line break
   vi_mode       # Vi-mode indicator
@@ -173,8 +172,8 @@ zplugin light zsh-users/zsh-completions
 ### End of Zinit's installer chunk
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/bparolini/.sdkman"
-[[ -s "/home/bparolini/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bparolini/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
 export NPM_CONFIG_PREFIX=$HOME/apps/npm-global
 
@@ -184,9 +183,9 @@ export JAVA_HOME=$HOME/apps/java
 export GOROOT=$HOME/apps/go
 export GOTPATH=$HOME/projetos/go
 
-export ANDROID_HOME=/home/bparolini/apps/Android/Sdk
+export ANDROID_HOME=$HOME/apps/Android/Sdk
 
-source "/home/bparolini/Google Drive/OLXBR/scripts/tokens.sh"
+source "$HOME/Google Drive/OLXBR/scripts/tokens.sh"
 
 if [ $commands[kubectl] ]
 then

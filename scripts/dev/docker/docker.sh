@@ -6,10 +6,6 @@
 echo "Enabling Docker Community Edition Fedora repository"
 dnf config-manager -yb --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
-# Enable nightly and test versions
-#dnf config-manager --set-enabled docker-ce-nightly
-#dnf config-manager --set-enabled docker-ce-test
-
 echo "Installing Docker CE and Docker Compose"
 dnf install -yb docker-ce docker-compose
 

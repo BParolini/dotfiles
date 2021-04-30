@@ -41,12 +41,3 @@ fi
 
 firewall-cmd --reload
 systemctl restart firewalld.service
-
-#firewall-cmd --add-service=plexmediaserver --permanent
-
-#cp ./plexmediaserver.xml /etc/firewalld/services/
-#cp ./fantasygrounds.xml /etc/firewalld/services/
-
-#firewall-cmd --zone=public --permanent --add-port=1802/tcp
-#firewall-cmd --zone=public --permanent --add-port=1802/udp
-#systemctl restart firewalld.service

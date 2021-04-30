@@ -15,7 +15,3 @@ docker run -d --restart always --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=
 docker run -d --restart always --name mongo -v "$HOME/docker/docker_local_databases/mongo":/data/db -p 27017:27017 -p 28017:28017 mongo:latest
 
 docker run -d --restart always --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=db-passord -v "$HOME/docker/docker_local_databases/postgres":/var/lib/pgsql/data postgres:latest
-
-# docker start mysql
-# docker start mongo
-# docker start postgres
