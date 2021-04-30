@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>fantasygrounds</short>
+  <description>Ports required by Fantasy Grounds.</description>
+  <port protocol="tcp" port="1802"></port>
+  <port protocol="udp" port="1802"></port>
+</service>
