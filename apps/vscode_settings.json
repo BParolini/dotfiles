@@ -1,0 +1,44 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "'JetBrains Mono Semi Light', Iosevka, 'Fira Code Light', 'Fira Code'",
+    "editor.lineHeight": 0,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.showFoldingControls": "always",
+    "editor.renderLineHighlight": "all",
+    "eslint.format.enable": true,
+    "eslint.packageManager": "npm",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true,
+        "source.organizeImports": true
+
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.minimap.size": "fit",
+    "editor.minimap.showSlider": "always",
+    "workbench.preferredDarkColorTheme": "Dracula",
+    "files.exclude": {
+        "**/.idea": true,
+        "**/Thumbs.db": true
+    },
+    "editor.fontSize": 15,
+    "workbench.fontAliasing": "antialiased",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.minimap.enabled": false,
+    "editor.largeFileOptimizations": false,
+    "markdown.extension.italic.indicator": "_",
+    "workbench.colorTheme": "Dracula"
+}
