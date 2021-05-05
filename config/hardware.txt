@@ -1,3 +1,7 @@
+Notebook DELL G3 15
+ - NVidia RTX 2060
+ - Service tag: 5DG5TD3
+
 Notebook DELL Inspiron 15
  - AMD Radeon™ R7 M265
  - Service tag: BNJMZ02
