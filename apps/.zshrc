@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/home/bparolini/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -132,6 +132,7 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
   exec_time     # Execution time
   line_sep      # Line break
   vi_mode       # Vi-mode indicator
@@ -172,8 +173,8 @@ zplugin light zsh-users/zsh-completions
 ### End of Zinit's installer chunk
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/bparolini/.sdkman"
+[[ -s "/home/bparolini/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bparolini/.sdkman/bin/sdkman-init.sh"
 
 export NPM_CONFIG_PREFIX=$HOME/apps/npm-global
 
@@ -183,9 +184,7 @@ export JAVA_HOME=$HOME/apps/java
 export GOROOT=$HOME/apps/go
 export GOTPATH=$HOME/projetos/go
 
-export ANDROID_HOME=$HOME/apps/Android/Sdk
-
-source "$HOME/Google Drive/OLXBR/scripts/tokens.sh"
+source "/home/bparolini/projetos/dotfiles/olxbr/tokens.sh"
 
 if [ $commands[kubectl] ]
 then
@@ -194,7 +193,7 @@ fi
 
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$NPM_CONFIG_PREFIX/bin:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
-## K8s setup ## Olx Brasil
+## K8s setup ##
 alias k8s-qa='
 kubectl config set-cluster https://api.k8s.qa.vivareal.io --server=https://api.k8s.qa.vivareal.io --insecure-skip-tls-verify &&
 kubectl config set-credentials https://api.k8s.qa.vivareal.io --token="$GH_TOKEN" &&
@@ -209,9 +208,5 @@ kubectl config set-context https://api.k8s.prod.vivareal.io --cluster=https://ap
 kubectl config use-context https://api.k8s.prod.vivareal.io &&
 kubectl cluster-info'
 
-export NEVERBOUNCE_KEY=***REMOVED***
-export NEVERBOUNCE_SECRET=***REMOVED***
-
-# This entry is needed to activate radeon video card
 xrandr --setprovideroffloadsink 1 0
 
