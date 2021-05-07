@@ -1,3 +1,4 @@
+*.insyncdl
 Thumbs.db
 .DS_Store
 .uuid
