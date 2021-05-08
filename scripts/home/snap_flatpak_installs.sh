@@ -8,6 +8,8 @@ ln -s /var/lib/snapd/snap /snap
 
 sleep 30
 
+systemctl restart snapd
+
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Media apps
@@ -17,10 +19,4 @@ snap install audible-for-linux
 
 # Communication apps
 snap install discord
-snap install telegram-desktop
 snap install slack --classic
-
-# Dev Apps
-snap install insomnia
-snap install --classic heroku
-flatpak install -y --or-update flathub io.dbeaver.DBeaverCommunity

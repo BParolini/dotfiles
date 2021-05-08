@@ -19,3 +19,4 @@ source $BASEDIR/cpp_libs.sh
 source $BASEDIR/vscode.sh
 source $BASEDIR/docker/docker.sh
 source $BASEDIR/virtualization.sh
+source $BASEDIR/python.sh

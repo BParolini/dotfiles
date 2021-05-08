@@ -49,5 +49,4 @@ echo
 
 echo
 echo "Installing C/C++ IDEs"
-dnf install -y qt5 qt-creator qt-creator-data qt-creator-doc \
-               codeblocks codeblocks-libs codeblocks-contrib codeblocks-contrib-libs
+dnf install -y qt5 qt-creator qt-creator-data qt-creator-doc

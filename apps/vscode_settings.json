@@ -41,5 +41,6 @@
     "editor.largeFileOptimizations": false,
     "markdown.extension.italic.indicator": "_",
     "workbench.colorTheme": "Dracula",
-    "window.dialogStyle": "custom"
+    "window.dialogStyle": "custom",
+    "terminal.external.linuxExec": "/bin/zsh"
 }

@@ -180,7 +180,7 @@ export JAVA_HOME=$HOME/apps/java
 export GOROOT=$HOME/apps/go
 export GOTPATH=$HOME/projetos/go
 
-source "/home/bparolini/projetos/dotfiles/olxbr/tokens.sh"
+source "$HOME/.dotfiles/olxbr/tokens.sh"
 
 if [ $commands[kubectl] ]
 then
@@ -203,6 +203,3 @@ kubectl config set-credentials https://api.k8s.prod.vivareal.io --token="$GH_TOK
 kubectl config set-context https://api.k8s.prod.vivareal.io --cluster=https://api.k8s.prod.vivareal.io --user=https://api.k8s.prod.vivareal.io &&
 kubectl config use-context https://api.k8s.prod.vivareal.io &&
 kubectl cluster-info'
-
-xrandr --setprovideroffloadsink 1 0
-
