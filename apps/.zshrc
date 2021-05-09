@@ -172,6 +172,8 @@ zplugin light zsh-users/zsh-completions
 export SDKMAN_DIR="/home/bparolini/.sdkman"
 [[ -s "/home/bparolini/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bparolini/.sdkman/bin/sdkman-init.sh"
 
+source "$HOME/.dotfiles/scripts/home/steam_env.sh"
+
 export NPM_CONFIG_PREFIX=$HOME/apps/npm-global
 
 export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
