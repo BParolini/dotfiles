@@ -3,10 +3,13 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs Kate editor
 
-echo "dnf install -y python3.6 python3.7 python3.8"
-dnf install -y python3.6 python3.7 python3.8
+echo "dnf install -y python3.6 python3.7 python3.8 python3.9 python3.10"
+dnf install -y python3.6 python3.7 python3.8 python3.9 python3.10
 
 echo "Preparing pip"
-python3.6 get-pip.py
-python3.7 get-pip.py
-python3.8 get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3.6 ./get-pip.py
+python3.7 ./get-pip.py
+python3.8 ./get-pip.py
+python3.9 ./get-pip.py
+python3.10 ./get-pip.py
