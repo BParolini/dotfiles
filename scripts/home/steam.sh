@@ -5,5 +5,5 @@
 
 dnf install -y steam
 
-# Add to .shrc
-# alias steam='env LD_PRELOAD=/usr/lib64/libfreetype.so.6 QT_AUTO_SCREEN_SCALE_FACTOR=0 steam'
+# STEAM_APP_PATH=$(which steam)
+# alias steam="env QT_AUTO_SCREEN_SCALE_FACTOR=0 LD_PRELOAD=/usr/lib64/libfreetype.so.6 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia $STEAM_APP_PATH"
