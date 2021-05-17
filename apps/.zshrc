@@ -182,6 +182,11 @@ export GOTPATH=$HOME/projetos/go
 
 source "$HOME/.dotfiles/olxbr/tokens.sh"
 
+if [ $commands[sdk] ]
+then
+	source <(sdk env zsh)
+fi
+
 if [ $commands[kubectl] ]
 then
 	source <(kubectl completion zsh)
