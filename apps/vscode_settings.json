@@ -42,5 +42,6 @@
     "markdown.extension.italic.indicator": "_",
     "workbench.colorTheme": "Dracula",
     "window.dialogStyle": "custom",
-    "terminal.external.linuxExec": "/bin/zsh"
+    "terminal.external.linuxExec": "/bin/zsh",
+    "docker.showStartPage": false
 }
