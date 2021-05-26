@@ -6,8 +6,8 @@
 echo "dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo"
 dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 
-echo "dnf install -y dnf-plugins-core git-all kdiff3 nodejs"
-dnf install -y dnf-plugins-core git-all kdiff3 nodejs gh
+echo "dnf install -y dnf-plugins-core git-all kdiff3 nodejs gh direnv"
+dnf install -y dnf-plugins-core git-all kdiff3 nodejs gh direnv
 
 echo "dnf group install -y --with-optional c-development"
 dnf group install -y --with-optional c-development

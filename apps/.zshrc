@@ -192,6 +192,11 @@ then
 	source <(kubectl completion zsh)
 fi
 
+if [ $commands[direnv] ]
+then
+    source <(direnv hook zsh)
+fi
+
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$NPM_CONFIG_PREFIX/bin:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 ## K8s setup ##
