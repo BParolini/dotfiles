@@ -176,6 +176,7 @@ export NPM_CONFIG_PREFIX=$HOME/apps/npm-global
 
 export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export JAVA_HOME=$HOME/apps/java
+export GRADLE_USER_HOME=$HOME/.gradle
 
 export GOROOT=$HOME/apps/go
 export GOTPATH=$HOME/projetos/go
