@@ -20,6 +20,14 @@ echo
 echo "=============================="
 echo
 
+echo "Installing Qt 6"
+dnf install -y $(dnf search qt6 | grep '^qt6-*.*[-devel]' | grep devel | grep x86_64 | awk '{print $1}' | uniq | sort)
+dnf debuginfo-install -y $(dnf search qt6 | grep '^qt6-*.*[-devel]' | grep devel | grep x86_64 | awk '{print $1}' | uniq | sort)
+
+echo
+echo "=============================="
+echo
+
 echo
 echo "Installing Boost"
 dnf install -y $(dnf search boost | grep '^boost-*.*[-devel]' | grep devel | grep x86_64 | awk '{print $1}' | uniq | sort)
