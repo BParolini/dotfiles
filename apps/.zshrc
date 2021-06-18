@@ -179,7 +179,7 @@ export JAVA_HOME=$HOME/apps/java
 export GRADLE_USER_HOME=$HOME/.gradle
 
 export GOROOT=$HOME/apps/go
-export GOTPATH=$HOME/projetos/go
+export GOPATH=$HOME/projetos/go
 
 source "$HOME/.dotfiles/olxbr/tokens.sh"
 
