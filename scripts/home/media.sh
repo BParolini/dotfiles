@@ -7,3 +7,5 @@ dnf install -y $(dnf search pipewire | grep ^pipewire | grep -v devel | grep -v 
                $(dnf search gstreamer | grep ^gstreamer1*- | grep -v svt | grep -v devel | grep -v i686 | awk '{print $1}' | sort | uniq) \
                vlc vlc-core vlc-extras \
                clementine
+
+dnf group upgrade -y --with-optional Multimedia
