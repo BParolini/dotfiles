@@ -172,7 +172,7 @@ zplugin light zsh-users/zsh-completions
 export SDKMAN_DIR="/home/bparolini/.sdkman"
 [[ -s "/home/bparolini/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bparolini/.sdkman/bin/sdkman-init.sh"
 
-export NPM_CONFIG_PREFIX=$HOME/apps/npm-global
+# export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
 export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export JAVA_HOME=$HOME/apps/java
