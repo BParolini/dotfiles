@@ -198,6 +198,10 @@ then
     source <(direnv hook zsh)
 fi
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$NPM_CONFIG_PREFIX/bin:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 ## K8s setup ##
