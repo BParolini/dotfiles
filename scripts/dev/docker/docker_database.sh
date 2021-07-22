@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs MySQL and PostgreSQL into Docker and runs them

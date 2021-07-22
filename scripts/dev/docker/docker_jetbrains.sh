@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs YouTrack, TeamCity and Upsource as Docker containers
