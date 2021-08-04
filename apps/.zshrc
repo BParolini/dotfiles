@@ -178,6 +178,9 @@ export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export JAVA_HOME=$HOME/apps/java
 export GRADLE_USER_HOME=$HOME/.gradle
 
+export NVM_SYMLINK_CURRENT=true
+export NVM_NODE_PATH=/home/bparolini/.nvm/current
+
 export GOROOT=$HOME/apps/go
 export GOPATH=$HOME/projetos/go
 
@@ -202,7 +205,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$NPM_CONFIG_PREFIX/bin:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$PATH
 
 ## K8s setup ##
 alias k8s-qa='
