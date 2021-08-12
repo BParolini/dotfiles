@@ -6,6 +6,7 @@
 export GH_TOKEN="***REMOVED***"
 export NPM_TOKEN="***REMOVED***"
 export DOCKER_TOKEN="***REMOVED***"
+export SONAR_TOKEN="***REMOVED***"
 
 export GH_HIRING_USER="***REMOVED***"
 export GH_HIRING_PASS="***REMOVED***"
