@@ -28,7 +28,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.minimap.size": "fit",
     "editor.minimap.showSlider": "always",
-    "workbench.preferredDarkColorTheme": "Dracula",
+    "workbench.preferredDarkColorTheme": "Default Dark+",
     "files.exclude": {
         "**/.idea": true,
         "**/Thumbs.db": true
@@ -42,5 +42,9 @@
     "markdown.extension.italic.indicator": "_",
     "window.dialogStyle": "custom",
     "terminal.external.linuxExec": "/bin/zsh",
-    "docker.showStartPage": false
+    "docker.showStartPage": false,
+    "importCost.vueExtensions": [
+
+        "\\.vue$"
+    ]
 }
