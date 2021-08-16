@@ -1,6 +1,6 @@
-**/*.insyncdl
-**/Thumbs.db
-**/.DS_Store
-**/.uuid
-**/.directory
-**/desktop.ini
+*.insyncdl
+Thumbs.db
+.DS_Store
+.uuid
+.directory
+desktop.ini
