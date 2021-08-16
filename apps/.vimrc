@@ -1,7 +1,3 @@
-packadd! dracula
-syntax enable
-colorscheme dracula
-
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
