@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "'JetBrains Mono Semi Light', Iosevka, 'Fira Code Light', 'Fira Code'",
+    "editor.fontFamily": "'JetBrains Mono Light', Iosevka, 'Fira Code Light', 'Fira Code'",
     "editor.lineHeight": 0,
     "liveServer.settings.CustomBrowser": "firefox",
     "editor.fontLigatures": true,
