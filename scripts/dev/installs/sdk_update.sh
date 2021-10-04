@@ -3,8 +3,6 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Updates SDKMan's installed packages
 
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 echo "sdk flush"
 sdk flush
 sdk flush broadcast
