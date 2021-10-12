@@ -196,6 +196,11 @@ then
 	source <(kubectl completion zsh)
 fi
 
+if [ $commands[minikube] ]
+then
+    source <(minikube completion zsh)
+fi
+
 if [ $commands[direnv] ]
 then
     source <(direnv hook zsh)
