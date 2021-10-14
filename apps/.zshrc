@@ -1,3 +1,6 @@
+# A link must be created using the following command:
+# ln -s $HOME/.dotfiles/apps/.zshrc $HOME/.zshrc
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -174,16 +177,7 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
-export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
-export JAVA_HOME=$HOME/apps/java
-export GRADLE_USER_HOME=$HOME/.gradle
-
-export NVM_SYMLINK_CURRENT=true
-export NVM_NODE_PATH=/home/bparolini/.nvm/current
-
-export GOROOT=$HOME/apps/go
-export GOPATH=$HOME/projetos/go
-
+source "$HOME/.profile"
 source "$HOME/.dotfiles/olxbr/tokens.sh"
 
 if [ $commands[sdk] ]
