@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 # author: Bruno Parolini brunoparolini@gmail.com
-# description: Installs various emulators and games
+# description: Installs various games
 
-snap install mgba citra-emu
-
-flatpak install -y --or-update ppsspp
-
-dnf install -y pcsxr pcsx2 dolphin-emu snes9x snes9x-gtk mupen64plus desmume
+dnf install -y wesnoth wesnoth-data wesnoth-server wesnoth-tools \
+               0ad 0ad-data \
+               openttd \
+               smc smc-music \
+               astromenace
