@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "'JetBrains Mono Light', Iosevka, 'Fira Code Light', 'Fira Code'",
+    "editor.fontFamily": "'Iosevka Light Extended', 'JetBrains Mono Light', 'Fira Code Light', 'Fira Code'",
     "editor.lineHeight": 0,
     "liveServer.settings.CustomBrowser": "firefox",
     "editor.fontLigatures": true,
@@ -44,7 +44,6 @@
     "terminal.external.linuxExec": "/bin/zsh",
     "docker.showStartPage": false,
     "importCost.vueExtensions": [
-
         "\\.vue$"
     ]
 }
