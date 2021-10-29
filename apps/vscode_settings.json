@@ -51,5 +51,7 @@
         "\\.vue$"
     ],
     "java.home": "~/apps/java",
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
 }
