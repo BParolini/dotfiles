@@ -31,7 +31,11 @@
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "files.exclude": {
         "**/.idea": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "editor.fontSize": 15,
     "workbench.fontAliasing": "antialiased",
@@ -45,5 +49,7 @@
     "docker.showStartPage": false,
     "importCost.vueExtensions": [
         "\\.vue$"
-    ]
+    ],
+    "java.home": "~/apps/java",
+    "redhat.telemetry.enabled": true
 }
