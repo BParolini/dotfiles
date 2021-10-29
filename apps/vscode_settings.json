@@ -53,5 +53,6 @@
     "java.home": "~/apps/java",
     "redhat.telemetry.enabled": true,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "One Dark Pro"
 }
