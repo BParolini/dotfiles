@@ -72,28 +72,10 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    dnf
     docker
     docker-compose
     dotenv
-    git
-    git-extras
-    github
-    gitignore
-    git-prompt
-    gradle
-    mvn
-    kubectl
-    node
-    npm
-    pip
     pipenv
-    pod
-    python
-    sdk
-    sudo
-    vim-interaction
-    vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -131,7 +113,6 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
   exec_time     # Execution time
   line_sep      # Line break
   vi_mode       # Vi-mode indicator
