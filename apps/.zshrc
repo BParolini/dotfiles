@@ -166,6 +166,11 @@ then
 	source <(sdk env zsh)
 fi
 
+if [ $commands[pipenv] ]
+then
+	source <(pipenv --completion)
+fi
+
 if [ $commands[kubectl] ]
 then
 	source <(kubectl completion zsh)
