@@ -54,5 +54,6 @@
     "redhat.telemetry.enabled": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "workbench.list.smoothScrolling": true
 }
