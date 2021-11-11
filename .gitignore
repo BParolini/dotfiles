@@ -4,3 +4,4 @@ Thumbs.db
 .uuid
 .directory
 desktop.ini
+**/.aws/sso
