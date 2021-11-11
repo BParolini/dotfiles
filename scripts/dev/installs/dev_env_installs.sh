@@ -10,8 +10,8 @@ echo
 echo "=============================="
 echo
 
-echo "dnf install -y dnf-plugins-core git-all kdiff3 gh direnv"
-dnf install -y dnf-plugins-core git-all kdiff3 gh direnv
+echo "dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql"
+dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql
 
 echo
 echo "=============================="
