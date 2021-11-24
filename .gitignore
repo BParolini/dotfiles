@@ -5,3 +5,4 @@ Thumbs.db
 .directory
 desktop.ini
 **/.aws/sso
+**/.aws/cli/cache
