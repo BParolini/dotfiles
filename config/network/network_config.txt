@@ -38,16 +38,17 @@ PS5 (wifi)              80-60-B7-96-D6-9E   192.168.0.4
 PS4 (cabo)              BC-60-A7-C2-D7-F3   192.168.0.5
 PS4 (wifi)              A8-47-4A-E7-45-1B   192.168.0.5
 Nintendo Switch         98-B6-E9-27-A7-DF   192.168.0.6
-PS Vita                 D4-4B-5E-50-86-62   192.168.0.7
-Celular (Bruno)         C8-C7-50-3D-23-D5   192.168.0.8
-Celular (Pamela)        04-D9-F5-68-9F-21   192.168.0.9
-Kindle (Bruno)          00-BB-3A-4F-78-16   192.168.0.10
-Kindle (Pamela)         00-BB-3A-D7-43-24   192.168.0.11
-TV (Sala - Cabo)        00-7C-2D-6A-27-CE   192.168.0.12
-TV (Quarto - Cabo)      84-A4-66-1D-5F-58   192.168.0.13
-TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB   192.168.0.14
-Amazfit Stratos 3       D8-80-3C-3F-98-41   192.168.0.15
-Amazfit Bip2            D8-80-3C-0B-90-F5   192.168.0.16
+Celular (Bruno)         C8-C7-50-3D-23-D5   192.168.0.7
+Celular (Pamela)        04-D9-F5-68-9F-21   192.168.0.8
+Kindle (Bruno)          F4-03-2A-8E-AB-F9   192.168.0.9
+Kindle (Pamela)         00-BB-3A-D7-43-24   192.168.0.10
+TV (Sala - Cabo)        00-7C-2D-6A-27-CE   192.168.0.11
+TV (Quarto - Cabo)      84-A4-66-1D-5F-58   192.168.0.12
+TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB   192.168.0.13
+Fire TV Stick 4k        40-A9-CF-A4-E4-33   192.168.0.14
+PS Vita                 D4-4B-5E-50-86-62   192.168.0.15
+Amazfit Stratos 3       D8-80-3C-3F-98-41   192.168.0.16
+Amazfit Bip2            D8-80-3C-0B-90-F5   192.168.0.17
 PSP                     00-1C-26-5D-5D-D4   192.168.0.97
 Notebook (MacBook)      38-C9-86-E9-1F-40   192.168.0.98
 HP                      94-57-A5-C3-05-DF   192.168.0.99
