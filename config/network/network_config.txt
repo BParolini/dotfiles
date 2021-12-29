@@ -46,9 +46,11 @@ TV (Sala - Cabo)        00-7C-2D-6A-27-CE   192.168.0.11
 TV (Quarto - Cabo)      84-A4-66-1D-5F-58   192.168.0.12
 TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB   192.168.0.13
 Fire TV Stick 4k        40-A9-CF-A4-E4-33   192.168.0.14
-PS Vita                 D4-4B-5E-50-86-62   192.168.0.15
-Amazfit Stratos 3       D8-80-3C-3F-98-41   192.168.0.16
-Amazfit Bip2            D8-80-3C-0B-90-F5   192.168.0.17
+Fire TV Stick           74-E2-0C-FC-8A-87   192.168.0.15
+Chromecast              B0-2A-43-53-B9-C3   192.168.0.16
+PS Vita                 D4-4B-5E-50-86-62   192.168.0.17
+Amazfit Stratos 3       D8-80-3C-3F-98-41   192.168.0.18
+Amazfit Bip2            D8-80-3C-0B-90-F5   192.168.0.19
 PSP                     00-1C-26-5D-5D-D4   192.168.0.97
 Notebook (MacBook)      38-C9-86-E9-1F-40   192.168.0.98
 HP                      94-57-A5-C3-05-DF   192.168.0.99
