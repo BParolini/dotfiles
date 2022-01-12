@@ -16,6 +16,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 snap install spotify
 snap install pocket-casts
 snap install audible-for-linux
+snap install easymp3gain
 
 # Communication apps
 snap install discord
