@@ -5,6 +5,6 @@
 
 snap install mgba citra-emu
 
-flatpak install -y --or-update ppsspp
+flatpak install -y --or-update ppsspp RPCS3
 
 dnf install -y pcsxr pcsx2 dolphin-emu snes9x snes9x-gtk mupen64plus desmume
