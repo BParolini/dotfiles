@@ -56,5 +56,6 @@
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Dracula",
     "workbench.list.smoothScrolling": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true
 }
