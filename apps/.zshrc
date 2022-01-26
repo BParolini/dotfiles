@@ -161,9 +161,16 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 source "$HOME/.profile"
 source "$HOME/.dotfiles/olxbr/tokens.sh"
 
+autoload -Uz compinit && compinit
+
 if [ $commands[sdk] ]
 then
 	source <(sdk env zsh)
+fi
+
+if [ $commands[npm] ]
+then
+    source <(npm completion)
 fi
 
 if [ $commands[pipenv] ]
