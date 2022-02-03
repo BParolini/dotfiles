@@ -9,9 +9,6 @@ dnf config-manager -yb --add-repo https://download.docker.com/linux/fedora/docke
 echo "Installing Docker CE and Docker Compose"
 dnf install -yb docker-ce docker-compose
 
-BASEDIR=$(dirname "$0")
-source $BASEDIR/kubectl.sh
-
 echo "Adding bparolini to linux's docker user group"
 usermod -a -G docker bparolini
 
