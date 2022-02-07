@@ -31,7 +31,7 @@ source $BASEDIR/cpp_libs_and_tools.sh
 source $BASEDIR/nodejs.sh
 source $BASEDIR/vscode.sh
 source $BASEDIR/podman.sh
-# source $BASEDIR/docker/docker.sh
+source $BASEDIR/docker/docker.sh
 source $BASEDIR/kubectl.sh
 source $BASEDIR/virtualization.sh
 source $BASEDIR/python.sh
