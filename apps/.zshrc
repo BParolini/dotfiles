@@ -175,7 +175,7 @@ fi
 
 if [ $commands[pipenv] ]
 then
-	source <(pipenv --completion)
+	eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 fi
 
 if [ $commands[kubectl] ]
