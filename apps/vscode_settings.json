@@ -23,7 +23,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.tslint": true,
         "source.organizeImports": true
-
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.minimap.size": "fit",
