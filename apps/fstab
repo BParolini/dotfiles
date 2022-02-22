@@ -15,4 +15,4 @@ UUID=AA7C-E043                            /boot/efi vfat    umask=0077,shortname
 UUID=2caa38cc-fce3-4a6c-945a-89280cf8b032 /home     btrfs   subvol=home,compress=zstd:1                                0 0
 
 # Samsung S3 - 1GB
-UUID=4EFE5923FE59051D                     /media    ntfs-3g defaults,_netdev,windows_names,umask=0000,fmask=0000       0 0
+UUID=4EFE5923FE59051D                     /media    ntfs-3g rw,auto,async,_netdev,users,dev,exec,umask=0000,fmask=0000 0 0
