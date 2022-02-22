@@ -25,3 +25,6 @@ ln -s $BASEDIR/sdk.config $HOME/.sdkman/etc/config
 
 rm $HOME/.config/Code/User/settings.json
 ln -s $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json
+
+rm /etc/fstab
+ln -s $BASEDIR/fstab /etc/fstab

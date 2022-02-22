@@ -1,0 +1,18 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Fri May  7 21:49:52 2021
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+UUID=2caa38cc-fce3-4a6c-945a-89280cf8b032 /         btrfs   subvol=root,compress=zstd:1                                0 0
+UUID=6e2157eb-21c8-4987-9fab-882c9cc1a390 /boot     ext4    defaults                                                   1 2
+UUID=AA7C-E043                            /boot/efi vfat    umask=0077,shortname=winnt                                 0 2
+UUID=2caa38cc-fce3-4a6c-945a-89280cf8b032 /home     btrfs   subvol=home,compress=zstd:1                                0 0
+
+# Samsung S3 - 1GB
+UUID=4EFE5923FE59051D                     /media    ntfs-3g defaults,_netdev,windows_names,umask=0000,fmask=0000       0 0
