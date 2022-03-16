@@ -159,7 +159,7 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
 source "$HOME/.profile"
-source "$HOME/.dotfiles/olxbr/tokens.sh"
+source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
 
 autoload -Uz compinit && compinit
 
