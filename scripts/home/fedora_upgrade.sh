@@ -17,12 +17,5 @@ echo
 echo "=============================="
 echo
 
-echo "snap refresh"
-snap refresh
-
-echo
-echo "=============================="
-echo
-
 echo "flatpak -y update"
 flatpak -y update
