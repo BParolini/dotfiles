@@ -23,5 +23,8 @@ ln -s $BASEDIR/gradle.properties $HOME/.gradle/gradle.properties
 rm $HOME/.sdkman/etc/config
 ln -s $BASEDIR/sdk.config $HOME/.sdkman/etc/config
 
+rm $HOME/.fleet/settings.json
+ln -s $BASEDIR/fleet_settings.json $HOME/.fleet/settings.json
+
 rm $HOME/.config/Code/User/settings.json
 ln -s $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json

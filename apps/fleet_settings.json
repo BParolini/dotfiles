@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 15.0,
+    "editor.ligatures": true,
+    "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
+    "keymap": "pc-ij"
+}
