@@ -4,8 +4,6 @@ Password:               n4ke6dj9
 
 Roteador:               192.168.0.1
 MAC:                    B0-BE-76-E9-CD-D3
-User:                   bruno
-Password:               senha padrão
 
 DNS Google:
 IPv4:	                8.8.8.8
@@ -57,12 +55,3 @@ HP                      94-57-A5-C3-05-DF   192.168.0.99
 
 DHCP Start:	            192.168.0.100
 
-Fantasy Grounds Port:
-TCP/UDP:    1802
-
-PS Ports:
-PlayStation®Network and SCEA Game Servers
-TCP Ports:	        10050
-                    10051
-                    10040-10060
-UDP Ports:          50000-60000
