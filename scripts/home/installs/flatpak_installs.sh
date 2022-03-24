@@ -15,3 +15,6 @@ flatpak install -y --or-update flathub tech.feliciano.pocket-casts
 flatpak install -y --or-update flathub com.discordapp.Discord
 flatpak install -y --or-update flathub com.slack.Slack
 flatpak install -y --or-update flathub us.zoom.Zoom
+
+# Util apps
+flatpak install -y --or-update com.simplenote.Simplenote
