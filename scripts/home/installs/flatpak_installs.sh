@@ -17,5 +17,11 @@ flatpak install -y --or-update flathub com.slack.Slack
 flatpak install -y --or-update flathub us.zoom.Zoom
 
 # Util apps
+flatpak install -y --or-update org.keepassxc.KeePassXC
 flatpak install -y --or-update com.calibre_ebook.calibre
 flatpak install -y --or-update com.simplenote.Simplenote
+flatpak install -y --or-update org.gnome.Solanum
+
+# Dev apps
+flatpak install -y --or-update com.github.artemanufrij.regextester
+flatpak install -y --or-update io.dbeaver.DBeaverCommunity
