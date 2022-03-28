@@ -2,7 +2,7 @@ Modem Vivo:             192.168.15.1
 User:                   admin
 Password:               n4ke6dj9
 
-Roteador:               192.168.0.1
+Roteador:               10.5.3.1
 MAC:                    B0-BE-76-E9-CD-D3
 
 DNS Google:
@@ -26,32 +26,38 @@ Passkey:                WarOfTheLions
 Máscara:                255.255.255.0
 
 Device                  MAC                 IP
-Roteador                50-C7-BF-2C-FB-35   192.168.0.1
-Dell G3 15 (Cabo)       34-73-5A-FC-FB-00   192.168.0.2
-Dell G3 15 (Wifi)       5C-CD-5B-F3-CC-B7   192.168.0.2
-Dell Inspiron 15 (Cabo) EC-F4-BB-99-48-A0   192.168.0.3
-Dell Inspiron 15 (Wifi) 90-48-9A-EF-A4-2D   192.168.0.3
-PS5 (cabo)              00-E4-21-0D-B9-11   192.168.0.4
-PS5 (wifi)              80-60-B7-96-D6-9E   192.168.0.4
-PS4 (cabo)              BC-60-A7-C2-D7-F3   192.168.0.5
-PS4 (wifi)              A8-47-4A-E7-45-1B   192.168.0.5
-Nintendo Switch         98-B6-E9-27-A7-DF   192.168.0.6
-Celular (Bruno)         C8-C7-50-3D-23-D5   192.168.0.7
-Celular (Pamela)        04-D9-F5-68-9F-21   192.168.0.8
-Kindle (Bruno)          F4-03-2A-8E-AB-F9   192.168.0.9
-Kindle (Pamela)         00-BB-3A-D7-43-24   192.168.0.10
-TV (Sala - Cabo)        00-7C-2D-6A-27-CE   192.168.0.11
-TV (Quarto - Cabo)      84-A4-66-1D-5F-58   192.168.0.12
-TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB   192.168.0.13
-Fire TV Stick 4k        40-A9-CF-A4-E4-33   192.168.0.14
-Fire TV Stick           74-E2-0C-FC-8A-87   192.168.0.15
-Chromecast              B0-2A-43-53-B9-C3   192.168.0.16
-PS Vita                 D4-4B-5E-50-86-62   192.168.0.17
-Amazfit Stratos 3       D8-80-3C-3F-98-41   192.168.0.18
-Amazfit Bip2            D8-80-3C-0B-90-F5   192.168.0.19
-PSP                     00-1C-26-5D-5D-D4   192.168.0.97
-Notebook (MacBook)      38-C9-86-E9-1F-40   192.168.0.98
-HP                      94-57-A5-C3-05-DF   192.168.0.99
+Roteador                50-C7-BF-2C-FB-35   10.5.3.1
 
-DHCP Start:	            192.168.0.100
+Dell G3 15 (Wifi)       5C-CD-5B-F3-CC-B7   10.5.3.2
+Dell G3 15 (Cabo)       34-73-5A-FC-FB-00
+Dell Inspiron 15 (Cabo) EC-F4-BB-99-48-A0
+Dell Inspiron 15 (Wifi) 90-48-9A-EF-A4-2D
+
+PS5 (cabo)              00-E4-21-0D-B9-11   10.5.3.3
+PS5 (wifi)              80-60-B7-96-D6-9E
+Nintendo Switch         98-B6-E9-27-A7-DF   10.5.3.4
+PS4 (cabo)              BC-60-A7-C2-D7-F3   10.5.3.5
+PS4 (wifi)              A8-47-4A-E7-45-1B
+
+Celular (Bruno)         C8-C7-50-3D-23-D5   10.5.3.6
+Celular (Pamela)        04-D9-F5-68-9F-21   10.5.3.7
+Kindle (Bruno)          F4-03-2A-8E-AB-F9   10.5.3.8
+Kindle (Pamela)         00-BB-3A-D7-43-24   10.5.3.9
+
+TV (Sala - Cabo)        00-7C-2D-6A-27-CE   10.5.3.10
+TV (Quarto - Cabo)      84-A4-66-1D-5F-58
+TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB
+Fire TV Stick 4k        40-A9-CF-A4-E4-33   10.5.3.11
+Fire TV Stick           74-E2-0C-FC-8A-87   10.5.3.12
+Chromecast              B0-2A-43-53-B9-C3   10.5.3.13
+
+Amazfit Stratos 3       D8-80-3C-3F-98-41   10.5.3.14
+Amazfit Bip 2           D8-80-3C-0B-90-F5   10.5.3.15
+
+PS Vita                 D4-4B-5E-50-86-62
+PSP                     00-1C-26-5D-5D-D4
+Notebook (MacBook)      38-C9-86-E9-1F-40
+HP                      94-57-A5-C3-05-DF   10.5.3.99
+
+DHCP Start:	            10.5.3.100
 
