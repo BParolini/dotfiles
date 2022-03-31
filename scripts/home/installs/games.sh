@@ -8,3 +8,7 @@ dnf install -y wesnoth wesnoth-data wesnoth-server wesnoth-tools \
                openttd \
                smc smc-music \
                astromenace
+
+BASEDIR=$(dirname "$0")
+
+source $BASEDIR/emulators.sh
