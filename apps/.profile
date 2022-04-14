@@ -6,8 +6,10 @@
 # A link must be created using the following command:
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
-export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export JAVA_HOME=$HOME/apps/java
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+
+export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export GRADLE_USER_HOME=$HOME/.gradle
 
 export NVM_SYMLINK_CURRENT=true
