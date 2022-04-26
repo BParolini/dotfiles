@@ -1,7 +1,11 @@
 {
+    "editor.fontFamily": "Iosevka Light Extended",
     "editor.fontSize": 15.0,
     "editor.ligatures": true,
+    "editor.lineSpacing": 1.2,
+    "ff.autoSyncEditors": true,
+    "ff.showShortcutsInGotoPanel": true,
     "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
     "keymap": "pc-ij",
-    "editor.fontFamily": "Iosevka Light Extended"
+    "rename.autoRenameOnTyping": true
 }
