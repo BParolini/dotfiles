@@ -7,7 +7,7 @@
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
 export JAVA_HOME=$HOME/apps/java
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 
 export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
 export GRADLE_USER_HOME=$HOME/.gradle
