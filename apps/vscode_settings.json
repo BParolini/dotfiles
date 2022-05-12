@@ -56,5 +56,7 @@
     "workbench.colorTheme": "Dracula",
     "workbench.list.smoothScrolling": true,
     "explorer.confirmDragAndDrop": false,
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
 }
