@@ -28,3 +28,6 @@ ln -s $BASEDIR/fleet_settings.json $HOME/.fleet/settings.json
 
 rm $HOME/.config/Code/User/settings.json
 ln -s $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json
+
+rm /etc/dnf/dnf.conf
+ln -s $BASEDIR/dnf.conf /etc/dnf/dnf.conf
