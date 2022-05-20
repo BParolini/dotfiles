@@ -1,11 +1,12 @@
 #!/usr/bin/env sh
 
 # author: Bruno Parolini brunoparolini@gmail.com
-# description: Installs all pipewire and gstreamer packages and some media players
+# description: Updates and installs multimedia apps and installs some players
 
-dnf install -y $(dnf search pipewire | grep ^pipewire | grep -v devel | grep -v doc | grep -v jack | awk '{print $1}' | uniq | sort) \
-               $(dnf search gstreamer | grep ^gstreamer1*- | grep -v svt | grep -v devel | grep -v i686 | awk '{print $1}' | sort | uniq) \
-               vlc vlc-core vlc-extras \
-               clementine
+echo "Updating multimedia apps and installing some players"
+dnf groupupdate -y --with-optional Multimedia
+dnf groupupdate -y sound-and-video
 
-dnf group upgrade -y --with-optional Multimedia
+dnf install -y vlc vlc-core vlc-extras \
+               clementine \
+               kodi kodi-firewalld

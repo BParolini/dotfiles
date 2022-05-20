@@ -26,12 +26,12 @@ echo
 
 BASEDIR=$(dirname "$0")
 
-source $BASEDIR/vim.sh
-source $BASEDIR/cpp_libs_and_tools.sh
-source $BASEDIR/nodejs.sh
-source $BASEDIR/vscode.sh
-source $BASEDIR/podman.sh
-source $BASEDIR/docker/docker.sh
-source $BASEDIR/kubectl.sh
-source $BASEDIR/virtualization.sh
-source $BASEDIR/python.sh
+. "$BASEDIR/vim.sh"
+. "$BASEDIR/cpp_libs_and_tools.sh"
+. "$BASEDIR/nodejs.sh"
+. "$BASEDIR/vscode.sh"
+. "$BASEDIR/podman.sh"
+. "$BASEDIR/docker/docker.sh"
+. "$BASEDIR/kubectl.sh"
+. "$BASEDIR/virtualization.sh"
+. "$BASEDIR/python.sh"
