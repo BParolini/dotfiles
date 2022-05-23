@@ -149,7 +149,7 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 
 source "$HOME/.profile"
 source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
-source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
+# source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
 
 autoload -Uz compinit && compinit
 
