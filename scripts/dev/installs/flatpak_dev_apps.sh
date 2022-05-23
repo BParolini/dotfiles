@@ -5,4 +5,6 @@
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install io.github.shiftey.Desktop # GitHub Desktop
+flatpak install -y --or-update io.github.shiftey.Desktop # GitHub Desktop
+flatpak install -y --or-update com.github.artemanufrij.regextester
+flatpak install -y --or-update io.dbeaver.DBeaverCommunity
