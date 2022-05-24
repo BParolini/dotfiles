@@ -10,8 +10,8 @@ echo
 echo "=============================="
 echo
 
-echo "dnf install -y adwaita-qt adwaita-qt5 adwaita-gtk2-theme adwaita-icon-theme adwaita-cursor-theme"
-dnf install -y adwaita-qt adwaita-qt5 adwaita-gtk2-theme adwaita-icon-theme adwaita-cursor-theme
+echo "dnf install -y adwaita-qt5 adwaita-gtk2-theme adwaita-icon-theme adwaita-cursor-theme"
+dnf install -y adwaita-qt5 adwaita-gtk2-theme adwaita-icon-theme adwaita-cursor-theme
 
 echo
 echo "=============================="

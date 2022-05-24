@@ -7,7 +7,7 @@ if [ $# -eq 0 ]
 then
     echo "No arguments supplied."
     echo "You must inform \"<user_email>\""
-    exit -1
+    exit 1
 fi
 
 gpg2 --full-generate-key

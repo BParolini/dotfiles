@@ -3,7 +3,7 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Generates a new SSH key
 
-if [ $# -eq 0 || -z "$1" ]
+if [ $# -eq 0 ] || [ -z "$1" ]
 then
     echo "E-mail must be supplied"
 fi

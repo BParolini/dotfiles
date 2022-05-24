@@ -8,7 +8,7 @@ then
     echo "No arguments supplied."
     echo "You must inform \"<user_name>\" \"<user_email>\" \"[<user_signingkey>]\""
     echo "If user_signingkey is not supplied, gpg signature will be disabled."
-    exit -1
+    exit 1
 fi
 
 git config --global user.name "$1"
@@ -27,10 +27,10 @@ git config --global alias.incoming "!(git fetch --quiet && git log --pretty=form
 
 git config --global alias.outgoing "!(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)"
 
-if [ ! -z $3 ]
+if [ -n "$3" ]
 then
     git config --global commit.gpgsign true
-    git config --global user.signingkey $3
+    git config --global user.signingkey "$3"
 else
     git config --global commit.gpgsign false
     git config --global --unset user.signingkey

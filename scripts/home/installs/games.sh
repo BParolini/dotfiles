@@ -11,4 +11,4 @@ dnf install -y wesnoth wesnoth-data wesnoth-server wesnoth-tools \
 
 BASEDIR=$(dirname "$0")
 
-source $BASEDIR/emulators.sh
+source "$BASEDIR/emulators.sh"

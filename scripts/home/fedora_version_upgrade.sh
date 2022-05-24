@@ -6,13 +6,13 @@
 if [ $# -ne 1 ]
 then
     echo "New Fedora version must be supplied"
-    exit -1
+    exit 1
 fi
 
 dnf install -y python3-dnf-plugin-system-upgrade
 
 dnf upgrade --refresh
 
-dnf system-upgrade download --releasever=$1
+dnf system-upgrade download --releasever="$1"
 
 dnf system-upgrade reboot
