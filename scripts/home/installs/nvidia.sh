@@ -11,4 +11,6 @@ dnf install -y \
     nvidia-modprobe \
     vdpauinfo \
     libva-vdpau-driver \
-    libva-utils
+    libva-utils \
+    libvdpau-va-gl \
+    mesa-vdpau-drivers
