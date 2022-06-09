@@ -17,3 +17,5 @@ export NVM_NODE_PATH=/home/bparolini/.nvm/current
 
 export GOROOT=$HOME/apps/go
 export GOPATH=$HOME/projetos/go
+
+. "$HOME/.dotfiles/apps/plasma_env.sh"

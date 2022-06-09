@@ -6,5 +6,7 @@
 
 # ln -s $HOME/.dotfiles/apps/plasma_env.sh $HOME/.config/plasma-workspace/env
 
-export XDG_CURRENT_DESKTOP=KDE
-export XDG_SESSION_DESKTOP=KDE
+export XDG_CURRENT_DESKTOP="${XDG_SESSION_DESKTOP:=KDE}"
+export XDG_SESSION_DESKTOP="${XDG_SESSION_DESKTOP:=KDE}"
+
+export XDG_DATA_HOME="${XDG_DATA_HOME:="$HOME/.local/share"}"
