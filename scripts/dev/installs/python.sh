@@ -15,10 +15,16 @@ python3.10 ./get-pip.py
 python3.11 ./get-pip.py
 rm -f ./get-pip.py
 
+echo "Installing Cython"
+python3.7 -m pip install --upgrade Cython
+python3.8 -m pip install --upgrade Cython
+python3.9 -m pip install --upgrade Cython
+python3.10 -m pip install --upgrade Cython
+python3.11 -m pip install --upgrade Cython
+
 echo "Upgrading packages for all installed Python versions"
 BASEDIR=$(dirname "$0")
 
-source $BASEDIR/../utils/python_package_upgrade.sh python3.6
 source $BASEDIR/../utils/python_package_upgrade.sh python3.7
 source $BASEDIR/../utils/python_package_upgrade.sh python3.8
 source $BASEDIR/../utils/python_package_upgrade.sh python3.9
