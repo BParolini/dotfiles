@@ -39,17 +39,17 @@ Nintendo Switch         98-B6-E9-27-A7-DF   10.5.3.4
 PS4 (cabo)              BC-60-A7-C2-D7-F3   10.5.3.5
 PS4 (wifi)              A8-47-4A-E7-45-1B
 
-Celular (Bruno)         C8-C7-50-3D-23-D5   10.5.3.6
-Celular (Pamela)        04-D9-F5-68-9F-21   10.5.3.7
-Kindle (Bruno)          F4-03-2A-8E-AB-F9   10.5.3.8
-Kindle (Pamela)         00-BB-3A-D7-43-24   10.5.3.9
+Celular (Bruno)         60-68-4E-F1-A4-C2   10.5.3.6
+Celular (Pamela)        60-68-4E-EA-24-5E   10.5.3.7
+Celular (Gabriel)       04-D9-F5-68-9F-21   10.5.3.8
+Kindle (Bruno)          F4-03-2A-8E-AB-F9   10.5.3.9
+Kindle (Pamela)         00-BB-3A-D7-43-24   10.5.3.10
 
-TV (Sala - Cabo)        00-7C-2D-6A-27-CE   10.5.3.10
+TV (Sala - Cabo)        00-7C-2D-6A-27-CE   10.5.3.11
 TV (Quarto - Cabo)      84-A4-66-1D-5F-58
 TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB
-Fire TV Stick 4k        40-A9-CF-A4-E4-33   10.5.3.11
-Fire TV Stick           74-E2-0C-FC-8A-87   10.5.3.12
-Chromecast              B0-2A-43-53-B9-C3   10.5.3.13
+Fire TV Stick 4k        40-A9-CF-A4-E4-33   10.5.3.12
+Fire TV Stick           74-E2-0C-FC-8A-87   10.5.3.13
 
 Amazfit Stratos 3       D8-80-3C-3F-98-41   10.5.3.14
 Amazfit Bip 2           D8-80-3C-0B-90-F5   10.5.3.15
