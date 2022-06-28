@@ -5,3 +5,6 @@ Thumbs.db
 .directory
 desktop.ini
 .idea
+.vscode
+.git
+.gradle
