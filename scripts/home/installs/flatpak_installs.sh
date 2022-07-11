@@ -11,6 +11,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y --or-update flathub com.spotify.Client
 flatpak install -y --or-update flathub tech.feliciano.pocket-casts
 flatpak install -y --or-update flathub com.obsproject.Studio
+flatpak install -y --reinstall flathub com.github.geigi.cozy
 
 # Communication apps
 flatpak install -y --or-update flathub com.discordapp.Discord
