@@ -187,7 +187,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$PATH
+export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
 ## K8s setup ##
 alias k8s-qa='
