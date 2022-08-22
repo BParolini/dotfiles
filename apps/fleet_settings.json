@@ -8,5 +8,6 @@
     "ff.showShortcutsInGotoPanel": true,
     "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
     "keymap": "pc-ij",
-    "rename.autoRenameOnTyping": true
+    "rename.autoRenameOnTyping": true,
+    "terminal.enableFocusEditorOnEsc": true
 }
