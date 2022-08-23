@@ -7,3 +7,4 @@ desktop.ini
 **/.aws/sso
 **/.aws/cli/cache
 .idea
+.fleet
