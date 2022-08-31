@@ -56,7 +56,7 @@ Amazfit Bip 2           D8-80-3C-0B-90-F5   10.5.3.15
 
 PS Vita                 D4-4B-5E-50-86-62
 PSP                     00-1C-26-5D-5D-D4
-Notebook (MacBook)      38-C9-86-E9-1F-40
+Notebook (MacBook)      B0-BE-83-70-24-B7   10.5.3.98
 HP                      94-57-A5-C3-05-DF   10.5.3.99
 
 DHCP Start:	            10.5.3.100
