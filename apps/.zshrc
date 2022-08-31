@@ -148,7 +148,8 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
 source "$HOME/.profile"
-source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
+# source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
+# source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
 # source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
 
 autoload -Uz compinit && compinit
@@ -189,20 +190,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
-## K8s setup ##
-alias k8s-qa='
-kubectl config set-cluster https://api.k8s.qa.vivareal.io --server=https://api.k8s.qa.vivareal.io --insecure-skip-tls-verify &&
-kubectl config set-credentials https://api.k8s.qa.vivareal.io --token="$GH_TOKEN" &&
-kubectl config set-context https://api.k8s.qa.vivareal.io --cluster=https://api.k8s.qa.vivareal.io --user=https://api.k8s.qa.vivareal.io --namespace=listings &&
-kubectl config use-context https://api.k8s.qa.vivareal.io &&
-kubectl cluster-info'
-
-alias k8s-prod='
-kubectl config set-cluster https://api.k8s.prod.vivareal.io --server=https://api.k8s.prod.vivareal.io --insecure-skip-tls-verify &&
-kubectl config set-credentials https://api.k8s.prod.vivareal.io --token="$GH_TOKEN" &&
-kubectl config set-context https://api.k8s.prod.vivareal.io --cluster=https://api.k8s.prod.vivareal.io --user=https://api.k8s.prod.vivareal.io --namespace=listings &&
-kubectl config use-context https://api.k8s.prod.vivareal.io &&
-kubectl cluster-info'
 zi light-mode for \
   z-shell/z-a-meta-plugins \
   @annexes # <- https://z.digitalclouds.dev/ecosystem/annexes

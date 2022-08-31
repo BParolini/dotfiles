@@ -20,6 +20,6 @@ export NVM_NODE_PATH=/home/bparolini/.nvm/current
 export GOROOT=$HOME/apps/go
 export GOPATH=$HOME/projetos/go
 
-export KAFKA_HOME=$HOME/apps/kafka
+# export KAFKA_HOME=$HOME/apps/kafka
 
 . "$HOME/.dotfiles/apps/plasma_env.sh"

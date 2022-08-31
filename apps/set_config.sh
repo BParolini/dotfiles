@@ -5,29 +5,18 @@
 
 BASEDIR=$(dirname "$0")
 
-rm $HOME/.aws
-ln -s $BASEDIR/.aws $HOME/.aws
+ln -sf $BASEDIR/.profile $HOME/.profile
 
-rm $HOME/.profile
-ln -s $BASEDIR/.profile $HOME/.profile
+ln -sf $BASEDIR/.vimrc $HOME/.vimrc
 
-rm $HOME/.vimrc
-ln -s $BASEDIR/.vimrc $HOME/.vimrc
+ln -sf $BASEDIR/.zshrc $HOME/.zshrc
 
-rm $HOME/.zshrc
-ln -s $BASEDIR/.zshrc $HOME/.zshrc
+ln -sf $BASEDIR/gradle.properties $HOME/.gradle/gradle.properties
 
-rm $HOME/.gradle/gradle.properties
-ln -s $BASEDIR/gradle.properties $HOME/.gradle/gradle.properties
+ln -sf $BASEDIR/sdk.config $HOME/.sdkman/etc/config
 
-rm $HOME/.sdkman/etc/config
-ln -s $BASEDIR/sdk.config $HOME/.sdkman/etc/config
+ln -sf $BASEDIR/fleet_settings.json $HOME/.fleet/settings.json
 
-rm $HOME/.fleet/settings.json
-ln -s $BASEDIR/fleet_settings.json $HOME/.fleet/settings.json
+ln -sf $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json
 
-rm $HOME/.config/Code/User/settings.json
-ln -s $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json
-
-rm /etc/dnf/dnf.conf
-ln -s $BASEDIR/dnf.conf /etc/dnf/dnf.conf
+ln -sf $BASEDIR/dnf.conf /etc/dnf/dnf.conf
