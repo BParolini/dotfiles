@@ -188,7 +188,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
+export PYTHON_USER_ENV=$HOME/.local/bin
+export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$PYTHON_USER_ENV:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
 zi light-mode for \
   z-shell/z-a-meta-plugins \
