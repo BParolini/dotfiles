@@ -6,5 +6,6 @@ Thumbs.db
 desktop.ini
 .idea
 .vscode
+.fleet
 .git
 .gradle
