@@ -187,7 +187,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export DOCKER_HOST='unix:///Users/bruno.parolini/.local/share/containers/podman/machine/podman-machine-default/podman.sock'
 export EXTRA_BIN=$HOME/apps/bin
 export KAFKA_HOME=$HOME/apps/kafka
 export PATH=$JAVA_HOME/bin:$EXTRA_BIN:$GOROOT/bin:$GRADLE_HOME/bin:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
