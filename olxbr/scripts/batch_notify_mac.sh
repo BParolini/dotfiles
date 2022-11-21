@@ -1,5 +1,16 @@
 #!/usr/bin/env sh
 
+if [ $# -eq 0 ]
+then
+    echo "No argument supplied."
+    echo "You must inform the csv file name"
+    exit 1
+fi
+
+mkdir -p ./split_files
+gsplit -dl 5000 -a 3 "$1" split_files/notify_
+
+cd ./split_files
 file_name=temp_notify.json
 
 for f in notify_*
@@ -16,4 +27,5 @@ do
     sleep 30
 done
 
-rm $file_name
+cd ..
+rm -rf ./split_files
