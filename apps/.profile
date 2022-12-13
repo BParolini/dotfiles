@@ -9,6 +9,8 @@
 export JAVA_HOME=$HOME/apps/java
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 
+export DOTNET_ROOT=$HOME/apps/dotnet
+
 export PIPENV_VENV_IN_PROJECT=1
 
 export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
