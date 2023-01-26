@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "'Iosevka Light Extended', 'JetBrains Mono Light', 'Fira Code Light', 'Fira Code'",
+    "editor.fontFamily": "'Iosevka Extended', 'JetBrains Mono Light', 'Fira Code Light', 'Fira Code'",
     "editor.lineHeight": 0,
     "liveServer.settings.CustomBrowser": "firefox",
     "editor.fontLigatures": true,
@@ -53,10 +53,11 @@
     "redhat.telemetry.enabled": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Default Light+",
     "workbench.list.smoothScrolling": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active"
+    "editor.guides.bracketPairs": "active",
+    "githubPullRequests.pullBranch": "never"
 }
