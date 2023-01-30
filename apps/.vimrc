@@ -1,6 +1,6 @@
-packadd! dracula
 syntax enable
-colorscheme dracula
+set background=light
+colorscheme solarized
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
