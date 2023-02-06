@@ -53,7 +53,6 @@
     "redhat.telemetry.enabled": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Solarized Light+",
     "workbench.list.smoothScrolling": true,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
