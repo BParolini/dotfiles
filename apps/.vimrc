@@ -1,6 +1,5 @@
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
