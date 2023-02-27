@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "Iosevka Light Extended",
+    "editor.fontFamily": "Iosevka",
     "editor.fontSize": 15.0,
     "editor.ligatures": true,
     "editor.lineSpacing": 1.2,
@@ -7,7 +7,11 @@
     "ff.autoSyncEditors": true,
     "ff.showShortcutsInGotoPanel": true,
     "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
-    "keymap": "pc-ij",
+    "keymap": "macos-ij",
     "rename.autoRenameOnTyping": true,
-    "terminal.enableFocusEditorOnEsc": true
+    "terminal.enableFocusEditorOnEsc": true,
+    "files.openFileMode": "doubleClick",
+    "files.keyboardNavigation": "Highlight",
+    "editor.honorCamelHumps": true,
+    "theme": "dark_purple"
 }
