@@ -32,4 +32,4 @@
 	- services;
 	- HPA (horizontal pod autoscaler);
 	- ingress;
-    10. Configure CI/CD ([GitHub Actions](https://docs.github.com/en/actions), etc.) 
+10. Configure CI/CD ([GitHub Actions](https://docs.github.com/en/actions), etc.)
