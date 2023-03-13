@@ -58,5 +58,10 @@
     "extensions.ignoreRecommendations": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
-    "githubPullRequests.pullBranch": "never"
+    "githubPullRequests.pullBranch": "never",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "workbench.colorTheme": "One Dark Pro"
 }
