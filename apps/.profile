@@ -6,6 +6,8 @@
 # A link must be created using the following command:
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
+export GH_IDE_TOKEN="***REMOVED***"
+
 export JAVA_HOME=$HOME/apps/java
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 
