@@ -1,6 +1,6 @@
 Modem Vivo:             192.168.15.1
 User:                   admin
-Password:               n4ke6dj9
+Password:               11454d7a
 
 Roteador:               10.5.3.1
 MAC:                    B0-BE-76-E9-CD-D3
@@ -11,27 +11,21 @@ IPv4:	                8.8.8.8
 IPv6:                   2001:4860:4860::8888
                         2001:4860:4860::8844
 
-GigaDNS
-IPv4:                   189.38.95.95
-                        189.38.95.96
-IPv6:                   2804:10:10::10
-                        2804:10:10::20
-
 OpenDNS
 IPv4:                   208.67.222.222
                         208.67.220.220
 
-SSID:                   Ivalice / Ivalice_5G
+SSID:                   Ivalice
 Passkey:                WarOfTheLions
 Máscara:                255.255.255.0
 
 Device                  MAC                 IP
-Roteador                50-C7-BF-2C-FB-35   10.5.3.1
+Deco X20 - Sala         14-EB-B6-70-36-EC   10.5.3.1
+Deco X20 - Escritório   14-EB-B6-70-37-00
+Deco X20 - Cozinha      14-EB-B6-70-36-FC
 
 Dell G3 15 (Wifi)       5C-CD-5B-F3-CC-B7   10.5.3.2
 Dell G3 15 (Cabo)       34-73-5A-FC-FB-00
-Dell Inspiron 15 (Cabo) EC-F4-BB-99-48-A0
-Dell Inspiron 15 (Wifi) 90-48-9A-EF-A4-2D
 
 PS5 (cabo)              00-E4-21-0D-B9-11   10.5.3.3
 PS5 (wifi)              80-60-B7-96-D6-9E
@@ -45,19 +39,21 @@ Celular (Gabriel)       04-D9-F5-68-9F-21   10.5.3.8
 Kindle (Bruno)          F4-03-2A-8E-AB-F9   10.5.3.9
 Kindle (Pamela)         00-BB-3A-D7-43-24   10.5.3.10
 
-TV (Sala - Cabo)        00-7C-2D-6A-27-CE   10.5.3.11
-TV (Quarto - Cabo)      84-A4-66-1D-5F-58
-TV (Gabriel - Cabo)     5C-A3-9D-51-9C-CB
+TV - Sala               80-47-86-26-5C-BB   10.5.3.11
+TV - Quarto             84-A4-66-1D-5F-58
+TV - Gabriel            5C-A3-9D-51-9C-CB
 Fire TV Stick 4k        40-A9-CF-A4-E4-33   10.5.3.12
-Fire TV Stick           74-E2-0C-FC-8A-87   10.5.3.13
+FireTVStick Quarto
+FireTVStick Cozinha     74-E2-0C-FC-8A-87   10.5.3.14
 
-Amazfit Stratos 3       D8-80-3C-3F-98-41   10.5.3.14
-Amazfit Bip 2           D8-80-3C-0B-90-F5   10.5.3.15
+Amazfit Stratos 3       D8-80-3C-3F-98-41
+Amazfit Bip 2           D8-80-3C-0B-90-F5
 
-PS Vita                 D4-4B-5E-50-86-62
-PSP                     00-1C-26-5D-5D-D4
-Notebook (MacBook)      B0-BE-83-70-24-B7   10.5.3.98
-HP                      94-57-A5-C3-05-DF   10.5.3.99
+Dell Inspiron 15 (Cabo) EC-F4-BB-99-48-A0
+Dell Inspiron 15 (Wifi) 90-48-9A-EF-A4-2D   10.5.3.96
+PS Vita                 D4-4B-5E-50-86-62   10.5.3.97
+PSP                     00-1C-26-5D-5D-D4   10.5.3.98
+Notebook (MacBook)      B0-BE-83-70-24-B7   10.5.3.99
 
-DHCP Start:	            10.5.3.100
+DHCP Start:	            10.5.3.2
 
