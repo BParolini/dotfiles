@@ -30,6 +30,7 @@
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "files.exclude": {
         "**/.idea": true,
+        "**/.fleet": true,
         "**/Thumbs.db": true,
         "**/.classpath": true,
         "**/.project": true,
