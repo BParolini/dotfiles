@@ -5,18 +5,26 @@
 
 BASEDIR=$(dirname "$0")
 
+rm -f $HOME/.profile
 ln -sf $BASEDIR/.profile $HOME/.profile
 
+rm -f $HOME/.vimrc
 ln -sf $BASEDIR/.vimrc $HOME/.vimrc
 
+rm -f $HOME/.zshrc
 ln -sf $BASEDIR/.zshrc $HOME/.zshrc
 
+rm -f $HOME/.gradle/gradle.properties
 ln -sf $BASEDIR/gradle.properties $HOME/.gradle/gradle.properties
 
+rm -f $HOME/.sdkman/etc/config
 ln -sf $BASEDIR/sdk.config $HOME/.sdkman/etc/config
 
+rm -f $HOME/.fleet/settings.json
 ln -sf $BASEDIR/fleet_settings.json $HOME/.fleet/settings.json
 
+rm -f $HOME/.config/Code/User/settings.json
 ln -sf $BASEDIR/vscode_settings.json $HOME/.config/Code/User/settings.json
 
-ln -sf $BASEDIR/dnf.conf /etc/dnf/dnf.conf
+sudo rm -f /etc/dnf/dnf.conf
+sudo ln -sf $BASEDIR/dnf.conf /etc/dnf/dnf.conf
