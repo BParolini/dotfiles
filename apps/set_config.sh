@@ -3,7 +3,7 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Removes the original configuration files and creates a symlink to the repository ones
 
-BASEDIR=$(dirname "$0")
+BASEDIR=$(dirname $(realpath "$0"))
 
 rm -f $HOME/.profile
 ln -sf $BASEDIR/.profile $HOME/.profile
