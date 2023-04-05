@@ -1,5 +1,5 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "editor.fontFamily": "'Iosevka Extended', 'JetBrains Mono Light', 'Fira Code Light', 'Fira Code'",
     "editor.lineHeight": 0,
     "liveServer.settings.CustomBrowser": "firefox",
