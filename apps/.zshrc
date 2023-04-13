@@ -151,8 +151,6 @@ source "$HOME/.profile"
 # source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
 # source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
 
-autoload -Uz compinit && compinit
-
 if [ $commands[sdk] ]
 then
 	source <(sdk env zsh)
@@ -183,13 +181,22 @@ then
     source <(direnv hook zsh)
 fi
 
+if [ $commands[rustup] ]
+then
+    mkdir -p $HOME/.zfunc
+    rustup completions zsh > $HOME/.zfunc/_rustup
+    fpath+=4$HOME/.zfunc
+fi
+
+autoload -Uz compinit && compinit
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
 export PYTHON_USER_ENV=$HOME/.local/bin
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$PYTHON_USER_ENV:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
 zi light-mode for \
   z-shell/z-a-meta-plugins \
