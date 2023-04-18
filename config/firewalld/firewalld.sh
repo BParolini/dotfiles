@@ -1,11 +1,11 @@
 #!/bin/bash
 
-BASEDIR=$(dirname "$0")
+BASEDIR=$(dirname $(realpath "$0"))
 
 if [ $# -eq 0 ]
 then
     echo "Copying all firewalld services to /ect/firewalld/services/"
-    for service in /etc/firewalld/services/*.xml
+    for service in "$BASEDIR/*.xml"
     do
         /usr/bin/cp -f "$service" /etc/firewalld/services/
     done
