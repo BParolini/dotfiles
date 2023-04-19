@@ -8,3 +8,4 @@ desktop.ini
 **/.aws/cli/cache
 .idea
 .fleet
+*_compiled.lua
