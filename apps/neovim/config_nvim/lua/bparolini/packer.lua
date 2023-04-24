@@ -24,17 +24,20 @@ return require('packer').startup(function(use)
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required
             {                                      -- Optional
-            'williamboman/mason.nvim',
-            run = function()
-                pcall(vim.cmd, 'MasonUpdate')
-            end,
-        },
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+                'williamboman/mason.nvim',
+                run = ":MasonUpdate"
+            },
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+            {'mfussenegger/nvim-jdtls'},
 
-        -- Autocompletion
-        {'hrsh7th/nvim-cmp'},     -- Required
-        {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
+            {'mfussenegger/nvim-dap'},
+            {'mfussenegger/nvim-lint'},
+            {'mhartington/formatter.nvim'},
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},     -- Required
+            {'hrsh7th/cmp-nvim-lsp'}, -- Required
+            {'L3MON4D3/LuaSnip'},     -- Required
+        }
     }
-}
 end)
