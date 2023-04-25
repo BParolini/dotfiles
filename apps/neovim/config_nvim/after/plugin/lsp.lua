@@ -3,18 +3,18 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-    "bash-language-server",
-    "cmake-language-server",
+    "bashls",
+    "cmake",
     "gopls",
-    "gradle-language-server",
-    "jdtlsserver",
-    "json-lsp",
-    "kotlin-language-server",
-    "lua-language-server",
-    "python-lsp-server",
-    "rust-analyzer",
+    "gradle_ls",
+    "jdtls",
+    "jsonls",
+    "kotlin_language_server",
+    "lua_ls",
+    "pylsp",
+    "rust_analyzer",
     "sqlls",
-    "yaml-language-server"
+    "yamlls"
 })
 
 local cmp = require('cmp')
