@@ -11,6 +11,7 @@ ln -sf "$BASEDIR/.profile" "$HOME/.profile"
 rm -f "$HOME/.vimrc"
 ln -sf "$BASEDIR/.vimrc" "$HOME/.vimrc"
 
+git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 rn -f "$HOME/.tmux.conf"
 ln -sf "$BASEDIR/.tmux.conf" "$HOME/.tmux.conf"
 
