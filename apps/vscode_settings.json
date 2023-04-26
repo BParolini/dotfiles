@@ -11,7 +11,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "catppuccin-macchiato",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -64,5 +64,5 @@
         "editor.formatOnType": true
     },
     "go.autocompleteUnimportedPackages": true,
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "Catppuccin Macchiato"
 }
