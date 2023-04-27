@@ -32,7 +32,16 @@ return require('packer').startup(function(use)
             {'williamboman/mason-lspconfig.nvim'}, -- Optional
             {'mfussenegger/nvim-jdtls'},
 
-            {'mfussenegger/nvim-dap'},
+            {
+                'mfussenegger/nvim-dap',
+                as = 'dap',
+                requires = {
+                    {'mfussenegger/nvim-dap-python'},
+                }
+            },
+            {'folke/neodev.nvim'},
+            {'rcarriga/nvim-dap-ui', as = 'dapui'},
+            {'theHamsta/nvim-dap-virtual-text'},
             {'mfussenegger/nvim-lint'},
             {'mhartington/formatter.nvim'},
 
