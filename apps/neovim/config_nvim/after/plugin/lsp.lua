@@ -42,3 +42,6 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+require'lspconfig'.lua_ls.setup {}
+require"lspconfig".gopls.setup {}
