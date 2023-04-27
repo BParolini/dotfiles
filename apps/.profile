@@ -10,6 +10,7 @@ export GH_IDE_TOKEN="***REMOVED***"
 
 export JAVA_HOME="$HOME/apps/java"
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
+export JDTLS_HOME="$HOME/.jdtls/org.eclipse.jdt.ls.product/target/repository"
 
 export DOTNET_ROOT="$HOME/apps/dotnet"
 

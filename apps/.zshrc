@@ -196,7 +196,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
 export PYTHON_USER_ENV=$HOME/.local/bin
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$JDTLS_HOME/bin:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
 zi light-mode for \
   z-shell/z-a-meta-plugins \
