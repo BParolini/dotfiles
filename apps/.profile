@@ -8,24 +8,24 @@
 
 export GH_IDE_TOKEN="***REMOVED***"
 
-export JAVA_HOME=$HOME/apps/java
+export JAVA_HOME="$HOME/apps/java"
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 
-export DOTNET_ROOT=$HOME/apps/dotnet
+export DOTNET_ROOT="$HOME/apps/dotnet"
 
 export PIPENV_VENV_IN_PROJECT=1
 
-export JETBRAINS_SCRIPTS=$HOME/apps/jetbrains
-export GRADLE_USER_HOME=$HOME/.gradle
+export JETBRAINS_SCRIPTS="$HOME/apps/jetbrains"
+export GRADLE_USER_HOME="$HOME/.gradle"
 
 export NVM_SYMLINK_CURRENT=true
-export NVM_NODE_PATH=$HOME/.nvm/current
+export NVM_NODE_PATH="$HOME/.nvm/current"
 
-export GOROOT=$HOME/apps/go
-export GOPATH=$HOME/projetos/go
+export GOROOT="$HOME/apps/go"
+export GOPATH="$HOME/projetos/go"
 
-export RUSTUP_HOME=$HOME/apps/rust
-export CARGO_HOME=$HOME/apps/cargo
+export RUSTUP_HOME="$HOME/apps/rust"
+export CARGO_HOME="$HOME/apps/cargo"
 
 # export KAFKA_HOME=$HOME/apps/kafka
 
