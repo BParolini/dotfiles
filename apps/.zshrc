@@ -5,7 +5,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/bparolini/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -147,8 +147,8 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
 source "$HOME/.profile"
-# source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
-# source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
+source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
+source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
 # source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
 
 if [ $commands[sdk] ]
