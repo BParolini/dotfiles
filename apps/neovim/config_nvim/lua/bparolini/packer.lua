@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 
     -- use 'navarasu/onedark.nvim'
     use { 'catppuccin/nvim', as = 'catppuccin' }
+    use('ryanoasis/vim-devicons')
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate' })
     use('nvim-treesitter/playground')
