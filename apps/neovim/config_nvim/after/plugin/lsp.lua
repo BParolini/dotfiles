@@ -5,17 +5,18 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     "bashls",
     "cmake",
+    "dockerls",
+    "docker_compose_language_service",
+    "emmet_ls",
     "gopls",
     "gradle_ls",
     "jdtls",
-    "jsonls",
-    "kotlin_language_server",
     "lua_ls",
+    "marksman",
     "pylsp",
     "rust_analyzer",
-    "sqlls",
     "tsserver",
-    "yamlls"
+    "yamlls",
 })
 
 local cmp = require('cmp')
@@ -49,12 +50,26 @@ lspconfig.gopls.setup {}
 lspconfig.bashls.setup {}
 lspconfig.cmake.setup {}
 lspconfig.gradle_ls.setup {}
-lspconfig.jqls.setup {}
-lspconfig.jsonls.setup {}
-lspconfig.kotlin_language_server.setup {}
-lspconfig.pylsp.setup {}
-lspconfig.rust_analyzer.setup {}
-lspconfig.sqlls.setup {}
-lspconfig.yamlls.setup {}
+lspconfig.pylsp.setup {
+    settings = {
+        pylsp = {
+            plugins = {
+                flake8 = {
+                    enabled = true
+                }
+            }
+        }
+    }
+}
+lspconfig.rust_analyzer.setup {
+    settings = {
+        ['rust-analyzer'] = {}
+    },
+}
 lspconfig.tsserver.setup {}
 lspconfig.jdtls.setup {}
+lspconfig.yamlls.setup {}
+lspconfig.dockerls.setup {}
+lspconfig.docker_compose_language_service.setup {}
+lspconfig.emmet_ls.setup {}
+lspconfig.marksman.setup {}

@@ -38,11 +38,13 @@ return require('packer').startup(function(use)
                 as = 'dap',
                 requires = {
                     {'mfussenegger/nvim-dap-python'},
+                    {'leoluz/nvim-dap-go'},
                 }
             },
             {'folke/neodev.nvim'},
             {'rcarriga/nvim-dap-ui', as = 'dapui'},
             {'theHamsta/nvim-dap-virtual-text'},
+            {'nvim-telescope/telescope-dap.nvim'},
             {'mfussenegger/nvim-lint'},
             {'mhartington/formatter.nvim'},
 
