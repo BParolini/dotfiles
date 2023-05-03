@@ -28,6 +28,15 @@ export GOPATH="$HOME/projetos/go"
 export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
 
+if [[ `uname -a` == *"fedora"* ]]
+then
+    export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
+else
+    systemctl --user enable docker.service
+    systemctl --user start docker.service
+    export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+fi
+
 # export KAFKA_HOME=$HOME/apps/kafka
 
 . "$HOME/.dotfiles/apps/plasma_env.sh"

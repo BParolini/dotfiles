@@ -147,9 +147,13 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
 source "$HOME/.profile"
-source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
-source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
-# source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
+
+if [[ `uname -a` == *"fedora"* ]]
+then
+    source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
+    source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
+    # source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
+fi
 
 if [ $commands[sdk] ]
 then
@@ -194,7 +198,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
 export PYTHON_USER_ENV=$HOME/.local/bin
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$JDTLS_HOME/bin:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
