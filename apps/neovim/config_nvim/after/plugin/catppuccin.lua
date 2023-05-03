@@ -1,11 +1,3 @@
-local catppuccin = require("catppuccin")
+require("catppuccin").setup {}
 
-catppuccin.setup({
-    flavour = "macchiato", -- latte, frappe, macchiato, mocha
-    background = {
-        light = "latte",
-        dark = "macchiato",
-    }
-})
-
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin-macchiato"
