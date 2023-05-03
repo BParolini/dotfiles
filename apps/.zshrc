@@ -148,10 +148,11 @@ export SDKMAN_DIR="/home/bparolini/.sdkman"
 
 source "$HOME/.profile"
 
-if [[ `uname -a` == *"fedora"* ]]
+if [[ `uname -a` != *"fedora"* ]]
 then
     source "$HOME/.dotfiles/olxbr/scripts/tokens.sh"
     source "$HOME/.dotfiles/olxbr/scripts/kubernetes_envs.sh"
+    source "$HOME/.dotfiles/olxbr/scripts/alias.sh"
     # source "$HOME/.dotfiles/olxbr/scripts/aws_credentials_export.sh"
 fi
 
