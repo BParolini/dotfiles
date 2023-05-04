@@ -45,7 +45,6 @@
     "editor.largeFileOptimizations": false,
     "markdown.extension.italic.indicator": "_",
     "window.dialogStyle": "custom",
-    "terminal.external.linuxExec": "/bin/zsh",
     "docker.showStartPage": false,
     "importCost.vueExtensions": [
         "\\.vue$"
@@ -64,5 +63,6 @@
         "editor.formatOnType": true
     },
     "go.autocompleteUnimportedPackages": true,
-    "workbench.colorTheme": "Catppuccin Macchiato"
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "terminal.external.linuxExec": "/usr/bin/zsh"
 }
