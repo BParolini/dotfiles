@@ -1,11 +1,9 @@
 {
-    "editor.fontFamily": "Iosevka",
+    "editor.fontFamily": "Iosevka Extended",
     "editor.fontSize": 15.0,
-    "editor.ligatures": true,
     "editor.lineSpacing": 1.2,
     "terminal.lineSpacing": 1.0,
     "ff.autoSyncEditors": true,
-    "ff.showShortcutsInGotoPanel": true,
     "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
     "keymap": "pc-ij",
     "rename.autoRenameOnTyping": true,
@@ -13,10 +11,10 @@
     "files.openFileMode": "doubleClick",
     "files.keyboardNavigation": "Highlight",
     "editor.honorCamelHumps": true,
-    "theme": "dark",
+    "theme": "dark_purple",
     "restoreWorkspacesOnStartup": false,
     "editor.softWrapEnabled": true,
     "terminal.fontSize": 15.0,
-    "editor.distractionFreeMode": false,
-    "editor.previewTab": false
+    "editor.previewTab": false,
+    "files.compactDirectories": false
 }
