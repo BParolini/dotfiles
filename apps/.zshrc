@@ -141,8 +141,8 @@ zi light-mode for \
 ### End of Zinit's installer chunk
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/bparolini/.sdkman"
-[[ -s "/home/bparolini/.sdkman/bin/sdkman-init.sh" ]] && source "/home/bparolini/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # export NPM_CONFIG_PREFIX=$HOME/apps/npm-global ## Incompatible with nvm
 
