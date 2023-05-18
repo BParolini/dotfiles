@@ -28,6 +28,10 @@ export GOPATH="$HOME/projetos/go"
 export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
 
+export KAFKA_HOME=$HOME/apps/kafka
+
+KUBE_EDITOR="nvim"
+
 if [[ `uname -a` == *"fedora"* ]]
 then
     export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
