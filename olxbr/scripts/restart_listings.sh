@@ -5,6 +5,7 @@
 
 deployments=(
     "listings-api"
+    "lqs-api"
     "listings-api-cleaner-worker"
     "listings-api-converter-worker"
     "listings-api-crude-worker"
@@ -12,6 +13,8 @@ deployments=(
     "listings-api-notifier-worker"
     "listings-api-renotifier-worker"
     "listings-api-unit-worker"
+    "redpin-api"
+    "subscription-control-api"
 )
 
 for deployment in "${deployments[@]}"
