@@ -67,7 +67,6 @@ lspconfig.rust_analyzer.setup {
     },
 }
 lspconfig.tsserver.setup {}
-lspconfig.jdtls.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.dockerls.setup {}
 lspconfig.docker_compose_language_service.setup {}
