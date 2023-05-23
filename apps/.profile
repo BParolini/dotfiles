@@ -30,7 +30,7 @@ export CARGO_HOME="$HOME/apps/cargo"
 
 export KAFKA_HOME=$HOME/apps/kafka
 
-KUBE_EDITOR="nvim"
+export KUBE_EDITOR="nvim"
 
 if [[ `uname -a` == *"fedora"* ]]
 then
