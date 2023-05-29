@@ -14,6 +14,11 @@ return require('packer').startup(function(use)
     use { 'catppuccin/nvim', as = 'catppuccin' }
     use('ryanoasis/vim-devicons')
 
+    use('nvim-tree/nvim-tree.lua')
+    use('nvim-tree/nvim-web-devicons')
+
+    use('nvim-lualine/lualine.nvim')
+
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
