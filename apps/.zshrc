@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # A link must be created using the following command:
 # ln -s $HOME/.dotfiles/apps/.zshrc $HOME/.zshrc
 
@@ -11,7 +18,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,11 +79,14 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    docker
-    docker-compose
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
     dotenv
     pipenv
 )
+
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,13 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG="pt_BR.UTF-8"
 export LC_ALL="pt_BR.UTF-8"
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -107,38 +110,6 @@ export LC_ALL="pt_BR.UTF-8"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lla="ls -lah"
-
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  exec_time     # Execution time
-  line_sep      # Line break
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
-
-### Zinit configuration
-zi_home="${HOME}/.zi"
-source "${zi_home}/bin/zi.zsh"
-
-autoload -Uz _zi
-(( ${+_comps} )) && _comps[zi]=_zi
-
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zi light-mode for \
-    zdharma/fast-syntax-highlighting \
-    zsh-users/zsh-autosuggestions \
-    zsh-users/zsh-completions
-
-### End of Zinit's installer chunk
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -190,7 +161,7 @@ if [ $commands[rustup] ]
 then
     mkdir -p $HOME/.zfunc
     rustup completions zsh > $HOME/.zfunc/_rustup
-    fpath+=4$HOME/.zfunc
+    fpath+=$HOME/.zfunc
 fi
 
 autoload -Uz compinit && compinit
@@ -202,11 +173,5 @@ export NVM_DIR="$HOME/.nvm"
 export PYTHON_USER_ENV=$HOME/.local/bin
 export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$JDTLS_HOME/bin:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
-zi light-mode for \
-  z-shell/z-a-meta-plugins \
-  @annexes # <- https://z.digitalclouds.dev/ecosystem/annexes
-# examples here -> https://z.digitalclouds.dev/docs/gallery/collection
-zicompinit # <- https://z.digitalclouds.dev/docs/guides/commands
-zi light-mode for \
-  z-shell/z-a-meta-plugins \
-  @annexes @zunit
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
