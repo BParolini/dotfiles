@@ -86,6 +86,7 @@ plugins=(
     pipenv
 )
 
+fpath+=$HOME/.zfunc
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
