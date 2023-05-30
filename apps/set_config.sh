@@ -12,8 +12,9 @@ rm -f "$HOME/.vimrc"
 ln -sf "$BASEDIR/.vimrc" "$HOME/.vimrc"
 
 git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-rn -f "$HOME/.tmux.conf"
-ln -sf "$BASEDIR/.tmux.conf" "$HOME/.tmux.conf"
+rn -f "$HOME/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf "$BASEDIR/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
 rm -f "$HOME/.zshrc"
 ln -sf "$BASEDIR/.zshrc" "$HOME/.zshrc"
