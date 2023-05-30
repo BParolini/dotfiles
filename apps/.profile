@@ -30,7 +30,7 @@ export GOPATH="$HOME/projetos/go"
 export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
 
-export KAFKA_HOME=$HOME/apps/kafka
+export KAFKA_HOME="$HOME/apps/kafka"
 
 export KUBE_EDITOR="nvim"
 
@@ -40,7 +40,7 @@ then
 else
     systemctl --user enable docker.service
     systemctl --user start docker.service
-    export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
 
 . "$HOME/.dotfiles/apps/plasma_env.sh"
