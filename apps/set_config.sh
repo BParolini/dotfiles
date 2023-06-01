@@ -6,18 +6,18 @@
 BASEDIR="$(dirname "$(realpath "$0")")"
 
 rm -f "$HOME/.profile"
-ln -sf "$BASEDIR/.profile" "$HOME/.profile"
+ln -sf "$BASEDIR/profile" "$HOME/.profile"
 
 rm -f "$HOME/.vimrc"
-ln -sf "$BASEDIR/.vimrc" "$HOME/.vimrc"
+ln -sf "$BASEDIR/vimrc" "$HOME/.vimrc"
 
 git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-rn -f "$HOME/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+rm -f "$HOME/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 mkdir -p "$XDG_CONFIG_HOME/tmux"
-ln -sf "$BASEDIR/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+ln -sf "$BASEDIR/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
 rm -f "$HOME/.zshrc"
-ln -sf "$BASEDIR/.zshrc" "$HOME/.zshrc"
+ln -sf "$BASEDIR/zshrc" "$HOME/.zshrc"
 
 rm -f "$HOME/.gradle/gradle.properties"
 ln -sf "$BASEDIR/gradle.properties" "$HOME/.gradle/gradle.properties"
