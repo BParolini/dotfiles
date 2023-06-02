@@ -34,7 +34,7 @@ export KAFKA_HOME="$HOME/apps/kafka"
 
 export KUBE_EDITOR="nvim"
 
-if [[ `uname -a` == *"fedora"* ]]
+if [[ "$ID" = "fedora" ]]
 then
     export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
 else
