@@ -6,6 +6,9 @@
 # A link must be created using the following command:
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
+export XDG_DATA_HOME="${XDG_DATA_HOME:="$HOME/.local/share"}"
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:="$HOME/.config"}"
+
 export EDITOR="/usr/bin/nvim"
 
 export GH_IDE_TOKEN="***REMOVED***"
