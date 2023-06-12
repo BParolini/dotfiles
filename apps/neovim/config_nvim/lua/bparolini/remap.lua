@@ -1,10 +1,10 @@
 vim.g.mapleader = " "
 
 local options = { noremap = true }
-vim.keymap.set({"n", "v"}, "<Up>", "<nop>", options)
-vim.keymap.set({"n", "v"}, "<Down>", "<nop>", options)
-vim.keymap.set({"n", "v"}, "<Left>", "<nop>", options)
-vim.keymap.set({"n", "v"}, "<Right>", "<nop>", options)
+vim.keymap.set({"n", "v", "i"}, "<Up>", "<nop>", options)
+vim.keymap.set({"n", "v", "i"}, "<Down>", "<nop>", options)
+vim.keymap.set({"n", "v", "i"}, "<Left>", "<nop>", options)
+vim.keymap.set({"n", "v", "i"}, "<Right>", "<nop>", options)
 
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -41,7 +41,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/bparolini/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
