@@ -1,5 +1,12 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+local options = { noremap = true }
+vim.keymap.set({"n", "v"}, "<Up>", "<nop>", options)
+vim.keymap.set({"n", "v"}, "<Down>", "<nop>", options)
+vim.keymap.set({"n", "v"}, "<Left>", "<nop>", options)
+vim.keymap.set({"n", "v"}, "<Right>", "<nop>", options)
+
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

@@ -28,12 +28,4 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
 
-vim.g.mapleader = " "
-
-local options = { noremap = true }
-vim.keymap.set("n", "<Up>", "<nop>", options)
-vim.keymap.set("n", "<Down>", "<nop>", options)
-vim.keymap.set("n", "<Left>", "<nop>", options)
-vim.keymap.set("n", "<Right>", "<nop>", options)
-
 vim.opt.clipboard = "unnamedplus"
