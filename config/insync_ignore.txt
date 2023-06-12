@@ -9,3 +9,5 @@ desktop.ini
 .fleet
 .git
 .gradle
+.obsidian
+.trash
