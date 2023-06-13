@@ -1,10 +1,11 @@
 vim.g.mapleader = " "
 
+-- disabling arrow keys within all modes to enforce vim motion learning
 local options = { noremap = true }
-vim.keymap.set({"n", "v", "i"}, "<Up>", "<nop>", options)
-vim.keymap.set({"n", "v", "i"}, "<Down>", "<nop>", options)
-vim.keymap.set({"n", "v", "i"}, "<Left>", "<nop>", options)
-vim.keymap.set({"n", "v", "i"}, "<Right>", "<nop>", options)
+vim.keymap.set("", "<Up>", "<nop>", options)
+vim.keymap.set("", "<Down>", "<nop>", options)
+vim.keymap.set("", "<Left>", "<nop>", options)
+vim.keymap.set("", "<Right>", "<nop>", options)
 
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
