@@ -23,6 +23,9 @@ rm -f "$XDG_CONFIG_HOME/i3/config"
 mkdir -p "$XDG_CONFIG_HOME/i3"
 ln -sf "$BASEDIR/i3.config" "$XDG_CONFIG_HOME/i3/config"
 
+rm -f "$HOME/.gitconfig"
+ln -sf "$BASEDIR/gitconfig" "$HOME/.gitconfig"
+
 rm -f "$HOME/.gradle/gradle.properties"
 ln -sf "$BASEDIR/gradle.properties" "$HOME/.gradle/gradle.properties"
 
