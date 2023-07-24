@@ -1,0 +1,24 @@
+[user]
+	name = Bruno Parolini
+	email = bruno.parolini@olxbr.com
+	signingkey = E4F203DF9EFAF894
+[color]
+	ui = auto
+[core]
+	editor = nvim
+[merge]
+	tool = kdiff3
+[gpg]
+	program = gpg2
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[checkout]
+	workers = 0
+[fetch]
+	parallel = 0
+[submodule]
+	fetchJobs = 0
+[commit]
+	gpgsign = true
