@@ -40,3 +40,6 @@ ln -sf "$BASEDIR/vscode_settings.json" "$HOME/.config/Code/User/settings.json"
 
 sudo rm -f /etc/dnf/dnf.conf
 sudo ln -sf "$BASEDIR/dnf.conf" /etc/dnf/dnf.conf
+
+sudo rm -f /etc/hosts
+sudo ln -sf "$BASEDIR/hosts" /etc/hosts
