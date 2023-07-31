@@ -42,4 +42,7 @@ sudo rm -f /etc/dnf/dnf.conf
 sudo ln -sf "$BASEDIR/dnf.conf" /etc/dnf/dnf.conf
 
 sudo rm -f /etc/hosts
-sudo ln -sf "$BASEDIR/hosts" /etc/hosts
+sudo ln -sf "$BASEDIR/apps/hosts" /etc/hosts
+
+sudo rm -f /etc/hosts
+sudo ln -sf "$BASEDIR/apps/hostname" /etc/hostname
