@@ -1,6 +1,6 @@
 {
   "workbench.startupEditor": "none",
-  "editor.fontFamily": "'JetBrains Mono', 'JetBrainsMono Nerd Font', 'Fira Code'",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Fira Code'",
   "editor.lineHeight": 0,
   "liveServer.settings.CustomBrowser": "firefox",
   "editor.fontLigatures": true,
@@ -18,8 +18,6 @@
   },
   "editor.showFoldingControls": "always",
   "editor.renderLineHighlight": "all",
-  "eslint.format.enable": true,
-  "eslint.packageManager": "npm",
   "editor.codeActionsOnSave": {
     "source.fixAll.tslint": true,
     "source.organizeImports": true
@@ -32,24 +30,25 @@
     "**/.idea": true,
     "**/.fleet": true,
     "**/Thumbs.db": true,
+    "**/.DS_Store": true,
+    "**/desktop.ini": true,
+    "**/.uuid": true,
+    "**/.directory": true,
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
   "editor.fontSize": 15,
-  "workbench.fontAliasing": "antialiased",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "editor.minimap.enabled": false,
   "editor.largeFileOptimizations": false,
   "markdown.extension.italic.indicator": "_",
   "window.dialogStyle": "custom",
-  "docker.showStartPage": false,
   "importCost.vueExtensions": [
     "\\.vue$"
   ],
-  "java.home": "~/apps/java",
   "redhat.telemetry.enabled": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -62,8 +61,14 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "go.autocompleteUnimportedPackages": true,
+  "go.useLanguageServer": true,
   "workbench.colorTheme": "Catppuccin Mocha",
   "terminal.external.linuxExec": "/usr/bin/zsh",
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  }
 }
