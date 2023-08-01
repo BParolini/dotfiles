@@ -20,7 +20,6 @@ export DOTNET_ROOT="$HOME/apps/dotnet"
 
 export PIPENV_VENV_IN_PROJECT=1
 
-export JETBRAINS_SCRIPTS="$HOME/apps/jetbrains"
 export GRADLE_USER_HOME="$HOME/.gradle"
 
 export NVM_SYMLINK_CURRENT=true

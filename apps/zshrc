@@ -173,7 +173,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PYTHON_USER_ENV=$HOME/.local/bin
-export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$JDTLS_HOME/bin:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:$JDTLS_HOME/bin:$GOROOT/bin:$GOPATH/bin:$PYTHON_USER_ENV:$CARGO_HOME/bin:$DOTNET_ROOT:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
