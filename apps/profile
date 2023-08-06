@@ -6,35 +6,47 @@
 # A link must be created using the following command:
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
+# Sets all the default values for the XDK environment variables
 . "$HOME/.dotfiles/apps/xdg_defaults.sh"
 
+# Sets the default editor
 export EDITOR="/usr/bin/nvim"
 
+# Sets the VCSs IDE tokens
 export GH_IDE_TOKEN="***REMOVED***"
+export GL_IDE_TOKEN="***REMOVED***"
 
+# Sets Java environment variables
 export JAVA_HOME="$HOME/apps/java"
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 export JDTLS_HOME="$HOME/.jdtls/org.eclipse.jdt.ls.product/target/repository"
-
-export DOTNET_ROOT="$HOME/apps/dotnet"
-
-export PIPENV_VENV_IN_PROJECT=1
-
 export GRADLE_USER_HOME="$HOME/.gradle"
 
+# Sets .NET environment variables
+export DOTNET_ROOT="$HOME/apps/dotnet"
+
+# Sets Python environment variables
+export PIPENV_VENV_IN_PROJECT=1
+
+# Sets NVM environment variables
 export NVM_SYMLINK_CURRENT=true
 export NVM_NODE_PATH="$HOME/.nvm/current"
 
+# Sets Go environment variables
 export GOROOT="$HOME/apps/go"
 export GOPATH="$HOME/projetos/go"
 
+# Sets Rust environment variables
 export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
 
+# Sets Kafka environment variables
 export KAFKA_HOME="$HOME/apps/kafka"
 
+# Sets Kubernetes environment variables
 export KUBE_EDITOR="nvim"
 
+# Sets Docker / Podman environment variables
 if [[ "$ID" = "fedora" ]]
 then
     export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
