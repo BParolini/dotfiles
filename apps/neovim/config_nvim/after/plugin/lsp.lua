@@ -42,11 +42,40 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+lsp.format_on_save({
+    format_opts = {
+        async = false,
+        timeout_ms = 10000,
+    },
+    servers = {
+        ["lua_ls"] = { "lua" },
+        ["gopls"] = { "go", "gomod", "gowork", "gotmpl" },
+        ["rust_analyzer"] = { "rust" },
+        ["bashls"] = { "sh", "bash", "zsh" },
+        ["gradle_ls"] = { "gradle" },
+    }
+})
+
 lsp.setup()
 
 local lspconfig = require("lspconfig")
+local util = require("lspconfig/util")
 lspconfig.lua_ls.setup {}
-lspconfig.gopls.setup {}
+lspconfig.gopls.setup {
+    cmd = { "gopls" },
+    filetypes = { "go", "gomod", "gowork", "gotmpl" },
+    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+    settings = {
+        gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+                unusedparams = true,
+            },
+            staticcheck = true,
+        }
+    },
+}
 lspconfig.bashls.setup {}
 lspconfig.cmake.setup {}
 lspconfig.gradle_ls.setup {}

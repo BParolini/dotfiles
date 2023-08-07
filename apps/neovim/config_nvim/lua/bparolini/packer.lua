@@ -6,9 +6,9 @@ return require('packer').startup(function(use)
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    use { 'christoomey/vim-tmux-navigator', lazy=false }
+    use { 'christoomey/vim-tmux-navigator', lazy = false }
 
     -- use 'navarasu/onedark.nvim'
     use { 'catppuccin/nvim', as = 'catppuccin' }
@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
 
     use('nvim-lualine/lualine.nvim')
 
-    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate' })
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
@@ -31,33 +31,40 @@ return require('packer').startup(function(use)
         branch = 'v2.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},             -- Required
-            {                                      -- Optional
+            { 'neovim/nvim-lspconfig' }, -- Required
+            {                          -- Optional
                 'williamboman/mason.nvim',
                 run = ":MasonUpdate"
             },
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
-            {'mfussenegger/nvim-jdtls'},
+            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+            { 'mfussenegger/nvim-jdtls' },
 
             {
                 'mfussenegger/nvim-dap',
                 as = 'dap',
                 requires = {
-                    {'mfussenegger/nvim-dap-python'},
-                    {'leoluz/nvim-dap-go'},
+                    { 'mfussenegger/nvim-dap-python' },
+                    {
+                        'leoluz/nvim-dap-go',
+                        ft = "go",
+                        dependencies = "mfussenegger/nvim-dap",
+                        config = function(_, opts)
+                            require("dap-go").setup(opts)
+                        end
+                    },
                 }
             },
-            {'folke/neodev.nvim'},
-            {'rcarriga/nvim-dap-ui', as = 'dapui'},
-            {'theHamsta/nvim-dap-virtual-text'},
-            {'nvim-telescope/telescope-dap.nvim'},
-            {'mfussenegger/nvim-lint'},
-            {'mhartington/formatter.nvim'},
+            { 'folke/neodev.nvim' },
+            { 'rcarriga/nvim-dap-ui',             as = 'dapui' },
+            { 'theHamsta/nvim-dap-virtual-text' },
+            { 'nvim-telescope/telescope-dap.nvim' },
+            { 'mfussenegger/nvim-lint' },
+            { 'mhartington/formatter.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},     -- Required
-            {'hrsh7th/cmp-nvim-lsp'}, -- Required
-            {'L3MON4D3/LuaSnip'},     -- Required
+            { 'hrsh7th/nvim-cmp' },   -- Required
+            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+            { 'L3MON4D3/LuaSnip' },   -- Required
         }
     }
 end)
