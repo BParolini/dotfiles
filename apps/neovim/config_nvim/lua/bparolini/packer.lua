@@ -32,28 +32,16 @@ return require('packer').startup(function(use)
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' }, -- Required
-            {                          -- Optional
+            {                            -- Optional
                 'williamboman/mason.nvim',
                 run = ":MasonUpdate"
             },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
             { 'mfussenegger/nvim-jdtls' },
 
-            {
-                'mfussenegger/nvim-dap',
-                as = 'dap',
-                requires = {
-                    { 'mfussenegger/nvim-dap-python' },
-                    {
-                        'leoluz/nvim-dap-go',
-                        ft = "go",
-                        dependencies = "mfussenegger/nvim-dap",
-                        config = function(_, opts)
-                            require("dap-go").setup(opts)
-                        end
-                    },
-                }
-            },
+            { 'mfussenegger/nvim-dap',            as = 'dap' },
+            { 'mfussenegger/nvim-dap-python' },
+            { 'leoluz/nvim-dap-go' },
             { 'folke/neodev.nvim' },
             { 'rcarriga/nvim-dap-ui',             as = 'dapui' },
             { 'theHamsta/nvim-dap-virtual-text' },
@@ -62,9 +50,9 @@ return require('packer').startup(function(use)
             { 'mhartington/formatter.nvim' },
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },   -- Required
+            { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },   -- Required
+            { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
 end)
