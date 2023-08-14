@@ -166,6 +166,12 @@ then
     fpath+=$HOME/.zfunc
 fi
 
+# opam (OCaml) configuration
+[[ ! -r /home/bparolini/.opam/opam-init/init.zsh ]] || source /home/bparolini/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# ghcup (Haskell) configuration
+[ -f "/home/bparolini/.ghcup/env" ] && source "/home/bparolini/.ghcup/env" # ghcup-env
+
 autoload -Uz compinit && compinit
 
 export NVM_DIR="$HOME/.nvm"
