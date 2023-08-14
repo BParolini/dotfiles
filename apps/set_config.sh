@@ -8,6 +8,11 @@ BASEDIR="$(dirname "$(realpath "$0")")"
 rm -f "$HOME/.profile"
 ln -sf "$BASEDIR/profile" "$HOME/.profile"
 
+rm -f "$HOME/.zshrc"
+ln -sf "$BASEDIR/zshrc" "$HOME/.zshrc"
+
+. "$HOME/.dotfiles/apps/xdg_defaults.sh"
+
 rm -f "$HOME/.vimrc"
 ln -sf "$BASEDIR/vimrc" "$HOME/.vimrc"
 
@@ -15,9 +20,6 @@ git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 rm -f "$HOME/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -sf "$BASEDIR/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
-
-rm -f "$HOME/.zshrc"
-ln -sf "$BASEDIR/zshrc" "$HOME/.zshrc"
 
 rm -f "$XDG_CONFIG_HOME/i3/config"
 mkdir -p "$XDG_CONFIG_HOME/i3"
@@ -27,6 +29,7 @@ rm -f "$HOME/.gitconfig"
 ln -sf "$BASEDIR/gitconfig" "$HOME/.gitconfig"
 
 rm -f "$HOME/.gradle/gradle.properties"
+mkdir -p "$HOME/.gradle"
 ln -sf "$BASEDIR/gradle.properties" "$HOME/.gradle/gradle.properties"
 
 rm -f "$HOME/.sdkman/etc/config"
@@ -43,6 +46,3 @@ sudo ln -sf "$BASEDIR/dnf.conf" /etc/dnf/dnf.conf
 
 sudo rm -f /etc/hosts
 sudo ln -sf "$BASEDIR/hosts" /etc/hosts
-
-sudo rm -f /etc/hosts
-sudo ln -sf "$BASEDIR/hostname" /etc/hostname
