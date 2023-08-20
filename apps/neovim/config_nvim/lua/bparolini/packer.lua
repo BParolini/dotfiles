@@ -37,8 +37,6 @@ return require('packer').startup(function(use)
                 run = ":MasonUpdate"
             },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
-            { 'mfussenegger/nvim-jdtls' },
-
             { 'mfussenegger/nvim-dap',            as = 'dap' },
             { 'mfussenegger/nvim-dap-python' },
             { 'leoluz/nvim-dap-go' },

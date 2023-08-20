@@ -4,22 +4,14 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
     "bashls",
-    "cmake",
     "dockerls",
     "docker_compose_language_service",
     "emmet_ls",
     "gopls",
-    "gradle_ls",
-    "groovyls",
-    "hls",
-    "jdtls",
-    "kotlin_language_server",
     "lua_ls",
     "marksman",
-    "ocamllsp",
     "pylsp",
     "rust_analyzer",
-    "tsserver",
     "yamlls",
 })
 
@@ -56,7 +48,6 @@ lsp.format_on_save({
         ["gopls"] = { "go", "gomod", "gowork", "gotmpl" },
         ["rust_analyzer"] = { "rust" },
         ["bashls"] = { "sh", "bash", "zsh" },
-        ["gradle_ls"] = { "gradle" },
     }
 })
 
@@ -81,8 +72,6 @@ lspconfig.gopls.setup {
     },
 }
 lspconfig.bashls.setup {}
-lspconfig.cmake.setup {}
-lspconfig.gradle_ls.setup {}
 lspconfig.pylsp.setup {
     settings = {
         pylsp = {
@@ -99,7 +88,6 @@ lspconfig.rust_analyzer.setup {
         ['rust-analyzer'] = {}
     },
 }
-lspconfig.tsserver.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.dockerls.setup {}
 lspconfig.docker_compose_language_service.setup {}
