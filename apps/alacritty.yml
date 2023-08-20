@@ -2,7 +2,7 @@
 
 # Window configuration
 window:
-  opacity: 0.8
+  opacity: 0.95
   startup_mode: Maximized # Windowed, Maximized, Fullscreen
 
 scrolling:
