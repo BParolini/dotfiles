@@ -51,6 +51,10 @@ lsp.format_on_save({
     }
 })
 
+require("neodev").setup({
+    library = { plugins = { "nvim-dap-ui" }, types = true }
+})
+
 lsp.setup()
 
 local lspconfig = require("lspconfig")

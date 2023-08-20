@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
                 run = ":MasonUpdate"
             },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+            { 'simrat39/rust-tools.nvim' },
             { 'mfussenegger/nvim-dap',            as = 'dap' },
             { 'mfussenegger/nvim-dap-python' },
             { 'leoluz/nvim-dap-go' },

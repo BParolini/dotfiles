@@ -1,5 +1,6 @@
-local dap = require("dap")
-local dapui = require("dapui")
+local dap, dapui = require("dap"), require("dapui")
+
+dapui.setup()
 
 -- dap.setup()
 dap.listeners.after.event_initialized["dapui_config"] = function()
@@ -12,9 +13,7 @@ dap.listeners.before.event_exited["dapui_config"] = function()
     dapui.close()
 end
 
-require("neodev").setup({
-    library = { plugins = { "nvim-dap-ui" }, types = true}
-})
+vim.keymap.set("n", "<leader>b", ":lua require('dap').toggle_breakpoint()<CR>", { noremap = true, silent = true })
 
 require("dap-go").setup {
     {
