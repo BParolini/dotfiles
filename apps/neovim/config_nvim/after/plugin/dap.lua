@@ -2,7 +2,6 @@ local dap, dapui = require("dap"), require("dapui")
 
 dapui.setup()
 
--- dap.setup()
 dap.listeners.after.event_initialized["dapui_config"] = function()
     dapui.open()
 end
@@ -12,8 +11,6 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
     dapui.close()
 end
-
-vim.keymap.set("n", "<leader>b", ":lua require('dap').toggle_breakpoint()<CR>", { noremap = true, silent = true })
 
 require("dap-go").setup {
     {
