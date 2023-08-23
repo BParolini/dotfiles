@@ -8,14 +8,14 @@ BASEDIR="$(dirname "$(realpath "$0")")"
 rm -f "$HOME/.profile"
 ln -sf "$BASEDIR/profile" "$HOME/.profile"
 
+. "$HOME/.dotfiles/apps/xdg_defaults.sh"
+
 rm -f "$XDG_CONFIG_HOME/alacritty/alacritty.yml"
 mkdir -p "$XDG_CONFIG_HOME/alacritty"
 ln -sf "$BASEDIR/alacritty.yml" "$XDG_CONFIG_HOME/alacritty/alacritty.yml"
 
 rm -f "$HOME/.zshrc"
 ln -sf "$BASEDIR/zshrc" "$HOME/.zshrc"
-
-. "$HOME/.dotfiles/apps/xdg_defaults.sh"
 
 rm -f "$HOME/.vimrc"
 rm -f "$HOME/.ideavimrc"
