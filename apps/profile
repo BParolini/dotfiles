@@ -57,3 +57,4 @@ else
 fi
 
 . "$HOME/.dotfiles/apps/plasma_env.sh"
+. "$HOME/.dotfiles/apps/alias.sh"
