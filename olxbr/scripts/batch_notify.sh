@@ -1,15 +1,40 @@
 #!/usr/bin/env sh
 
+: "${PGPASSWORD:?"No value supplied for PGPASSWORD"}"
+
 if [ $# -eq 0 ]
 then
     echo "No arguments supplied."
     echo "You must inform the csv file to be notified"
-    exit -1
+    exit 1
 fi
 
-# update da base pela linha de comando mesmo
-cat "$1" | sed ':a;N;$!ba;s/\n/,/g;s/,$//g' | xargs -I {} psql -h db.listings.listings-management.private.prod.grupozap.io -p 5432 -d listings -U master -c "update listing set listing_status = 'ACTIVE', portal='GRUPOZAP', portals='{OLX,VIVAREAL,ZAP}', non_activation_reason=null where id in ({})"
-​
-# o sed serve para deixar o csv com uma única linha separada por ','
-# isso faz com que seja enviado apenas uma chamada ao endpoint de notificação
-cat "$1" | sed ':a;N;$!ba;s/\n/,/g;s/,$//g' | xargs -P200 -I {} curl -X POST "http://listings-api.grupozap.io/v4/listings/actions/notify" -H "accept: application/json" -H "Content-Type: application/json" -d "[{}]"
+WORK_DIR=$(mktemp -d)
+split -dl 10000 -a 3 "$1" "$WORK_DIR/notify_"
+
+(
+    cd "$WORK_DIR" || exit 1
+
+    for f in notify_*
+    do
+        echo "Sending file $f"
+
+        ids=$(sed ':a;N;$!ba;s/\n/,/g;s/,$//g' < "$f")
+
+        # update da base pela linha de comando mesmo
+        psql -h db.listings.listings-management.private.prod.grupozap.io -p 5432 \
+            -d listings -U master \
+            -c "update listing set scores = '[]'::jsonb where id in ($ids)"
+
+        curl_response=$(
+            curl -s -w "%{http_code}" \
+                -X POST "http://listings-api.grupozap.io/v4/listings/actions/notify-to-crude" \
+                -H "accept: application/json" -H "Content-Type: application/json" -d "[$ids]"
+        )
+        echo "Request response for \"$f\": $curl_response"
+
+        sleep 20
+    done
+)
+
+rm -rf "$WORK_DIR"
