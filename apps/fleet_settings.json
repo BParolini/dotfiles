@@ -20,7 +20,7 @@
   "files.openFileMode": "doubleClick",
   "files.keyboardNavigation": "Highlight",
   "editor.honorCamelHumps": true,
-  "theme": "dark_purple",
+  "theme": "dark",
   "restoreWorkspacesOnStartup": false,
   "editor.softWrapEnabled": true,
   "terminal.fontSize": 15.0,
