@@ -20,10 +20,7 @@ return require('packer').startup(function(use)
 
     use('nvim-lualine/lualine.nvim')
 
-    use('nvim-treesitter/nvim-treesitter', {
-        run = ':TSUpdate',
-        event = { "BufReadPre", "BufNewFile" },
-    })
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
