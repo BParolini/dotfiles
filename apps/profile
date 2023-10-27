@@ -39,6 +39,7 @@ export GOPATH="$HOME/projetos/go"
 # Sets Rust environment variables
 export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
+export CARGO_BIN_HOME="$CARGO_HOME/bin"
 
 # Sets Kafka environment variables
 export KAFKA_HOME="$HOME/apps/kafka"
