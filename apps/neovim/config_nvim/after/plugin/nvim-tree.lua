@@ -6,6 +6,9 @@ require("nvim-tree").setup({
     renderer = {
         group_empty = true,
     },
+    view = {
+        width = 40,
+    },
 })
 
 vim.keymap.set("n", "<c-n>", ":NvimTreeFindFileToggle<CR>")
