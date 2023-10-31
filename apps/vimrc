@@ -16,8 +16,8 @@ set incsearch
 set termguicolors
 set signcolumn = "yes"
 set colorcolumn = "100"
-set splitbelow
 set splitright
+set splitbelow
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
