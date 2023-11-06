@@ -1,3 +1,3 @@
 require("bparolini.remap")
-require("bparolini.packer")
+require("bparolini.lazy")
 require("bparolini.set")
