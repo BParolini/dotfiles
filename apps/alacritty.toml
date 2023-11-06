@@ -30,7 +30,7 @@ history = 10000
 multiplier = 3
 
 [shell]
-program = "/usr/bin/tmux"
+program = "/usr/bin/zsh"
 
 [window]
 opacity = 0.95

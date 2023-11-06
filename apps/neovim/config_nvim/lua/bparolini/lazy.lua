@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     "ThePrimeagen/vim-be-good",
+    "ThePrimeagen/harpoon",
 
     {
         "nvim-telescope/telescope.nvim",
@@ -25,22 +26,15 @@ require("lazy").setup({
 
     { "christoomey/vim-tmux-navigator", lazy = false },
 
-    {
-        "catppuccin/nvim",
-        name = "catppuccin"
-    },
+    { "catppuccin/nvim",                name = "catppuccin" },
     "ryanoasis/vim-devicons",
 
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
 
-    {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-    },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     "nvim-treesitter/playground",
-    "theprimeagen/harpoon",
     "mbbill/undotree",
     "tpope/vim-fugitive",
 
@@ -49,26 +43,25 @@ require("lazy").setup({
         branch = "v3.x",
         dependencies = {
             -- LSP Support
-            "neovim/nvim-lspconfig", -- Required
-            {                        -- Optional
-                "williamboman/mason.nvim",
-                build = ":MasonUpdate",
-            },
+            "neovim/nvim-lspconfig",             -- Required
+            { "williamboman/mason.nvim", build = ":MasonUpdate" },
             "williamboman/mason-lspconfig.nvim", -- Optional
             "simrat39/rust-tools.nvim",
+
+            -- Debugger Adapter Protocol (DAP) dependencies
             {
                 "mfussenegger/nvim-dap",
-                name = "dap"
+                name = "dap",
+                dependencies = {
+                    "mfussenegger/nvim-dap-python",
+                    "leoluz/nvim-dap-go",
+                    { "rcarriga/nvim-dap-ui", name = "dapui" },
+                    "theHamsta/nvim-dap-virtual-text",
+                    "nvim-telescope/telescope-dap.nvim",
+                }
             },
-            "mfussenegger/nvim-dap-python",
-            "leoluz/nvim-dap-go",
+
             "folke/neodev.nvim",
-            {
-                "rcarriga/nvim-dap-ui",
-                name = "dapui"
-            },
-            "theHamsta/nvim-dap-virtual-text",
-            "nvim-telescope/telescope-dap.nvim",
             "mfussenegger/nvim-lint",
             "mhartington/formatter.nvim",
 

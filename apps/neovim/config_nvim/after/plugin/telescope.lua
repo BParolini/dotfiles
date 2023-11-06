@@ -1,4 +1,6 @@
-require("telescope").load_extension("dap")
+local telescope = require("telescope")
+telescope.load_extension("harpoon")
+telescope.load_extension("dap")
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
