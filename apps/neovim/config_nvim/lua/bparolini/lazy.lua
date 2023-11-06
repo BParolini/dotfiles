@@ -18,7 +18,9 @@ require("lazy").setup({
     {
         "nvim-telescope/telescope.nvim",
         branch = "0.1.x",
-        dependencies = { "nvim-lua/plenary.nvim" },
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
     },
 
     { "christoomey/vim-tmux-navigator", lazy = false },
@@ -44,13 +46,13 @@ require("lazy").setup({
 
     {
         "VonHeikemen/lsp-zero.nvim",
-        branch = "v2.x",
+        branch = "v3.x",
         dependencies = {
             -- LSP Support
             "neovim/nvim-lspconfig", -- Required
             {                        -- Optional
                 "williamboman/mason.nvim",
-                build = ":MasonUpdate"
+                build = ":MasonUpdate",
             },
             "williamboman/mason-lspconfig.nvim", -- Optional
             "simrat39/rust-tools.nvim",

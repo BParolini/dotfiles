@@ -2,17 +2,23 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-lsp.ensure_installed({
-    "bashls",
-    "dockerls",
-    "docker_compose_language_service",
-    "emmet_ls",
-    "gopls",
-    "lua_ls",
-    "marksman",
-    "pylsp",
-    "rust_analyzer",
-    "yamlls",
+require("mason").setup({})
+require("mason-lspconfig").setup({
+    ensure_installed = {
+        "bashls",
+        "dockerls",
+        "docker_compose_language_service",
+        "emmet_ls",
+        "gopls",
+        "lua_ls",
+        "marksman",
+        "pylsp",
+        "rust_analyzer",
+        "yamlls",
+    },
+    handlers = {
+        lsp.default_setup,
+    },
 })
 
 local cmp = require('cmp')
@@ -59,7 +65,15 @@ lsp.setup()
 
 local lspconfig = require("lspconfig")
 local util = require("lspconfig/util")
-lspconfig.lua_ls.setup {}
+lspconfig.lua_ls.setup({
+    settings = {
+        Lua = {
+            workspace = {
+                checkThirdParty = false,
+            },
+        },
+    },
+})
 lspconfig.gopls.setup {
     cmd = { "gopls" },
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
