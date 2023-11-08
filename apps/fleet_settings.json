@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "JetBrainsMono NF",
-  "editor.fontSize": 15.0,
+  "editor.fontSize": 16.0,
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
@@ -25,5 +25,6 @@
   "editor.softWrapEnabled": true,
   "terminal.fontSize": 15.0,
   "editor.previewTab": false,
-  "files.compactDirectories": false
+  "files.compactDirectories": false,
+  "vimEmulationEnabled": true
 }
