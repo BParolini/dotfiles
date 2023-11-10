@@ -38,6 +38,8 @@ require("lazy").setup({
     "mbbill/undotree",
     "tpope/vim-fugitive",
 
+    { "github/copilot.vim",              build = ":Copilot enable" },
+
     {
         "VonHeikemen/lsp-zero.nvim",
         branch = "v3.x",
