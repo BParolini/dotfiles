@@ -9,6 +9,9 @@
 # Sets all the default values for the XDK environment variables
 . "$HOME/.dotfiles/apps/xdg_defaults.sh"
 
+# Sets the default TERM
+export TERM="screen-256color"
+
 # Sets the default editor
 export EDITOR="/usr/bin/nvim"
 
