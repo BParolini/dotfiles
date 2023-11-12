@@ -1,10 +1,10 @@
 require("lualine").setup {
     options = {
         icons_enabled = true,
-        theme = "catppuccin-mocha",
+        theme = "material",
     },
     sections = {
-        lualine_a = {
+        lualine_c = {
             {
                 "filename",
                 path = 1,
