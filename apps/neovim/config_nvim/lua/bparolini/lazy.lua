@@ -13,8 +13,21 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    -- Simple games which help to learn how to work with VIM
     "ThePrimeagen/vim-be-good",
+
+    -- Mark files to jump around more easily
     "ThePrimeagen/harpoon",
+
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {},
+    },
 
     {
         "nvim-telescope/telescope.nvim",
