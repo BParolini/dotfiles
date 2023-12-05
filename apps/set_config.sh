@@ -44,9 +44,6 @@ ln -sf "$BASEDIR/sdk.config" "$HOME/.sdkman/etc/config"
 rm -f "$HOME/.fleet/settings.json"
 ln -sf "$BASEDIR/fleet_settings.json" "$HOME/.fleet/settings.json"
 
-rm -f "$HOME/.config/Code/User/settings.json"
-ln -sf "$BASEDIR/vscode_settings.json" "$HOME/.config/Code/User/settings.json"
-
 sudo rm -f /etc/dnf/dnf.conf
 sudo ln -sf "$BASEDIR/dnf.conf" /etc/dnf/dnf.conf
 
