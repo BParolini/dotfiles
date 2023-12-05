@@ -20,11 +20,9 @@
   "files.openFileMode": "doubleClick",
   "files.keyboardNavigation": "Highlight",
   "editor.honorCamelHumps": true,
-  "theme": "dark",
   "restoreWorkspacesOnStartup": false,
   "editor.softWrapEnabled": true,
   "terminal.fontSize": 15.0,
   "editor.previewTab": false,
-  "files.compactDirectories": false,
-  "vimEmulationEnabled": true
+  "files.compactDirectories": false
 }
