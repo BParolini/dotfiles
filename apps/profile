@@ -51,14 +51,14 @@ export KAFKA_HOME="$HOME/apps/kafka"
 export KUBE_EDITOR="nvim"
 
 # Sets Docker / Podman environment variables
-# if [[ "$ID" = "fedora" ]]
-# then
+if [[ "$ID" = "fedora" ]]
+then
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
-# else
-#     systemctl --user enable docker.service
-#     systemctl --user start docker.service
-#     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
-# fi
+else
+    systemctl --user enable docker.service
+    systemctl --user start docker.service
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
+fi
 
 . "$HOME/.dotfiles/apps/plasma_env.sh"
 . "$HOME/.dotfiles/apps/alias.sh"
