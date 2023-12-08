@@ -24,5 +24,7 @@
   "editor.softWrapEnabled": true,
   "terminal.fontSize": 15.0,
   "editor.previewTab": false,
-  "files.compactDirectories": false
+  "files.compactDirectories": false,
+  "fus.ai.sendAllowed": true,
+  "theme": "dark"
 }
