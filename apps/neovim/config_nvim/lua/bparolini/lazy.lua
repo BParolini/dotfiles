@@ -39,7 +39,8 @@ require("lazy").setup({
 
     { "christoomey/vim-tmux-navigator", lazy = false },
 
-    { "catppuccin/nvim",                name = "catppuccin" },
+    -- { "catppuccin/nvim",                name = "catppuccin" },
+    { "arcticicestudio/nord-vim",       name = "nord" },
     "ryanoasis/vim-devicons",
 
     "nvim-tree/nvim-tree.lua",
