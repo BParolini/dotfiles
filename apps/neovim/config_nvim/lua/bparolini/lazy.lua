@@ -69,12 +69,30 @@ require("lazy").setup({
                 "mfussenegger/nvim-dap",
                 name = "dap",
                 dependencies = {
-                    "mfussenegger/nvim-dap-python",
-                    "leoluz/nvim-dap-go",
                     { "rcarriga/nvim-dap-ui", name = "dapui" },
                     "theHamsta/nvim-dap-virtual-text",
                     "nvim-telescope/telescope-dap.nvim",
                 }
+            },
+            {
+                "leoluz/nvim-dap-go",
+                ft = "go",
+                dependencies = {
+                    "mfussenegger/nvim-dap",
+                },
+                config = function(_, opts)
+                    require("dap-go").setup(opts)
+                end,
+            },
+            {
+                "mfussenegger/nvim-dap-python",
+                ft = "python",
+                dependencies = {
+                    "mfussenegger/nvim-dap",
+                },
+                config = function(_, _)
+                    require("dap-python").setup(vim.fn.getcwd() .. "/.venv/bin/python")
+                end,
             },
 
             "folke/neodev.nvim",

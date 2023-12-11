@@ -12,21 +12,4 @@ dap.listeners.before.event_exited["dapui_config"] = function()
     dapui.close()
 end
 
-require("dap-go").setup {
-    {
-        dap_configurations = {
-            type = "go",
-            name = "Attach remote",
-            mode = "remote",
-            request = "attach",
-        },
-    },
-    delve = {
-        path = "dlv",
-        initialize_timeout_sec = 20,
-        port = "${port}",
-        args = {}
-    },
-}
-
 require("dap-python").setup(vim.fn.getcwd() .. "/.venv/bin/python")
