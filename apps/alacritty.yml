@@ -34,7 +34,7 @@ live_config_reload: true
 
 # uncomment the flavour you want below:
 import:
-  - ~/.config/alacritty/nord/src/nord.yml
+  - ~/.config/alacritty/nord/src/nord.yaml
 #  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
