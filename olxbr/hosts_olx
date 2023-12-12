@@ -1,8 +1,15 @@
 # Loopback entries; do not change.
 
 # For historical reasons, localhost precedes localhost.localdomain:
-127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 SP-LNZ6072
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6 SP-LNZ6072
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 SP-LNZ5110 dev-canalpro.grupozap.com redis postgres
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6 SP-LNZ5110 dev-canalpro.grupozap.com redis postgres
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
 
 # Kafka QA
 10.160.12.71    ip-10-160-12-71.ec2.internal    #qa-platform-kafkagreen-v4-broker-2
