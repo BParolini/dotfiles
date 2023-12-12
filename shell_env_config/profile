@@ -54,11 +54,11 @@ export KUBE_EDITOR="nvim"
 if [[ "$ID" = "fedora" ]]
 then
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
+    . "$HOME/.dotfiles/desktop_environment/plasma_env.sh"
 else
     systemctl --user enable docker.service
     systemctl --user start docker.service
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
 
-. "$HOME/.dotfiles/shell_env_config/plasma_env.sh"
 . "$HOME/.dotfiles/shell_env_config/alias.sh"
