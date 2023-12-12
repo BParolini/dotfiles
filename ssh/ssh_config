@@ -9,3 +9,10 @@ Host gitlab.com
     Hostname gitlab.com
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/gitlab_ed25519
+
+Host bitbucket.org
+    User git
+    Hostname bitbucket.org
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/bitbucket_ed25519
+
