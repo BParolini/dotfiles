@@ -1,1 +1,8 @@
-
+[submodule "shellscripts"]
+	path = shellscripts
+	url = git@github.com:BParolini/shellscripts.git
+	branch = main
+[submodule "python_scripts"]
+	path = python_scripts
+	url = git@github.com:BParolini/python_scripts.git
+	branch = master
