@@ -7,7 +7,7 @@
 # ln -s $HOME/.dotfiles/apps/.profile $HOME/.profile
 
 # Sets all the default values for the XDK environment variables
-. "$HOME/.dotfiles/apps/xdg_defaults.sh"
+. "$HOME/.dotfiles/shell_env_config/xdg_defaults.sh"
 
 # Sets the default TERM
 export TERM="xterm-256color"
@@ -60,5 +60,5 @@ else
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
 
-. "$HOME/.dotfiles/apps/plasma_env.sh"
-. "$HOME/.dotfiles/apps/alias.sh"
+. "$HOME/.dotfiles/shell_env_config/plasma_env.sh"
+. "$HOME/.dotfiles/shell_env_config/alias.sh"
