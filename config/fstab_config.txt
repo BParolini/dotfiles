@@ -1,6 +1,0 @@
-Check device UUID:
-"sudo blkid <device>"
-"ls -l /dev/disk/by-uuid"
-
-Samsung S3 - 1GB
-UUID=4EFE5923FE59051D   /media  ntfs-3g rw,auto,async,_netdev,users,dev,exec,umask=0000,fmask=0000      0 0
