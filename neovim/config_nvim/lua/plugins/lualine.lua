@@ -4,16 +4,8 @@ return {
         require("lualine").setup {
             options = {
                 icons_enabled = true,
-                theme = "material",
+                theme = "dracula",
             },
-            sections = {
-                lualine_c = {
-                    {
-                        "filename",
-                        path = 1,
-                    }
-                }
-            }
         }
     end,
 }

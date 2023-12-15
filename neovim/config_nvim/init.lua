@@ -13,7 +13,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("remap")
+require("lazy").setup("plugins")
 require("set")
-
-local lazy = require("lazy")
-lazy.setup("plugins")
