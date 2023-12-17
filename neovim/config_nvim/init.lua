@@ -12,6 +12,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("remap")
+vim.g.mapleader = " "
+
 require("lazy").setup("plugins")
-require("set")
+require("core.remap")
+require("core.set")

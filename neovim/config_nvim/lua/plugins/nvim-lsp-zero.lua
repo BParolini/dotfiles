@@ -4,7 +4,10 @@ return {
     dependencies = {
         -- LSP Support
         "neovim/nvim-lspconfig",
-        "williamboman/mason.nvim",
+        {
+            "williamboman/mason.nvim",
+            build = ":MasonUpdate",
+        },
         "williamboman/mason-lspconfig.nvim",
 
         "folke/neodev.nvim",
@@ -19,6 +22,26 @@ return {
         local lsp = require('lsp-zero')
 
         lsp.preset('recommended')
+
+        require("mason").setup({})
+
+        require("mason-lspconfig").setup({
+            ensure_installed = {
+                "bashls",
+                "dockerls",
+                "docker_compose_language_service",
+                "emmet_ls",
+                "gopls",
+                "lua_ls",
+                "marksman",
+                "pylsp",
+                "rust_analyzer",
+                "yamlls",
+            },
+            handlers = {
+                lsp.default_setup,
+            },
+        })
 
         local cmp = require('cmp')
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -105,10 +128,9 @@ return {
                 ['rust-analyzer'] = {}
             },
         }
-        lspconfig.yamlls.setup {}
-        lspconfig.dockerls.setup {}
-        lspconfig.docker_compose_language_service.setup {}
-        lspconfig.emmet_ls.setup {}
-        lspconfig.marksman.setup {}
+
+        lsp.setup_servers({
+            "yamlls", "dockerls", "docker_compose_language_service", "emmet_ls", "marksman",
+        })
     end,
 }
