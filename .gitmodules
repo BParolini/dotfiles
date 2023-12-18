@@ -6,3 +6,7 @@
 	path = python_scripts
 	url = git@github.com:BParolini/python_scripts.git
 	branch = master
+[submodule "neovim"]
+	path = neovim
+	url = git@github.com:BParolini/neovim_config.git
+	branch = main
