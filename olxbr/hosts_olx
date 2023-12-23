@@ -19,8 +19,8 @@ ff02::2 ip6-allrouters
 10.160.12.94    ip-10-160-12-94.ec2.internal    #qa-platform-kafkagreen-v4-broker-0
 
 # Kafka PROD
-10.164.38.129   ip-10-164-38-129.ec2.internal   #prod-platform-kafkagreen-v4-zookeeper-1
-10.164.38.25    ip-10-164-38-25.ec2.internal    #prod-platform-kafkagreen-v4-zookeeper-0
+10.164.32.79    ip-10-164-32-79.ec2.internal    #prod-platform-kafkagreen-v4-broker-5
+10.164.34.217   ip-10-164-34-217.ec2.internal   #prod-platform-kafkagreen-v4-broker-6
 10.164.40.253   ip-10-164-40-253.ec2.internal   #prod-platform-kafkagreen-v4-broker-1
 10.164.32.15    ip-10-164-32-15.ec2.internal    #prod-platform-kafkagreen-v4-broker-4
 10.164.34.64    ip-10-164-34-64.ec2.internal    #prod-platform-kafkagreen-v4-broker-3
