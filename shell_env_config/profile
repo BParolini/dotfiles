@@ -61,4 +61,3 @@ else
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
 
-. "$HOME/.dotfiles/shell_env_config/alias.sh"
