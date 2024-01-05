@@ -10,9 +10,9 @@ ln -sf "$BASEDIR/profile" "$HOME/.profile"
 
 . "$BASEDIR/xdg_defaults.sh"
 
-rm -f "$XDG_CONFIG_HOME/alacritty/alacritty.yml"
+rm -f "$XDG_CONFIG_HOME/alacritty/alacritty.toml"
 mkdir -p "$XDG_CONFIG_HOME/alacritty"
-ln -sf "$BASEDIR/alacritty.yml" "$XDG_CONFIG_HOME/alacritty/alacritty.yml"
+ln -sf "$BASEDIR/alacritty.toml" "$XDG_CONFIG_HOME/alacritty/alacritty.toml"
 
 rm -f "$HOME/.zshrc"
 ln -sf "$BASEDIR/zshrc" "$HOME/.zshrc"
