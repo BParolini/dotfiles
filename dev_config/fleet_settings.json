@@ -26,5 +26,6 @@
   "editor.previewTab": false,
   "files.compactDirectories": false,
   "fus.ai.sendAllowed": true,
-  "theme": "catppuccin-mocha"
+  "theme": "catppuccin-mocha",
+  "vimEmulationEnabled": true
 }
