@@ -22,7 +22,6 @@ export GL_IDE_TOKEN="***REMOVED***"
 # Sets Java environment variables
 export JAVA_HOME="$HOME/apps/java"
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
-export JDTLS_HOME="$HOME/.jdtls/org.eclipse.jdt.ls.product/target/repository"
 export GRADLE_USER_HOME="$HOME/.gradle"
 
 # Sets .NET environment variables
@@ -38,6 +37,7 @@ export NVM_NODE_PATH="$HOME/.nvm/current"
 # Sets Go environment variables
 export GOROOT="$HOME/apps/go"
 export GOPATH="$HOME/projetos/go"
+export GOBIN="$HOME/.local/bin"
 
 # Sets Rust environment variables
 export RUSTUP_HOME="$HOME/apps/rust"
