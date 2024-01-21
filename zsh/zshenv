@@ -1,0 +1,38 @@
+# author: Bruno Parolini brunoparolini@gmail.com
+# description: Defines env variables
+
+# Set the .dotfile path env variables
+export DOTFILES="$HOME/.dotfiles"
+
+# Sets all the default values for the XDK environment variables
+. "$DOTFILES/zsh/xdg_defaults"
+
+# Sets ZSH config directory
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# Sets the default history file
+export HISTFILE="$ZDOTDIR/.zhistory"
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# Sets the default TERM
+export TERM="xterm-256color"
+
+# Sets the default editor
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# Sets development environment variables
+ source "$DOTFILES/zsh/dev_env"
+
+# Sets Docker / Podman environment variables
+if [[ "$ID" = "fedora" ]]
+then
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
+    . "$DOTFILES/desktop_environment/plasma_env.sh"
+else
+    systemctl --user enable docker.service
+    systemctl --user start docker.service
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
+fi
+
