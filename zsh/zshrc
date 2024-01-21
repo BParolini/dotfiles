@@ -118,6 +118,17 @@ then
     fpath+=$HOME/.zfunc
 fi
 
+if [ $commands[fzf] ]; then
+    if [ ! -f /usr/share/fzf/completion.zsh ]; then
+        sudo mkdir -p /usr/share/fzf
+        sudo curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -o /usr/share/fzf/completion.zsh
+        sudo curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -o /usr/share/fzf/key-bindings.zsh
+    fi
+
+    source /usr/share/fzf/completion.zsh
+    source /usr/share/fzf/key-bindings.zsh
+fi
+
 # opam (OCaml) configuration
 [[ ! -r /home/bparolini/.opam/opam-init/init.zsh ]] || source /home/bparolini/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
