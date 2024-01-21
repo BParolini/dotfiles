@@ -13,9 +13,3 @@ rm -f "$HOME/.vimrc"
 rm -f "$HOME/.ideavimrc"
 ln -sf "$BASEDIR/vimrc" "$HOME/.vimrc"
 ln -sf "$BASEDIR/vimrc" "$HOME/.ideavimrc"
-
-git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-rm -f "$HOME/.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
-mkdir -p "$XDG_CONFIG_HOME/tmux"
-ln -sf "$BASEDIR/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
-
