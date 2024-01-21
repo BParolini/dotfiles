@@ -5,6 +5,7 @@
 
 BASEDIR="$(dirname "$(realpath "$0")")"
 
-rm -f "$XDG_CONFIG_HOME/i3/config"
-mkdir -p "$XDG_CONFIG_HOME/i3"
-ln -sf "$BASEDIR/i3.config" "$XDG_CONFIG_HOME/i3/config"
+rm -f "$HOME/.vimrc"
+rm -f "$HOME/.ideavimrc"
+ln -sf "$BASEDIR/vimrc" "$HOME/.vimrc"
+ln -sf "$BASEDIR/vimrc" "$HOME/.ideavimrc"
