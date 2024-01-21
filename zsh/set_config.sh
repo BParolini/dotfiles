@@ -12,5 +12,4 @@ mkdir -p "$HOME/.config/zsh/external"
 rm -f "$HOME/.zshrc"
 ln -sf "$BASEDIR/zshrc" "$HOME/.config/zsh/.zshrc"
 ln -sf "$BASEDIR/aliases" "$HOME/.config/zsh/aliases"
-ln -sf "$BASEDIR/cursor_mode" "$HOME/.config/zsh/external/cursor_mode"
 
