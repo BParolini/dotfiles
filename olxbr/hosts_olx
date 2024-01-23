@@ -12,11 +12,12 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
 # Kafka QA
-10.160.12.71    ip-10-160-12-71.ec2.internal    #qa-platform-kafkagreen-v4-broker-2
-10.160.14.158   ip-10-160-14-158.ec2.internal   #qa-platform-kafkagreen-v4-broker-1
-10.160.14.69    ip-10-160-14-69.ec2.internal    #qa-platform-kafkagreen-v4-broker-3
-10.160.14.121   ip-10-160-14-121.ec2.internal   #qa-platform-kafkagreen-v4-broker-4
-10.160.12.94    ip-10-160-12-94.ec2.internal    #qa-platform-kafkagreen-v4-broker-0
+10.160.12.71    ip-10-160-12-71.ec2.internal    #Blue 2
+10.160.14.69    ip-10-160-14-69.ec2.internal    #Blue 3
+10.160.14.121   ip-10-160-14-121.ec2.internal   #Blue 0
+10.160.14.244	ip-10-160-14-244.ec2.internal	#BlueV5 1
+10.160.15.11	ip-10-160-16-11.ec2.internal	#BlueV5 3
+10.160.15.154	ip-10-160-15-154.ec2.internal	#BlueV5 4
 
 # Kafka PROD
 10.164.32.79    ip-10-164-32-79.ec2.internal    #prod-platform-kafkagreen-v4-broker-5
