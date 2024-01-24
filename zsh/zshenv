@@ -36,3 +36,9 @@ else
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
 
+# Sets fzf environment variables
+if [ $commands[rg] ]; then
+    export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git' --glob '!.cache'"
+    export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+fi
+
