@@ -4,6 +4,11 @@ alias ll='ls -lah'
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
+# fd-find
+if [ $commands[fdfind] ]; then
+    alias fd='fdfind'
+fi
+
 # fzf
 alias nf='nvim $(fzf)'
 alias nff='nvim $(find . -type f 2> /dev/null | rg -v ".git|.cache|.{0,1}venv" | fzf)'
