@@ -58,10 +58,9 @@ source /etc/os-release
 
 if [[ "$ID" != "fedora" ]]
 then
-    source "$DOTFILES/olxbr/scripts/tokens.sh"
-    source "$DOTFILES/olxbr/scripts/kubernetes_envs.sh"
-    source "$DOTFILES/olxbr/scripts/alias.sh"
-    # source "$DOTFILES/olxbr/scripts/aws_credentials_export.sh"
+    source "$DOTFILES/olxbr/scripts/tokens"
+    source "$DOTFILES/olxbr/scripts/kubernetes_aliases"
+    # source "$DOTFILES/olxbr/scripts/aws_envs"
 fi
 
 if [ $commands[sdk] ]
