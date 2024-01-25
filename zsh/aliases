@@ -6,3 +6,5 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # fzf
 alias nf='nvim $(fzf)'
+alias nff='nvim $(find . -type f 2> /dev/null | rg -v ".git|.cache|.{0,1}venv" | fzf)'
+alias nfd='nvim $(find . -type d 2> /dev/null | rg -v ".git|.cache|.{0,1}venv" | fzf)'
