@@ -11,5 +11,5 @@ fi
 
 # fzf
 alias nf='nvim $(fzf)'
-alias nff='nvim $(find . -type f 2> /dev/null | rg -v ".git|.cache|.{0,1}venv" | fzf)'
-alias nfd='nvim $(find . -type d 2> /dev/null | rg -v ".git|.cache|.{0,1}venv" | fzf)'
+alias nff='nvim $(fd . --type f --hidden --follow --exclude ".git" --exclude ".cache" --exclude ".venv" --exclude "venv" 2> /dev/null | fzf)'
+alias nfd='nvim $(fd . --type d --hidden --follow --exclude ".git" --exclude ".cache" --exclude ".venv" --exclude "venv" 2> /dev/null | fzf)'
