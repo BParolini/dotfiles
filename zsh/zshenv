@@ -41,5 +41,6 @@ if [ $commands[rg] ]; then
     export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git' --glob '!.cache' --glob '!.venv' --glob '!venv' 2> /dev/null"
     export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
-export FZF_DEFAULT_OPTS="--multi --height=50% --margin=5%,2%,2%,5% --layout=reverse-list --border=double --info=inline --header='CTRL-C or ESC to quit'"
+export FZF_DEFAULT_OPTS="--multi --height=50% --margin=5%,2%,2%,5% --layout=reverse-list --border=double --border-label='Fuzzy Finder' --info=inline --header='CTRL-C or ESC to quit'"
+export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree"
 
