@@ -30,3 +30,13 @@ export KAFKA_HOME="$HOME/apps/kafka"
 # Sets Kubernetes environment variables
 export KUBE_EDITOR="nvim"
 
+# Sets Docker / Podman environment variables
+if [[ "$ID" = "fedora" ]]
+then
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
+    . "$DOTFILES/desktop_environment/plasma_env.sh"
+else
+    systemctl --user enable docker.service
+    systemctl --user start docker.service
+    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
+fi
