@@ -2,26 +2,19 @@
 region = us-east-1
 output = json
 
-[profile olxbrazil-crosstech-dev]
-sso_start_url = https://d-906764d535.awsapps.com/start
+[profile ecr]
+sso_start_url = https://d-906764d535.awsapps.com/start#
 sso_region = us-east-1
 sso_account_id = 073521391622
-sso_role_name = Developers
+sso_role_name = AWSECRReadAccess
 region = us-east-1
 output = json
 
-[profile vivareal-dev]
-sso_start_url = https://d-906764d535.awsapps.com/start
+[profile vivareal]
+sso_start_url = https://d-906764d535.awsapps.com/start#
 sso_region = us-east-1
 sso_account_id = 444914307613
-sso_role_name = Developers
+sso_role_name = re-ads-experience
 region = us-east-1
 output = json
 
-[profile Developers-444914307613]
-sso_start_url = https://d-906764d535.awsapps.com/start
-sso_region = us-east-1
-sso_account_id = 444914307613
-sso_role_name = Developers
-region = us-east-1
-output = json
