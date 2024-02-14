@@ -108,6 +108,9 @@ fi
 # ghcup (Haskell) configuration
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
+# Nix configuration
+if [ -e /home/bruno.parolini@olxbr.net/.nix-profile/etc/profile.d/nix.sh ]; then . /home/bruno.parolini@olxbr.net/.nix-profile/etc/profile.d/nix.sh; fi
+
 autoload -Uz compinit && compinit
 
 export NVM_DIR="$HOME/.nvm"
