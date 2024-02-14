@@ -132,3 +132,6 @@ if [ $commands[fzf] ]; then
         source "$HOME/projetos/fzf/shell/key-bindings.zsh"
     fi
 fi
+
+# zoxide configuration
+eval "$(zoxide init --cmd cd zsh)"
