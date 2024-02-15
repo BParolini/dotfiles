@@ -123,6 +123,9 @@ export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# zoxide configuration
+eval "$(zoxide init --cmd cd zsh)"
+
 # fzf configuration -- MUST BE THE LAST ENTRY OR THE KEY-BINDINGS WON'T WORK
 if [ $commands[fzf] ]; then
     if [ -f "$HOME/projetos/fzf/shell/completion.zsh" ]; then
@@ -132,6 +135,3 @@ if [ $commands[fzf] ]; then
         source "$HOME/projetos/fzf/shell/key-bindings.zsh"
     fi
 fi
-
-# zoxide configuration
-eval "$(zoxide init --cmd cd zsh)"
