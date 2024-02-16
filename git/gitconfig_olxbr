@@ -3,11 +3,12 @@
 	email = bruno.parolini@olxbr.com
 	signingkey = E4F203DF9EFAF894
 [color]
-	ui = auto
+	ui = true
 [core]
 	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RF
 [merge]
-	tool = kdiff3
+	tool = diff3
 [gpg]
 	program = gpg2
 [pull]
@@ -22,3 +23,18 @@
 	fetchJobs = 0
 [commit]
 	gpgsign = true
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
