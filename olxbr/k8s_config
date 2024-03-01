@@ -1,0 +1,29 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://rancher.preprod.olxbr.io/k8s/clusters/c-m-2xwfwzfk
+  name: preprod
+- cluster:
+    server: https://rancher.prod.cross.olxbr.io/k8s/clusters/c-m-mzzpcgmh
+  name: prod
+contexts:
+- context:
+    cluster: preprod
+    namespace: listings
+    user: preprod
+  name: preprod
+- context:
+    cluster: prod
+    namespace: listings
+    user: prod
+  name: prod
+current-context: preprod
+kind: Config
+preferences: {}
+users:
+- name: preprod
+  user:
+    token: kubeconfig-u-yx6gyyl2pzfkhrr:59lb9xdwdbhh6n6zlw92rdndbd9xf6dnckzgc47tgz7gxlt7r6kwdh
+- name: prod
+  user:
+    token: kubeconfig-u-yx6gyyl2pzwjnph:dmjx7f45nd9zcs5d4vkf6fb4gtwkchfjrzhmgmzwj99gq72hb4r9rw
