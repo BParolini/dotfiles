@@ -125,6 +125,9 @@ export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # zoxide configuration
+if [ ! $commands[zoxide] ]; then
+    curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+fi
 eval "$(zoxide init --cmd cd zsh)"
 
 # fzf configuration -- MUST BE THE LAST ENTRY OR THE KEY-BINDINGS WON'T WORK
