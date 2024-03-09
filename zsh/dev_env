@@ -3,8 +3,13 @@ export GH_IDE_TOKEN="***REMOVED***"
 export GL_IDE_TOKEN="***REMOVED***"
 
 # Sets Java environment variables
-export JAVA_HOME="$HOME/apps/java"
-# export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
+if [[ -d "$SDKMAN_DIR" ]]
+then
+    export JAVA_HOME="$SDKMAN_CANDIDATES_DIR/java/current"
+elif [[ -d "$HOME/apps/java" ]]
+    export JAVA_HOME="$HOME/apps/java"
+fi
+
 export GRADLE_USER_HOME="$HOME/.gradle"
 
 # Sets Python environment variables
