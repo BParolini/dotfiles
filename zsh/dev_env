@@ -3,10 +3,9 @@ export GH_IDE_TOKEN="***REMOVED***"
 export GL_IDE_TOKEN="***REMOVED***"
 
 # Sets Java environment variables
-if [[ -d "$SDKMAN_DIR" ]]
-then
+if [[ -d "$SDKMAN_CANDIDATES_DIR/java/current" ]]; then
     export JAVA_HOME="$SDKMAN_CANDIDATES_DIR/java/current"
-elif [[ -d "$HOME/apps/java" ]]
+elif [[ -d "$HOME/apps/java" ]]; then
     export JAVA_HOME="$HOME/apps/java"
 fi
 
