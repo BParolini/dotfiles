@@ -20,9 +20,16 @@ set colorcolumn = "100"
 set splitright
 set splitbelow
 
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+nmap <leader>y "+y
+nmap <leader>p "+p
+nmap <leader>P "+P
 
 set clipboard+=unnamedplus
