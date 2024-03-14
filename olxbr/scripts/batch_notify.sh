@@ -17,7 +17,7 @@ declare -A actions=(
     ["unit"]="notify-to-unit"
     ["exporter"]="notify-to-exporter"
     ["notify"]="notify"
-    ["dedup"]="notify-dedup-image"
+    ["dedup"]="notify-dedup-image?force=true"
 )
 
 environment="$1"
