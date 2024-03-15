@@ -1,6 +1,6 @@
 {
-  "editor.fontFamily": "JetBrainsMono NF",
-  "editor.fontSize": 13.0,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 15.0,
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
@@ -27,5 +27,7 @@
   "files.compactDirectories": false,
   "fus.ai.sendAllowed": true,
   "theme": "catppuccin-mocha",
-  "vimEmulationEnabled": true
+  "vimEmulationEnabled": true,
+  "editor.fontWeight": 250,
+  "editor.ligatures": true,
 }
