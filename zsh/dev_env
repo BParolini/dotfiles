@@ -9,6 +9,12 @@ elif [[ -d "$HOME/apps/java" ]]; then
     export JAVA_HOME="$HOME/apps/java"
 fi
 
+export JAVA_TOOL_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
+
+if [[ -f "$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar" ]]; then
+    export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
+fi
+
 export GRADLE_USER_HOME="$HOME/.gradle"
 
 # Sets Python environment variables
