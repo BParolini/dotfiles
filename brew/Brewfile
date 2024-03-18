@@ -30,6 +30,7 @@ brew "kotlin-language-server"
 brew "lapack"
 brew "libpq"
 brew "librdkafka"
+brew "neovim"
 brew "openssl@3", link: true
 brew "p7zip"
 brew "pinentry-mac"
