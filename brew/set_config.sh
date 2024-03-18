@@ -7,4 +7,6 @@ BASEDIR="$(dirname "$(realpath "$0")")"
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew bundle --file="$BASEDIR/Brewfile"
+rm -f ~/Brewfile
+ln -s "$BASEDIR/Brewfile" ~/Brewfile
+brew bundle install
