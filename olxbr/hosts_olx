@@ -1,8 +1,9 @@
 # Loopback entries; do not change.
 
 # For historical reasons, localhost precedes localhost.localdomain:
-127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 SP-LNZ6072 dev-canalpro.grupozap.com redis postgres
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6 SP-LNZ6072 dev-canalpro.grupozap.com redis postgres
+127.0.0.1       localhost dev-canalpro.grupozap.com redis postgres
+::1             localhost dev-canalpro.grupozap.com redis postgres
+255.255.255.255 broadcasthost
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
