@@ -55,12 +55,11 @@ source "$ZDOTDIR/aliases"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-source /etc/os-release
+[[ ! -f /etc/os-release ]] || source /etc/os-release
 
 if [[ "$ID" != "fedora" ]]
 then
     source "$DOTFILES/olxbr/scripts/tokens"
-    source "$DOTFILES/olxbr/scripts/kubernetes_aliases"
     # source "$DOTFILES/olxbr/scripts/aws_envs"
 fi
 
@@ -84,11 +83,6 @@ then
     source <(kubectl completion zsh)
 fi
 
-if [ $commands[minikube] ]
-then
-    source <(minikube completion zsh)
-fi
-
 if [ $commands[direnv] ]
 then
     source <(direnv hook zsh)
@@ -103,6 +97,10 @@ then
     fpath+="$HOME/.zfunc"
 fi
 
+if [ -f "/opt/homebrew/bin/brew" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # opam (OCaml) configuration
 [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
 
@@ -115,14 +113,19 @@ if [ -e /home/bruno.parolini@olxbr.net/.nix-profile/etc/profile.d/nix.sh ]; then
 autoload -Uz compinit && compinit
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+if [ ! -d "/opt/homebrew" ]; then
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+else
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+fi
 
 export LOCAL_USER_BIN="$HOME/.local/bin"
 export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # zoxide configuration
 if [ ! $commands[zoxide] ]; then
