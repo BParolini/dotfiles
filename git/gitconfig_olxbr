@@ -10,7 +10,7 @@
 [merge]
 	tool = diff3
 [gpg]
-	program = gpg2
+	program = gpg
 [pull]
 	rebase = false
 [init]
