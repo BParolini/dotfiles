@@ -25,7 +25,9 @@ export NVM_SYMLINK_CURRENT=true
 export NVM_NODE_PATH="$HOME/.nvm/current"
 
 # Sets Go environment variables
-export GOROOT="$HOME/apps/go"
+if [ -d "$HOME/apps/go" ]; then
+    export GOROOT="$HOME/apps/go"
+fi
 export GOPATH="$HOME/projetos/go"
 export GOBIN="$HOME/.local/bin"
 
@@ -35,7 +37,9 @@ export CARGO_HOME="$HOME/apps/cargo"
 export CARGO_BIN_HOME="$CARGO_HOME/bin"
 
 # Sets Kafka environment variables
-export KAFKA_HOME="$HOME/apps/kafka"
+if [ -d "$HOME/apps/kafka" ]; then
+    export KAFKA_HOME="$HOME/apps/kafka"
+fi
 
 # Sets Kubernetes environment variables
 export KUBE_EDITOR="nvim"
@@ -45,8 +49,4 @@ if [[ "$ID" = "fedora" ]]
 then
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
     . "$DOTFILES/desktop_environment/plasma_env.sh"
-else
-    systemctl --user enable docker.service
-    systemctl --user start docker.service
-    export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 fi
