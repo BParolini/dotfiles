@@ -1,4 +1,6 @@
-# Set the .dotfile path env variables
+set -o allexport
+
+# Set the .dot path env variables
 export DOTFILES="$HOME/.dotfiles"
 
 # Sets all the default values for the XDK environment variables
