@@ -1,9 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if [ $# -lt 4 ]
 then
-    echo "No arguments supplied."
-    echo "Usage: $0 <environment> <action> <file> <line_nr> [wait seconds]"
+    gecho "No arguments supplied."
+    gecho "Usage: $0 <environment> <action> <file> <line_nr> [wait seconds]"
     exit 1
 fi
 
@@ -27,33 +27,33 @@ line_nr="$4"
 endpoint="${environments[$environment]}/${actions[$action]}"
 wait_time=${5:-20}
 
-echo "Endpoint: $endpoint"
-echo "Wait time: $wait_time"
-echo "File: $file - $(wc -l < "$file") lines"
-echo "Lines per iteration: $line_nr"
-read -p "Deseja continuar? (Y/n): " -n 1 -r confirm && [[ $confirm =~ ^[yYsS]$ ]] || exit 1
-echo
+gecho "Endpoint: $endpoint"
+gecho "Wait time: $wait_time"
+gecho "File: $file - $(wc -l < "$file") lines"
+gecho "Lines per iteration: $line_nr"
+# read -p "Deseja continuar? (Y/n): " -n 1 -r confirm && [[ $confirm =~ ^[yYsS]$ ]] || exit 1
+gecho
 
 WORK_DIR=$(mktemp -d)
-split -dl "$line_nr" -a 3 "$file" "$WORK_DIR/notify_"
+gsplit -dl "$line_nr" -a 3 "$file" "$WORK_DIR/notify_"
 
 (
     cd "$WORK_DIR" || exit 1
-    echo "Entered $WORK_DIR"
-    echo "Files: $(find . -maxdepth 1 -type f | wc -l)"
+    gecho "Entered $WORK_DIR"
+    gecho "Files: $(find . -maxdepth 1 -type f | wc -l)"
 
     for f in notify_*
     do
-        echo "Sending file $f"
+        gecho "Sending file $f"
 
-        ids=$(sed ':a;N;$!ba;s/\n/,/g;s/,$//g' < "$f")
+        ids=$(gsed ':a;N;$!ba;s/\n/,/g;s/,$//g' < "$f")
 
         curl_response=$(
             curl -s -w "%{http_code}" \
                 -X POST "$endpoint" \
                 -H "accept: application/json" -H "Content-Type: application/json" -d "[$ids]"
         )
-        echo "Request response for \"$f\": $curl_response"
+        gecho "Request response for \"$f\": $curl_response"
 
         sleep "$wait_time"
     done
