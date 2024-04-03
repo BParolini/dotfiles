@@ -21,16 +21,16 @@ set incsearch
 set ignorecase
 set smartcase
 set termguicolors
-set signcolumn = "yes"
-set colorcolumn = "100"
+set signcolumn=yes
+set colorcolumn=100
 set splitright
 set splitbelow
 set autoread
-set encoding = "utf8"
-set completeopt="menuone,noinsert,noselect"
+set encoding=utf8
+set completeopt=menuone,noinsert,noselect
 
 nnoremap <SPACE> <Nop>
-let mapleader = " "
+let mapleader=" "
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
