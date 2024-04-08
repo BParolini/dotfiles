@@ -7,5 +7,5 @@
 : "${AWS_ACCOUNT_ID:="073521391622"}"
 
 aws sso login --profile "$1"
-aws ecr get-login-password --region $AWS_REGION --profile olxbrazil-crosstech-dev | \
-    docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+aws ecr get-login-password --region "$AWS_REGION" --profile olxbrazil-crosstech-dev | \
+    docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
