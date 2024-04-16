@@ -29,7 +29,7 @@ wait_time=${5:-20}
 
 gecho "Endpoint: $endpoint"
 gecho "Wait time: $wait_time"
-gecho "File: $file - $(wc -l < "$file") lines"
+gecho "File: $file - $(($(wc -l < "$file"))) lines"
 gecho "Lines per iteration: $line_nr"
 # read -p "Deseja continuar? (Y/n): " -n 1 -r confirm && [[ $confirm =~ ^[yYsS]$ ]] || exit 1
 gecho
@@ -40,20 +40,30 @@ gsplit -dl "$line_nr" -a 3 "$file" "$WORK_DIR/notify_"
 (
     cd "$WORK_DIR" || exit 1
     gecho "Entered $WORK_DIR"
-    gecho "Files: $(find . -maxdepth 1 -type f | wc -l)"
+    total_files=$(($(find . -maxdepth 1 -type f | wc -l)))
+    gecho "Files: $total_files"
 
+    index=$((1))
     for f in notify_*
     do
-        gecho "Sending file $f"
+        gecho "Sending file $f ($index/$total_files)"
 
         ids=$(gsed ':a;N;$!ba;s/\n/,/g;s/,$//g' < "$f")
 
+        gecho "Request: $endpoint"
+        body="Body: [$ids]"
+        gecho "${body:0:80}"
         curl_response=$(
             curl -s -w "%{http_code}" \
                 -X POST "$endpoint" \
-                -H "accept: application/json" -H "Content-Type: application/json" -d "[$ids]"
+                -H "accept: application/json" \
+                -H "Content-Type: application/json" \
+                -d "[$ids]"
         )
         gecho "Request response for \"$f\": $curl_response"
+        gecho
+
+        ((index++))
 
         sleep "$wait_time"
     done
