@@ -8,8 +8,8 @@ then
 fi
 
 declare -A environments=(
-    ["prod"]="http://listings-api.grupozap.io/v4/listings/actions"
-    ["qa"]="http://qa-listings-api.grupozap.io/v4/listings/actions"
+    ["prod"]="https://listings-api.re-listings.prod.olxbr.io/v4/listings/actions"
+    ["qa"]="https://listings-api.re-listings.preprod.olxbr.io/v4/listings/actions"
 )
 
 declare -A actions=(
