@@ -1,0 +1,57 @@
+live_config_reload = true
+
+working_directory = "None"
+
+import = [
+    # "~/.config/alacritty/themes/themes/{theme}.toml"
+    "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+    # "~/.config/alacritty/themes/themes/solarized_dark.toml"
+    # "~/.config/alacritty/themes/themes/nord.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 5
+padding.y = 5
+
+decorations = "Buttonless"
+
+opacity = 0.85
+blur = true
+
+option_as_alt = "Both"
+
+startup_mode = "Maximized"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "JetBrainsMono NF SemiBold"
+style = "SemiBold"
+
+[font.bold_italic]
+family = "JetBrainsMono NF SemiBold"
+style = "SemiBold Italic"
+
+[font.italic]
+family = "JetBrainsMono NF Light"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono NF Light"
+style = "Light"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+program = "/opt/homebrew/bin/tmux"
+
+
