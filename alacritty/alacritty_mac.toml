@@ -28,21 +28,21 @@ startup_mode = "Maximized"
 [font]
 size = 14.0
 
+[font.normal]
+family = "JetBrainsMono NF Light"
+style = "Light"
+
 [font.bold]
 family = "JetBrainsMono NF SemiBold"
 style = "SemiBold"
-
-[font.bold_italic]
-family = "JetBrainsMono NF SemiBold"
-style = "SemiBold Italic"
 
 [font.italic]
 family = "JetBrainsMono NF Light"
 style = "Italic"
 
-[font.normal]
-family = "JetBrainsMono NF Light"
-style = "Light"
+[font.bold_italic]
+family = "JetBrainsMono NF SemiBold"
+style = "SemiBold Italic"
 
 [mouse]
 hide_when_typing = true
@@ -51,7 +51,8 @@ hide_when_typing = true
 history = 10000
 multiplier = 3
 
+[selection]
+save_to_clipboard = true
+
 [shell]
 program = "/opt/homebrew/bin/tmux"
-
-
