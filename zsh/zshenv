@@ -1,5 +1,9 @@
 set -o allexport
 
+# You may need to manually set your language environment
+export LANG="pt_BR.UTF-8"
+export LC_ALL="pt_BR.UTF-8"
+
 # Set the .dot path env variables
 export DOTFILES="$HOME/.dotfiles"
 
@@ -9,14 +13,24 @@ export DOTFILES="$HOME/.dotfiles"
 # Sets ZSH config directory
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+# Directory stack config
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_SILENT
+
 # Sets the default history file
 export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
-export SAVEHIST=10000
+export SAVEHIST=$HISTSIZE
+export HISTDUP=erase
 setopt share_history
+setopt append_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
 setopt hist_verify
+setopt hist_ignore_space
 
 # Sets the default TERM
 export TERM="xterm-256color"
@@ -28,6 +42,9 @@ export VISUAL="nvim"
 # Sets development environment variables
 source "$DOTFILES/zsh/dev_env"
 
+export LOCAL_USER_BIN="$HOME/.local/bin"
+export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"
+
 # Sets fzf environment variables
 if [ $commands[rg] ]; then
     export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git' --glob '!.cache' --glob '!.venv' --glob '!venv' 2> /dev/null"
@@ -35,3 +52,9 @@ if [ $commands[rg] ]; then
 fi
 export FZF_DEFAULT_OPTS="--multi --height=50% --margin=5%,2%,2%,5% --layout=reverse-list --border=double --border-label='Fuzzy Finder' --info=inline --header='CTRL-C or ESC to quit'"
 export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree"
+
+# Keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
