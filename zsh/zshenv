@@ -8,7 +8,7 @@ export LC_ALL="pt_BR.UTF-8"
 export DOTFILES="$HOME/.dotfiles"
 
 # Sets all the default values for the XDK environment variables
-. "$DOTFILES/zsh/xdg_defaults"
+. "$HOME/.config/zsh/xdg_defaults"
 
 # Sets ZSH config directory
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -40,7 +40,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # Sets development environment variables
-source "$DOTFILES/zsh/dev_env"
+source "$ZDOTDIR/dev_env"
 
 export LOCAL_USER_BIN="$HOME/.local/bin"
 export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"
