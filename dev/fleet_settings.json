@@ -14,7 +14,7 @@
     ".directory",
     "desktop.ini"
   ],
-  "keymap": "macos-ij",
+  "keymap": "intellij",
   "rename.autoRenameOnTyping": true,
   "terminal.enableFocusEditorOnEsc": true,
   "files.openFileMode": "doubleClick",
@@ -27,9 +27,10 @@
   "files.compactDirectories": false,
   "fus.ai.sendAllowed": true,
   "theme": "dark",
-  "vimEmulationEnabled": true,
+  "vimEmulationEnabled": false,
   "editor.fontWeight": 250,
   "editor.ligatures": true,
   "editor.formatOnSave": true,
-  "terminal.bell": false
+  "terminal.bell": false,
+  "editor.caretSmoothAnimation": true
 }
