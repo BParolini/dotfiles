@@ -36,14 +36,18 @@ zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::direnv
 zinit snippet OMZP::dotenv
+zinit snippet OMZP::fzf
 zinit snippet OMZP::git
+zinit snippet OMZP::gradle
 zinit snippet OMZP::kubectl
+zinit snippet OMZP::mvn
 zinit snippet OMZP::npm
 zinit snippet OMZP::nvm
 zinit snippet OMZP::pipenv
 zinit snippet OMZP::rust
 zinit snippet OMZP::sdk
 zinit snippet OMZP::sudo
+zinit snippet OMZP::tmux
 
 # opam (OCaml) configuration
 [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
