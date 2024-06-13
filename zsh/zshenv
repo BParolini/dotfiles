@@ -54,7 +54,11 @@ export FZF_DEFAULT_OPTS="--multi --height=50% --margin=5%,2%,2%,5% --layout=reve
 export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree"
 
 # Keybindings
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
 bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
+bindkey "^[[A" history-beginning-search-backward-end # up arrow
+bindkey "^[[B" history-beginning-search-forward-end  # down arrow
 bindkey '^[w' kill-region
