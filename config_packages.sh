@@ -33,6 +33,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         "brew"
         "alacritty-mac"
         "git_olxbr"
+        "k8s_olxbr"
         )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
