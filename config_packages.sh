@@ -9,6 +9,9 @@ packages=(
     "zsh"
     "vim"
     "tmux"
+    "gradle"
+    "sdkman"
+    "fleet"
     "ssh"
     "aws"
     )
