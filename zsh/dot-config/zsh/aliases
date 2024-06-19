@@ -25,7 +25,5 @@ alias nvimdiff='nvim -d'
 # region olxbr mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
     source "$DOTFILES/olxbr/scripts/tokens"
-    source "$DOTFILES/olxbr/alias"
-    # source "$DOTFILES/olxbr/scripts/aws_envs"
 fi
 # endregion
