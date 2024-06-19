@@ -26,13 +26,26 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
-    rm -f ~/Brewfile
-    stow -d "$BASEDIR" brew
-    brew bundle install --file ~/Brewfile
+    packages=(
+        "brew"
+        "alacritty-mac"
+        "git_olxbr"
+        )
+    for p in "${packages[@]}"; do
+        stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+    done
 
-    stow -d "$BASEDIR" -t "$HOME" --dotfiles alacritty-mac
+    brew bundle install --file ~/Brewfile
 else
-    stow -d "$BASEDIR" -t "$HOME" --dotfiles alacritty
+    packages=(
+        "alacritty"
+        "git"
+        "i3"
+        "plasma"
+        )
+    for p in "${packages[@]}"; do
+        stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+    done
 fi
 
 # Installs or updates tpm
