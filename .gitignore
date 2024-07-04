@@ -4,8 +4,8 @@ Thumbs.db
 .uuid
 .directory
 desktop.ini
-**/aws/sso
-**/aws/cli/cache
+**/dot-aws/sso
+**/dot-aws/cli/cache
 .idea
 .fleet
 *_compiled.lua
