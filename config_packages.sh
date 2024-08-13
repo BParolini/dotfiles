@@ -7,6 +7,7 @@ BASEDIR="$(dirname "$(realpath "$0")")"
 
 packages=(
     "zsh"
+    "kitty"
     "vim"
     "tmux"
     "gradle"
