@@ -35,7 +35,7 @@ gecho "Lines per iteration: $line_nr"
 gecho
 
 WORK_DIR=$(mktemp -d)
-gsplit -dl "$line_nr" -a 3 "$file" "$WORK_DIR/notify_"
+gsplit -dl "$line_nr" -a 4 "$file" "$WORK_DIR/notify_"
 
 (
     cd "$WORK_DIR" || exit 1
