@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize": 14.0,
+  "editor.fontSize": 13.0,
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
@@ -22,15 +22,14 @@
   "editor.honorCamelHumps": true,
   "restoreWorkspacesOnStartup": false,
   "editor.softWrapEnabled": true,
-  "terminal.fontSize": 14.0,
+  "terminal.fontSize": 13.0,
   "editor.previewTab": false,
-  "files.compactDirectories": false,
   "fus.ai.sendAllowed": true,
-  "theme": "dark",
-  "vimEmulationEnabled": false,
+  "vimEmulationEnabled": true,
   "editor.fontWeight": 250,
-  "editor.ligatures": true,
   "editor.formatOnSave": true,
   "terminal.bell": false,
-  "editor.caretSmoothAnimation": true
+  "editor.caretSmoothAnimation": true,
+  "theme": "dark_purple",
+  "collaboration.displayName": "bparolini"
 }

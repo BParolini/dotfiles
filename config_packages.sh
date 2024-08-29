@@ -12,10 +12,9 @@ packages=(
     "tmux"
     "gradle"
     "sdkman"
-    "fleet"
     "ssh"
     "aws"
-    )
+)
 
 # Run GNU stow in all repo packages
 for p in "${packages[@]}"; do
@@ -33,9 +32,10 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     packages=(
         "brew"
         "alacritty-mac"
+        "fleet-mac"
         "git_olxbr"
         "k8s_olxbr"
-        )
+    )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
     done
@@ -44,10 +44,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     packages=(
         "alacritty"
+        "fleet"
         "git"
         "i3"
         "plasma"
-        )
+    )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
     done
