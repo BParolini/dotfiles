@@ -21,7 +21,7 @@ for p in "${packages[@]}"; do
     stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
 done
 
-source ./neovim/config_nvim.sh
+source "$BASEDIR/neovim/config_nvim.sh"
 
 # Installs brew only if in MacOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
