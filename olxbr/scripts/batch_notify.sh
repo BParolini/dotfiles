@@ -10,6 +10,7 @@ fi
 declare -A environments=(
     ["prod"]="https://listings-api.re-listings.prod.olxbr.io/v4/listings/actions"
     ["qa"]="https://listings-api.re-listings.preprod.olxbr.io/v4/listings/actions"
+    ["local"]="http://localhost:8080/v4/listings/actions"
 )
 
 declare -A actions=(
