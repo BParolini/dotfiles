@@ -31,5 +31,7 @@
   "terminal.bell": false,
   "editor.caretSmoothAnimation": true,
   "theme": "dark_purple",
-  "collaboration.displayName": "bparolini"
+  "collaboration.displayName": "bparolini",
+  "aiCompletion.enabled": false,
+  "completion.inline.highlighting.enabled": false
 }
