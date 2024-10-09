@@ -6,6 +6,7 @@
 BASEDIR="$(dirname "$(realpath "$0")")"
 
 packages=(
+    "fonts"
     "zsh"
     "kitty"
     "vim"
@@ -35,7 +36,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         "fleet-mac"
         "git_olxbr"
         "k8s_olxbr"
-    )
+        )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
     done
