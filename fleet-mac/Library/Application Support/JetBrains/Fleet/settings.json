@@ -4,16 +4,7 @@
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
-  "files.exclude": [
-    ".DS_Store",
-    ".git",
-    "Thumbs.db",
-    ".idea",
-    ".gradle",
-    ".uuid",
-    ".directory",
-    "desktop.ini"
-  ],
+  "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
   "keymap": "intellij",
   "rename.autoRenameOnTyping": true,
   "terminal.enableFocusEditorOnEsc": true,
@@ -30,7 +21,7 @@
   "editor.formatOnSave": true,
   "terminal.bell": false,
   "editor.caretSmoothAnimation": true,
-  "theme": "dark_purple",
+  "theme": "dark",
   "collaboration.displayName": "bparolini",
   "aiCompletion.enabled": false,
   "completion.inline.highlighting.enabled": false
