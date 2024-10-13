@@ -8,6 +8,7 @@ BASEDIR="$(dirname "$(realpath "$0")")"
 packages=(
     "fonts"
     "zsh"
+    "starship"
     "kitty"
     "vim"
     "tmux"

@@ -1,3 +1,5 @@
+DISABLE_MAGIC_FUNCTIONS=true
+
 set -o allexport
 
 # You may need to manually set your language environment
