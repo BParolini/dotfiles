@@ -17,7 +17,7 @@ contexts:
     namespace: listings
     user: prod
   name: prod
-current-context: preprod
+current-context: prod
 kind: Config
 preferences: {}
 users:
