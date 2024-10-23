@@ -10,6 +10,7 @@ packages=(
     "zsh"
     "starship"
     "kitty"
+    "wezterm"
     "vim"
     "tmux"
     "gradle"
