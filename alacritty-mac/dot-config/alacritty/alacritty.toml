@@ -29,20 +29,20 @@ startup_mode = "Maximized"
 size = 13.0
 
 [font.normal]
-family = "JetBrainsMono NF Light"
-style = "Light"
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
 
 [font.bold]
-family = "JetBrainsMono NF SemiBold"
-style = "SemiBold"
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono NF Light"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMono NF SemiBold"
-style = "SemiBold Italic"
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
 
 [mouse]
 hide_when_typing = true
