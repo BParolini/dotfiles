@@ -20,7 +20,11 @@ local config = {
 
     color_scheme = "Nord (Gogh)",
 
-    font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Regular" }),
+    font = wezterm.font_with_fallback({
+        { family = "JetBrainsMono Nerd Font", weight = "DemiBold" },
+        { family = "Iosevka Nerd Font", weight = "DemiBold" },
+        { family = "FiraCode Nerd Font", weight = "DemiBold" },
+    }),
     font_size = 13.0,
 }
 
