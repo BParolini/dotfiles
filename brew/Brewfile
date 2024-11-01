@@ -33,6 +33,7 @@ brew "kcat"
 brew "lapack"
 brew "libpq", link: true
 brew "librdkafka"
+brew "lld"
 brew "llvm"
 brew "lua"
 brew "luarocks"
