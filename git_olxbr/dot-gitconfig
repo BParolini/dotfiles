@@ -19,6 +19,8 @@
 	workers = 0
 [fetch]
 	parallel = 0
+	prune = true
+	pruneTags = true
 [submodule]
 	fetchJobs = 0
 [commit]
