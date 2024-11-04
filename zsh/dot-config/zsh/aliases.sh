@@ -22,8 +22,3 @@ alias nfd='nvim $(fd . --type d --hidden --follow --exclude ".git" --exclude ".c
 alias nvimdiff='nvim -d'
 # endregion
 
-# region olxbr mac
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    source "$DOTFILES/olxbr/scripts/tokens"
-fi
-# endregion

@@ -1,6 +1,10 @@
-# Sets the VCSs IDE tokens
-export GH_IDE_TOKEN="***REMOVED***"
-export GL_IDE_TOKEN="***REMOVED***"
+source "$HOME/.secrets/personal/dev.sh"
+#
+# region olxbr mac
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    source "$DOTFILES/olxbr/scripts/tokens.sh"
+fi
+# endregion
 
 # Sets Java environment variables
 if [[ -d "$SDKMAN_CANDIDATES_DIR/java/current" ]]; then

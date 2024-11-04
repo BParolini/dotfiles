@@ -25,6 +25,7 @@ for p in "${packages[@]}"; do
 done
 
 source "$BASEDIR/neovim/config_nvim.sh"
+source "$BASEDIR/secrets/config_secrets.sh"
 
 # Installs brew only if in MacOS
 if [[ "$OSTYPE" == "darwin"* ]]; then

@@ -10,3 +10,7 @@
 	path = neovim
 	url = git@github.com:BParolini/neovim_config.git
 	branch = main
+[submodule "secrets"]
+	path = secrets
+	url = git@github.com:BParolini/secrets.git
+	branch = main
