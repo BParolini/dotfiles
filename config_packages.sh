@@ -15,6 +15,7 @@ packages=(
     "tmux"
     "gradle"
     "sdkman"
+    "bat"
     "ssh"
     "aws"
 )
