@@ -15,7 +15,7 @@ declare -A environments=(
 
 declare -A actions=(
     ["crude"]="notify-to-crude"
-    ["unit"]="notify-to-unit"
+    ["unit"]="notify-to-unit?forceImageDedup=true&internalEvent=true"
     ["exporter"]="notify-to-exporter"
     ["notify"]="notify"
     ["dedup"]="notify-dedup-image?force=true"
