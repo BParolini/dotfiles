@@ -18,7 +18,7 @@ local config = {
         bottom = "3px",
     },
 
-    color_scheme = "Nord (Gogh)",
+    color_scheme = "tokyonight_moon",
 
     font = wezterm.font_with_fallback({
         { family = "JetBrainsMono Nerd Font", weight = "DemiBold" },
