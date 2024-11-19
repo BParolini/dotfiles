@@ -4,7 +4,16 @@
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
-  "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
+  "files.exclude": [
+    ".DS_Store",
+    ".git",
+    "Thumbs.db",
+    ".idea",
+    ".gradle",
+    ".uuid",
+    ".directory",
+    "desktop.ini"
+  ],
   "keymap": "intellij",
   "rename.autoRenameOnTyping": true,
   "terminal.enableFocusEditorOnEsc": true,
@@ -17,12 +26,22 @@
   "editor.previewTab": false,
   "fus.ai.sendAllowed": true,
   "vimEmulationEnabled": true,
-  "editor.fontWeight": 250,
   "editor.formatOnSave": true,
   "terminal.bell": false,
   "editor.caretSmoothAnimation": true,
-  "theme": "dark",
+  "theme": "catppuccin-mocha",
   "collaboration.displayName": "bparolini",
   "aiCompletion.enabled": false,
-  "completion.inline.highlighting.enabled": false
+  "completion.inline.highlighting.enabled": false,
+  "plugins": [
+    {
+      "type": "add",
+      "pluginName": "com.github.catppuccin.fleet"
+    },
+    {
+      "type": "add",
+      "pluginName": "izhangzhihao.fleet.rainbow.brackets"
+    }
+  ],
+  "rainbow.brackets.version": "0.5.1"
 }
