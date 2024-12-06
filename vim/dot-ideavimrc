@@ -42,4 +42,8 @@ nmap <leader>y "*Y
 nmap <leader>p "*p
 nmap <leader>P "*P
 
+nmap <leader>nh :nohl<CR>
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
 set clipboard+=unnamedplus
