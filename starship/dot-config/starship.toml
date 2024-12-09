@@ -136,6 +136,7 @@ Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
+disabled = true
 
 [perl]
 symbol = " "
@@ -169,3 +170,4 @@ symbol = " "
 
 [gradle]
 symbol = " "
+disabled = true
