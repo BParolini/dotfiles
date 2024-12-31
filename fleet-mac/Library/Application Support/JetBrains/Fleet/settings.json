@@ -29,7 +29,7 @@
   "editor.formatOnSave": true,
   "terminal.bell": false,
   "editor.caretSmoothAnimation": true,
-  "theme": "catppuccin-mocha",
+  "theme": "dark",
   "collaboration.displayName": "bparolini",
   "aiCompletion.enabled": false,
   "completion.inline.highlighting.enabled": false,
