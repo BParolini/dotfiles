@@ -37,6 +37,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     packages=(
         "brew"
         "alacritty-mac"
+        "ghostty-mac"
         "fleet-mac"
         "git_olxbr"
         "k8s_olxbr"
@@ -49,6 +50,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     packages=(
         "alacritty"
+        "ghostty"
         "fleet"
         "git"
         "i3"
