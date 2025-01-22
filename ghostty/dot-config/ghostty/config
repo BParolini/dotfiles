@@ -15,3 +15,6 @@ macos-non-native-fullscreen = "false"
 
 window-height = 10000
 window-width = 10000
+
+command = "tmux"
+shell-integration = "zsh"
