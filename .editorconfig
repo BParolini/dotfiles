@@ -11,13 +11,14 @@ end_of_line = lf
 max_line_length = off
 trim_trailing_whitespace = true
 
+[*.go]
+indent_style = tab
+
 [*.{css,html,js,jsx,json,less,scss,ts,tsx,vue,xml,xsd,yaml,yml}]
 tab_width = 2
 indent_size = 2
 
 [{M,m}akefile]
-tab_width = 4
-indent_size = 4
 indent_style = tab
 
 [*.md]
