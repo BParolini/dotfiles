@@ -47,3 +47,10 @@ nmap <C-d> <C-d>zz
 nmap <C-u> <C-u>zz
 
 set clipboard+=unnamedplus
+
+if has("macunix")
+    set rtp+=/opt/homebrew/opt/fzf
+else
+    set rtp+=/usr/bin/fzf
+endif
+
