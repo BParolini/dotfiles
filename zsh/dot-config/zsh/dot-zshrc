@@ -55,6 +55,11 @@ then
     eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 fi
 
+if [ $commands[poetry] ]
+then
+    poetry completions zsh > "$HOME/.zfunc/_poetry"
+fi
+
 if [ $commands[kubectl] ]
 then
     source <(kubectl completion zsh)
