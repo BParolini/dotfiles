@@ -4,16 +4,7 @@
   "editor.lineSpacing": 1.2,
   "terminal.lineSpacing": 1.0,
   "ff.autoSyncEditors": true,
-  "files.exclude": [
-    ".DS_Store",
-    ".git",
-    "Thumbs.db",
-    ".idea",
-    ".gradle",
-    ".uuid",
-    ".directory",
-    "desktop.ini"
-  ],
+  "files.exclude": [".DS_Store", ".git", "Thumbs.db", ".idea", ".gradle", ".uuid", ".directory", "desktop.ini"],
   "keymap": "intellij",
   "rename.autoRenameOnTyping": true,
   "terminal.enableFocusEditorOnEsc": true,
@@ -43,5 +34,5 @@
       "pluginName": "izhangzhihao.fleet.rainbow.brackets"
     }
   ],
-  "rainbow.brackets.version": "0.5.1"
+  "rainbow.brackets.version": "0.6.1"
 }
