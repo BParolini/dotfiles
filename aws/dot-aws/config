@@ -26,3 +26,10 @@ sso_role_name = re-ads-experience
 region = us-east-1
 output = json
 
+[profile mlops]
+sso_start_url = https://d-906764d535.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 073521391622
+sso_role_name = machine-learning-operations
+region = us-east-1
+output = json

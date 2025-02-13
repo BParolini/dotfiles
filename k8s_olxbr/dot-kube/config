@@ -1,12 +1,21 @@
 apiVersion: v1
 clusters:
 - cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMvakNDQWVhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJek1ETXhOakU1TWpFeU1Gb1hEVE16TURNeE16RTVNakV5TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSnhFClI4cElUS3FoakJWTWNOMTdpRUs0OE51R09YbzdHV0oxV1k0WWNRcFhkbFJmUTUyanRtZHMzc0VhdksrZUlpZ1EKbld4aEZ4ZFVnS1kvQ2ZTcnVzVTZLRVNKYVg3QzZSUnBMZTQ1bFlZWkVUTzhscStmbGplamFBLzBvTUdLRTBvVApUWWJzSXNBSEo4VTVKKzhjOFY1cUg5TzFjeC9CWmgzOFNTQ3VRU0FWSzZkbllocVRsMkNJalQ4Q3YxUTlTRTh6CkVPMUQ0UVNFbnlCazR1bGxzNHVwVW5DTms2czFzeU10MnQ2ZHp2UUdOSFJtOU16c0NLT0lBWjRmL2FLaW9aVUsKY25sT1kveExPNGJlYStkMjlBZWZsNWJydnA1VUpNWUxMZ0VtVnN5VzhpRnRhU0FNaCtSdkFCY1loV2V4QVY3Ygo1NEQxWnpUL1hjYXR5NUROUVFNQ0F3RUFBYU5aTUZjd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZIb2QxVStXTmsrbjdCS3cwV0dabHF1NVlSYnFNQlVHQTFVZEVRUU8KTUF5Q0NtdDFZbVZ5Ym1WMFpYTXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQnlNL3JweGFzbnp5OGRhQXhONwpqQ2J3Y2szR1BPckxEd2gwVFY4YzY3SXZzaDZzT0VMMEpiTS8zMjlaT1pWdlk1dHdjWHNJcEt1a1NCN3NQTEVBCmRvbTNidzhvNG5QdHBybDliblhzeXg2WWdNbUlHVzJNVXJiMDVqcm51ZGhqbWxFemh3THlieWxvaTR3TlJVZXYKVlBGUFNvU24zUFNHNHlYeUN1eStSZDZuK0gxaWtnOEVoMmVlem1XRHcwZko4TVJUd24zOStSVS9naTVQLzRXVApyWFF5VUJVQTNNeGgxS3RFbGYvM203OU9mUm52TWRrRzVxenNJSmM4emhUNUFUOG85MS8xVlNrUmxadTk3dk1yCkVlYms0MDg5d0x3elNMMm0wVG8yNlNWM3RXQmVJazJ1NE9wd0Myd0tHMGhPVWMwMDgzMnZJOUs1WERHbm5xTGUKVFM0PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://66C08DF848AD86C1445335F890BABA44.gr7.us-east-1.eks.amazonaws.com
+  name: cross-mlops-main
+- cluster:
     server: https://rancher.preprod.olxbr.io/k8s/clusters/c-m-2xwfwzfk
   name: preprod
 - cluster:
     server: https://rancher.prod.cross.olxbr.io/k8s/clusters/c-m-mzzpcgmh
   name: prod
 contexts:
+- context:
+    cluster: cross-mlops-main
+    user: cross-mlops-main
+    namespace: image-dedup-preprod
+  name: cross-mlops-main
 - context:
     cluster: preprod
     namespace: listings
@@ -17,10 +26,27 @@ contexts:
     namespace: listings
     user: prod
   name: prod
-current-context: prod
+current-context: cross-mlops-main
 kind: Config
 preferences: {}
 users:
+- name: cross-mlops-main
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - cross-mlops-main
+      - --output
+      - json
+      command: aws
+      env:
+      - name: AWS_PROFILE
+        value: mlops
 - name: preprod
   user:
     token: kubeconfig-u-yx6gyyl2pzfkhrr:59lb9xdwdbhh6n6zlw92rdndbd9xf6dnckzgc47tgz7gxlt7r6kwdh
