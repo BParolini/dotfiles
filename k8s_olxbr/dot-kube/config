@@ -37,6 +37,8 @@ users:
       args:
       - --region
       - us-east-1
+      - --profile
+      - mlops
       - eks
       - get-token
       - --cluster-name
