@@ -65,6 +65,11 @@ then
     source <(kubectl completion zsh)
 fi
 
+if [ $commands[helm] ]
+then
+    source <(helm completion zsh)
+fi
+
 if [ $commands[direnv] ]
 then
     source <(direnv hook zsh)
