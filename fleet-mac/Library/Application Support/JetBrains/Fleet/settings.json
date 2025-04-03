@@ -41,6 +41,14 @@
     {
       "type": "add",
       "pluginName": "izhangzhihao.fleet.rainbow.brackets"
+    },
+    {
+      "type": "remove",
+      "pluginName": "ignaigna.tokyo.night.fleet"
+    },
+    {
+      "type": "remove",
+      "pluginName": "fleet.grazie"
     }
   ],
   "rainbow.brackets.version": "0.6.1"
