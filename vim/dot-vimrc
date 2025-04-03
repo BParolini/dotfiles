@@ -54,3 +54,4 @@ else
     set rtp+=/usr/bin/fzf
 endif
 
+set rtp^=$HOME . "/.opam/default/share/ocp-indent/vim"
