@@ -18,7 +18,8 @@ local config = {
         bottom = "3px",
     },
 
-    color_scheme = "tokyonight_moon",
+    -- color_scheme = "tokyonight_moon",
+    color_scheme = "catppuccin-mocha",
 
     font = wezterm.font_with_fallback({
         { family = "JetBrainsMono Nerd Font", weight = "DemiBold" },
