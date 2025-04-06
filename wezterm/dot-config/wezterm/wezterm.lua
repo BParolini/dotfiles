@@ -23,8 +23,8 @@ local config = {
 
     font = wezterm.font_with_fallback({
         { family = "JetBrainsMono Nerd Font", weight = "DemiBold" },
-        { family = "Iosevka Nerd Font", weight = "DemiBold" },
-        { family = "FiraCode Nerd Font", weight = "DemiBold" },
+        { family = "Iosevka Nerd Font",       weight = "DemiBold" },
+        { family = "FiraCode Nerd Font",      weight = "DemiBold" },
     }),
     font_size = 13.0,
 }
