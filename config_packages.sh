@@ -6,6 +6,7 @@
 BASEDIR="$(dirname "$(realpath "$0")")"
 
 packages=(
+    "stow"
     "fonts"
     "zsh"
     "starship"
