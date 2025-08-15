@@ -1,0 +1,62 @@
+
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 5
+padding.y = 5
+
+decorations = "Buttonless"
+
+option_as_alt = "Both"
+
+startup_mode = "Maximized"
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "DemiBold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "DemiBold Italic"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+
+[general]
+live_config_reload = true
+
+working_directory = "None"
+
+import = [
+    "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+    # "~/.config/alacritty/themes/themes/dracula_plus.toml"
+    # "~/.config/alacritty/themes/themes/nord.toml"
+    # "~/.config/alacritty/themes/themes/rose-pine.toml"
+    # "~/.config/alacritty/themes/themes/solarized_dark.toml"
+    # "~/.config/alacritty/themes/themes/tokyo-night.toml"
+    # "~/.config/alacritty/themes/themes/tokyo-night-storm.toml"
+]
+
+[terminal]
+
+shell = "/opt/homebrew/bin/tmux"

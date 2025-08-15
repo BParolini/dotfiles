@@ -1,0 +1,13 @@
+*.insyncdl
+Thumbs.db
+.DS_Store
+.uuid
+.directory
+desktop.ini
+.idea
+.vscode
+.fleet
+.git
+.gradle
+.obsidian
+.trash

@@ -1,0 +1,20 @@
+theme = "tokyonight_night"
+
+font-family = ""
+font-family = "JetbrainsMono Nerd Font"
+
+font-feature = "liga"
+font-feature = "calt"
+font-feature = "dlig"
+
+font-size = "13"
+
+window-decoration = "false"
+quit-after-last-window-closed = "true"
+macos-non-native-fullscreen = "false"
+
+window-height = 10000
+window-width = 10000
+
+command = "tmux"
+shell-integration = "zsh"

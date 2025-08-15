@@ -1,0 +1,18 @@
+Host github.com
+    User git
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/github_ed25519
+
+Host gitlab.com
+    User git
+    Hostname gitlab.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/gitlab_ed25519
+
+Host bitbucket.org
+    User git
+    Hostname bitbucket.org
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/bitbucket_ed25519
+

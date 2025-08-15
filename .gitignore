@@ -1,0 +1,16 @@
+*.insyncdl
+Thumbs.db
+.DS_Store
+.uuid
+.directory
+desktop.ini
+**/dot-aws/credentials
+**/dot-aws/sso
+**/dot-aws/cli/cache
+.idea
+.fleet
+*_compiled.lua
+.luarc.json
+.obsidian
+.trash
+lazy-lock.json

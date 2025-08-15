@@ -1,0 +1,44 @@
+{
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 13.0,
+  "editor.lineSpacing": 1.2,
+  "terminal.lineSpacing": 1.0,
+  "ff.autoSyncEditors": true,
+  "files.exclude": [
+    ".DS_Store",
+    ".git",
+    "Thumbs.db",
+    ".idea",
+    ".gradle",
+    ".uuid",
+    ".directory",
+    "desktop.ini"
+  ],
+  "keymap": "intellij",
+  "rename.autoRenameOnTyping": true,
+  "terminal.enableFocusEditorOnEsc": true,
+  "files.openFileMode": "doubleClick",
+  "files.keyboardNavigation": "Highlight",
+  "editor.honorCamelHumps": true,
+  "restoreWorkspacesOnStartup": false,
+  "editor.softWrapEnabled": true,
+  "terminal.fontSize": 13.0,
+  "editor.previewTab": false,
+  "fus.ai.sendAllowed": true,
+  "vimEmulationEnabled": true,
+  "editor.formatOnSave": true,
+  "terminal.bell": false,
+  "theme": "catppuccin-mocha",
+  "collaboration.displayName": "bparolini",
+  "plugins": [
+    {
+      "type": "add",
+      "pluginName": "izhangzhihao.fleet.rainbow.brackets"
+    },
+    {
+      "type": "add",
+      "pluginName": "com.github.catppuccin.fleet"
+    }
+  ],
+  "rainbow.brackets.version": "0.8.0"
+}

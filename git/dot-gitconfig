@@ -1,0 +1,44 @@
+[user]
+	name = Bruno Parolini
+	email = brunoparolini@gmail.com
+	signingkey = 0C9C5567E192316B
+[color]
+	ui = true
+[core]
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RF
+[merge]
+	tool = diff3
+[gpg]
+	program = gpg2
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[checkout]
+	workers = 0
+[fetch]
+	parallel = 0
+	prune = true
+	pruneTags = true
+[submodule]
+	fetchJobs = 0
+[commit]
+	gpgsign = true
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+	lg = log --oneline --graph --decorate --parents

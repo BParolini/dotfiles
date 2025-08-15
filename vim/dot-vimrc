@@ -1,0 +1,57 @@
+syntax enable
+set background=dark
+set noerrorbells
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+set linebreak
+set nu
+set rnu
+set cursorline
+set scrolloff=5
+set sidescrolloff=5
+set showmatch
+set showbreak=+++
+set noswapfile
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set termguicolors
+set signcolumn=yes
+set colorcolumn=100
+set splitright
+set splitbelow
+set autoread
+set encoding=utf8
+set completeopt=menuone,noinsert,noselect
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+nmap <leader>y "*y
+nmap <leader>y "*Y
+nmap <leader>p "*p
+nmap <leader>P "*P
+
+nmap <leader>nh :nohl<CR>
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
+set clipboard+=unnamedplus
+
+if has("macunix")
+    set rtp+=/opt/homebrew/opt/fzf
+else
+    set rtp+=/usr/bin/fzf
+endif
+
+exe 'set rtp+=' . $HOME . '/.opam/default/share/ocp-indent/vim'
