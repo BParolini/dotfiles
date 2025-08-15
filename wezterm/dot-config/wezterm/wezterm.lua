@@ -18,6 +18,25 @@ local config = {
         bottom = "3px",
     },
 
+    background = {
+        {
+            source = {
+                File = wezterm.config_dir .. "/bg_image.jpg",
+            },
+            attachment = "Fixed",
+            vertical_align = "Middle",
+            horizontal_align = "Center",
+            opacity = 1.0,
+            hsb = {
+                hue = 1.0,
+                saturation = 1.0,
+                brightness = 0.08,
+            },
+            height = "Cover",
+            width = "Cover",
+        },
+    },
+
     -- color_scheme = "tokyonight_moon",
     color_scheme = "catppuccin-mocha",
     -- color_scheme = "Kanagawa (Gogh)",
