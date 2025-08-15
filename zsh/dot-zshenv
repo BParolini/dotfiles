@@ -10,7 +10,7 @@ export LC_ALL="pt_BR.UTF-8"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set the .dot path env variables
-export DOTFILES="$HOME/.dotfiles"
+export DOTFILES="$HOME/personal/dotfiles"
 
 # Sets all the default values for the XDK environment variables
 . "$HOME/.config/zsh/xdg_defaults"
