@@ -18,6 +18,7 @@ packages=(
     "sdkman"
     "bat"
     "ssh"
+    "gh"
 )
 
 # Run GNU stow in all repo packages
