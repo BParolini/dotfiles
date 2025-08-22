@@ -1,8 +1,14 @@
 source "$HOME/.secrets/personal/dev.sh"
-#
+
 # region olxbr mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
     source "$HOME/.secrets/olxbr/tokens.sh"
+
+    export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+    export CC="/opt/homebrew/opt/llvm/bin/clang"
+    export CXX="/opt/homebrew/opt/llvm/bin/clang++"
+
+    alias cc="$CC"
 fi
 # endregion
 
@@ -53,3 +59,5 @@ if [[ "$ID" = "fedora" ]]
 then
     export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 fi
+
+export PATH="$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"

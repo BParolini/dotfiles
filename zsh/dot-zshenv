@@ -44,11 +44,8 @@ export TERM="xterm-256color"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-# Sets development environment variables
-source "$ZDOTDIR/dev_env.sh"
-
 export LOCAL_USER_BIN="$HOME/.local/bin"
-export PATH="$LOCAL_USER_BIN:$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"
+export PATH="$LOCAL_USER_BIN:$PATH"
 
 # Sets fzf environment variables
 if [ $commands[rg] ]; then

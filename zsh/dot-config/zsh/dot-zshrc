@@ -101,3 +101,6 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
 
 eval "$(starship init zsh)"
+
+# Sets development environment variables
+source "$ZDOTDIR/dev_env.sh"
