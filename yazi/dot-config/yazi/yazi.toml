@@ -1,0 +1,19 @@
+[mgr]
+show_hidden = true
+show_symlink = true
+
+scrolloff = 10
+
+sort_by = "natural"
+sort_sensitive = false
+sort_dir_first = true
+sort_translit = true
+
+[preview]
+wrap = "yes"
+tab_size = 4
+
+[which]
+sort_by = "key"
+sort_sensitive = true
+sort_translit = true
