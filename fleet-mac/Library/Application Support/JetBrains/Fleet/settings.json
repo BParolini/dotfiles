@@ -6,12 +6,14 @@
   "ff.autoSyncEditors": true,
   "files.exclude": [
     ".DS_Store",
-    ".git",
-    "Thumbs.db",
-    ".idea",
-    ".gradle",
-    ".uuid",
+    "._*",
     ".directory",
+    ".git",
+    ".gradle",
+    ".idea",
+    ".trash",
+    ".uuid",
+    "Thumbs.db",
     "desktop.ini"
   ],
   "keymap": "intellij",
@@ -28,7 +30,7 @@
   "vimEmulationEnabled": true,
   "editor.formatOnSave": true,
   "terminal.bell": false,
-  "theme": "catppuccin-mocha",
+  "theme": "dark",
   "collaboration.displayName": "bparolini",
   "plugins": [
     {
