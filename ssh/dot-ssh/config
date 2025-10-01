@@ -3,6 +3,7 @@ Host github.com
     Hostname github.com
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/github_ed25519
+    IdentitiesOnly yes
 
 Host gitlab.com
     User git
@@ -16,3 +17,10 @@ Host bitbucket.org
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/bitbucket_ed25519
 
+Host github.com-emu
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_melisource
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    UseKeychain yes

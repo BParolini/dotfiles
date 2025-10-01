@@ -1,12 +1,13 @@
 [user]
 	name = Bruno Parolini
 	email = brunoparolini@gmail.com
-	signingkey = 0C9C5567E192316B
+	signingkey = 5C7D3AF381B7702
 [color]
 	ui = true
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RF
+    autocrlf = input
 [merge]
 	tool = diff3
 [gpg]
@@ -18,11 +19,11 @@
 [checkout]
 	workers = 0
 [fetch]
-	parallel = 0
+	parallel = 4
 	prune = true
 	pruneTags = true
 [submodule]
-	fetchJobs = 0
+	fetchJobs = 4
 [commit]
 	gpgsign = true
 [interactive]

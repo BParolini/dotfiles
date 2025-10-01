@@ -30,7 +30,7 @@
   "vimEmulationEnabled": true,
   "editor.formatOnSave": true,
   "terminal.bell": false,
-  "theme": "dark",
+  "theme": "catppuccin-mocha",
   "collaboration.displayName": "bparolini",
   "plugins": [
     {

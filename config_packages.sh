@@ -23,7 +23,7 @@ packages=(
 
 # Run GNU stow in all repo packages
 for p in "${packages[@]}"; do
-    stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+    stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
 done
 
 # Installs brew only if in MacOS
@@ -33,30 +33,34 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 
     packages=(
-        "brew"
-        "alacritty-mac"
-        "ghostty-mac"
-        "fleet-mac"
-        "wget"
-        )
+    "brew"
+    "alacritty-mac"
+    "ghostty-mac"
+    "fleet-mac"
+    "wget"
+    )
     for p in "${packages[@]}"; do
-        stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+        stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
     done
 
     brew bundle install --file ~/Brewfile
 else
     packages=(
-        "alacritty"
-        "ghostty"
-        "fleet"
-        "git"
-        "i3"
-        "plasma"
+    "alacritty"
+    "ghostty"
+    "fleet"
+    "git"
+    "i3"
+    "plasma"
     )
     for p in "${packages[@]}"; do
-        stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+        stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
     done
 fi
+
+# Installs ZSH external plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Installs or updates tpm
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then

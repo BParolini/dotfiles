@@ -2,7 +2,7 @@ source "$HOME/.secrets/personal/dev.sh"
 
 # region olxbr mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    source "$HOME/.secrets/olxbr/tokens.sh"
+    source "$HOME/.secrets/meli/fury"
 
     export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
     export CC="/opt/homebrew/opt/llvm/bin/clang"
