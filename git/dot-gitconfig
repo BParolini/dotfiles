@@ -12,16 +12,18 @@
 	tool = diff3
 [gpg]
 	program = gpg2
-[pull]
-	rebase = false
-[init]
-	defaultBranch = main
-[checkout]
-	workers = 0
 [fetch]
 	parallel = 4
 	prune = true
 	pruneTags = true
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[checkout]
+	workers = 0
 [submodule]
 	fetchJobs = 4
 [commit]
