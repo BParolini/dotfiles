@@ -48,7 +48,7 @@ local config = {
         { family = "Iosevka Nerd Font", weight = "DemiBold" },
         { family = "FiraCode Nerd Font", weight = "DemiBold" },
     }),
-    font_size = 13.0,
+    font_size = 14.0,
 }
 
 local mux = wezterm.mux
