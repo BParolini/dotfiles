@@ -3,6 +3,7 @@ source "$HOME/.secrets/personal/dev.sh"
 # region olxbr mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
     source "$HOME/.secrets/meli/fury"
+    source "$HOME/.secrets/meli/project_envs"
 
     export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
     export CC="/opt/homebrew/opt/llvm/bin/clang"
