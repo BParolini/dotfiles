@@ -20,6 +20,10 @@ elif [[ -d "$HOME/apps/java" ]]; then
     export JAVA_HOME="$HOME/apps/java"
 fi
 
+# Disabling all Java telemetry
+export OTEL_JAVAAGENT_ENABLED=false
+export OTEL_SDK_DISABLED=true
+
 # export JAVA_TOOL_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java2d.xrender=true"
 
 if [[ -f "$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar" ]]; then
@@ -41,6 +45,9 @@ if [ -d "$HOME/apps/go" ]; then
 fi
 export GOPATH="$HOME/projetos/go"
 export GOBIN="$HOME/.local/bin"
+
+# Disabling all Go telemetry
+export GOTELEMETRY="off"
 
 # Sets Rust environment variables
 export RUSTUP_HOME="$HOME/apps/rust"
