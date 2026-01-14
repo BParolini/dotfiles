@@ -1,5 +1,6 @@
 *.insyncdl
 .DS_Store
+.localized
 ._*
 .directory
 .fleet
