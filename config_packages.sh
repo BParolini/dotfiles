@@ -17,7 +17,6 @@ packages=(
     "gradle"
     "sdkman"
     "bat"
-    "ssh"
     "gh"
 )
 
@@ -52,9 +51,28 @@ else
     "git"
     "i3"
     "plasma"
+    "steam"
+    "ssh"
     )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
+    done
+
+    packages_with_folding=(
+        "retroarch"
+    )
+    for p in "${packages_with_folding[@]}"; do
+        stow -d "$BASEDIR" -t "$HOME" --dotfiles "$p"
+    done
+
+    sudo_packages=(
+        "ipv6"
+        "iwlwifi"
+        "nework_manager"
+        "podman"
+    )
+    for p in "${sudo_packages[@]}"; do
+        sudo stow -d "$BASEDIR" -t / --no-folding --dotfiles "$p"
     done
 fi
 

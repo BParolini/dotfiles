@@ -39,6 +39,9 @@ export PIPENV_VENV_IN_PROJECT=1
 export NVM_SYMLINK_CURRENT=true
 export NVM_NODE_PATH="$HOME/.nvm/current"
 
+# Sets PYENV root directory
+export PYENV_ROOT="$HOME/.pyenv"
+
 # Sets Go environment variables
 if [ -d "$HOME/apps/go" ]; then
     export GOROOT="$HOME/apps/go"
@@ -69,3 +72,7 @@ then
 fi
 
 export PATH="$JAVA_HOME/bin:$GOROOT/bin:$GOBIN:$CARGO_BIN_HOME:$NVM_NODE_PATH/bin:$KAFKA_HOME/bin:$PATH"
+
+if [ -d "$PYENV_ROOT" ]; then
+    export PATH="$PYENV_ROOT/bin:$PATH"
+fi

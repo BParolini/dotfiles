@@ -47,6 +47,9 @@ export VISUAL="nvim"
 export LOCAL_USER_BIN="$HOME/.local/bin"
 export PATH="$LOCAL_USER_BIN:$PATH"
 
+# ES-DE home directory set to external HD
+export ESDE_APPDATA_DIR="/run/media/bparolini/Samsung/Emulation/ES-DE"
+
 # Sets fzf environment variables
 if [ $commands[rg] ]; then
     export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git' --glob '!.cache' --glob '!.venv' --glob '!venv' 2> /dev/null"

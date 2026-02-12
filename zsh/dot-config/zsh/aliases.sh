@@ -22,3 +22,7 @@ alias nfd='nvim $(fd . --type d --hidden --follow --exclude ".git" --exclude ".c
 alias nvimdiff='nvim -d'
 # endregion
 
+# region steam
+alias steam="prime-run steam"
+# endregion
+

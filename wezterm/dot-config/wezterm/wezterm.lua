@@ -7,7 +7,6 @@ local config = {
     enable_tab_bar = false,
     audible_bell = "Disabled",
 
-    default_prog = { "/opt/homebrew/bin/tmux" },
 
     window_close_confirmation = "NeverPrompt",
     window_decorations = "RESIZE",
@@ -48,8 +47,15 @@ local config = {
         { family = "Iosevka Nerd Font", weight = "DemiBold" },
         { family = "FiraCode Nerd Font", weight = "DemiBold" },
     }),
-    font_size = 14.0,
 }
+
+if wezterm.target_triple:find("linux") then
+    config.default_prog = { "/bin/tmux" }
+    config.font_size = 12.0
+elseif wezterm.target_triple:find("darwin") then
+    config.default_prog = { "/opt/homebrew/bin/tmux" }
+    config.font_size = 14.0
+end
 
 local mux = wezterm.mux
 wezterm.on("gui-startup", function(cmd)
