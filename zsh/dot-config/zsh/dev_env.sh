@@ -11,6 +11,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
     alias cc="$CC"
 
+    export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=1
+    export HOMEBREW_BUNDLE_DUMP_NO_GO=1
+    export HOMEBREW_BUNDLE_DUMP_NO_CARGO=1
+    export HOMEBREW_BUNDLE_NO_SECRETS=1
+    export HOMEBREW_BUNDLE_DUMP_NO_FLATPAK=1
+
     # nordic-doctor
     export NORDIC_DOCTOR_DIR="$HOME/.config/nordic-doctor"
     export PATH="$NORDIC_DOCTOR_DIR/bin:$PATH"
