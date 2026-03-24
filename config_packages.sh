@@ -17,7 +17,6 @@ packages=(
     "gradle"
     "sdkman"
     "bat"
-    "gh"
 )
 
 # Run GNU stow in all repo packages
@@ -37,6 +36,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     "ghostty-mac"
     "fleet-mac"
     "wget"
+    "gh"
     )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
