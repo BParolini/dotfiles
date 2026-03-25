@@ -31,12 +31,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 
     packages=(
-    "brew"
-    "alacritty-mac"
-    "ghostty-mac"
-    "fleet-mac"
-    "wget"
-    "gh"
+        "brew"
+        "alacritty-mac"
+        "ghostty-mac"
+        "fleet-mac"
+        "wget"
+        "gh"
     )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
@@ -45,14 +45,15 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     brew bundle install --file ~/Brewfile
 else
     packages=(
-    "alacritty"
-    "ghostty"
-    "fleet"
-    "git"
-    "i3"
-    "plasma"
-    "steam"
-    "ssh"
+        "alacritty"
+        "discord"
+        "ghostty"
+        "fleet"
+        "git"
+        "i3"
+        "plasma"
+        "steam"
+        "ssh"
     )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
