@@ -7,6 +7,8 @@ local config = {
     enable_tab_bar = false,
     audible_bell = "Disabled",
 
+    front_end = "WebGpu",
+    webgpu_power_preference = "HighPerformance",
 
     window_close_confirmation = "NeverPrompt",
     window_decorations = "RESIZE",
@@ -16,25 +18,6 @@ local config = {
         top = "3px",
         bottom = "3px",
     },
-
-    -- background = {
-    --     {
-    --         source = {
-    --             File = wezterm.config_dir .. "/bg_image.jpg",
-    --         },
-    --         attachment = "Fixed",
-    --         vertical_align = "Middle",
-    --         horizontal_align = "Center",
-    --         opacity = 1.0,
-    --         hsb = {
-    --             hue = 1.0,
-    --             saturation = 1.0,
-    --             brightness = 0.03,
-    --         },
-    --         height = "Cover",
-    --         width = "Cover",
-    --     },
-    -- },
 
     -- color_scheme = "tokyonight_moon",
     color_scheme = "catppuccin-mocha",
