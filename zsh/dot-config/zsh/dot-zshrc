@@ -16,7 +16,6 @@ plugins=(
     git
     dotenv
     fzf
-    pipenv
     sdk
     zsh-syntax-highlighting
     zsh-autosuggestions
@@ -49,11 +48,6 @@ fi
 if [ $commands[npm] ]
 then
     source <(npm completion)
-fi
-
-if [ $commands[pipenv] ]
-then
-    eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 fi
 
 if [ $commands[poetry] ]
