@@ -3,7 +3,6 @@
 .localized
 ._*
 .directory
-.fleet
 .git
 .gradle
 .idea

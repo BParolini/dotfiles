@@ -34,7 +34,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         "brew"
         "alacritty-mac"
         "ghostty-mac"
-        "fleet-mac"
         "wget"
         "gh"
     )
@@ -48,7 +47,6 @@ else
         "alacritty"
         "discord"
         "ghostty"
-        "fleet"
         "git"
         "i3"
         "plasma"
