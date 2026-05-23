@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Operation = Delete
+Type = Package
+Target = *
+
+[Action]
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /home/bparolini/personal/dotfiles/config/pacman_packages.txt'

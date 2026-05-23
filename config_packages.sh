@@ -68,6 +68,7 @@ else
         "ipv6"
         "iwlwifi"
         "nework_manager"
+        "pacman"
         "podman"
     )
     for p in "${sudo_packages[@]}"; do
