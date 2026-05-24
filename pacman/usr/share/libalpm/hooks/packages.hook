@@ -1,9 +1,10 @@
 [Trigger]
 Operation = Install
-Operation = Delete
+Operation = Remove
 Type = Package
 Target = *
 
 [Action]
+Description = Saves a list of all packages for future system fresh install
 When = PostTransaction
 Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /home/bparolini/personal/dotfiles/config/pacman_packages.txt'
