@@ -67,6 +67,11 @@ export RUSTUP_HOME="$HOME/apps/rust"
 export CARGO_HOME="$HOME/apps/cargo"
 export CARGO_BIN_HOME="$CARGO_HOME/bin"
 
+# Enable OCaml
+if [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]]; then
+    source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
+fi
+
 # Sets Kafka environment variables
 if [ -d "$HOME/apps/kafka" ]; then
     export KAFKA_HOME="$HOME/apps/kafka"
