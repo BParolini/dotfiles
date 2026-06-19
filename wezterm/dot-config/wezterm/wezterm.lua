@@ -30,6 +30,14 @@ local config = {
         { family = "Iosevka Nerd Font", weight = "DemiBold" },
         { family = "FiraCode Nerd Font", weight = "DemiBold" },
     }),
+
+    keys = {
+        {
+            key = "Enter",
+            mods = "OPT",
+            action = wezterm.action.SendKey({ key = "Enter", mods = "OPT" }),
+        },
+    },
 }
 
 if wezterm.target_triple:find("linux") then
