@@ -172,7 +172,6 @@ vlc-plugin-gme
 vlc-plugin-gstreamer
 vlc-plugin-jack
 vlc-plugin-kate
-vlc-plugin-kwallet
 vlc-plugin-libsecret
 vlc-plugin-lirc
 vlc-plugin-live555
@@ -185,7 +184,6 @@ vlc-plugin-mtp
 vlc-plugin-musepack
 vlc-plugin-nfs
 vlc-plugin-notify
-vlc-plugin-quicksync
 vlc-plugin-samplerate
 vlc-plugin-sdl
 vlc-plugin-sftp
