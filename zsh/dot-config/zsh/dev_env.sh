@@ -9,7 +9,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export CC="/opt/homebrew/opt/llvm/bin/clang"
     export CXX="/opt/homebrew/opt/llvm/bin/clang++"
 
-    alias cc="$CC"
+    alias cc='$CC'
 
     export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=1
     export HOMEBREW_BUNDLE_DUMP_NO_GO=1
@@ -20,6 +20,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # nordic-doctor
     export NORDIC_DOCTOR_DIR="$HOME/.config/nordic-doctor"
     export PATH="$NORDIC_DOCTOR_DIR/bin:$PATH"
+else
+    export CC="clang"
+    export CXX="clang++"
+
+    alias cc='$CC'
 fi
 # endregion
 
