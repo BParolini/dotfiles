@@ -17,7 +17,6 @@ packages=(
     "gradle"
     "sdkman"
     "bat"
-    "rust"
 )
 
 # Run GNU stow in all repo packages
@@ -51,6 +50,7 @@ else
         "git"
         "i3"
         "plasma"
+        "rust"
         "steam"
         "ssh"
     )
