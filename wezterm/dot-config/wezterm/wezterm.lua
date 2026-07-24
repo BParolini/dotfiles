@@ -1,6 +1,23 @@
 -- Pull the WezTerm API
 local wezterm = require("wezterm")
 
+-- Helper variable to store the detected OS
+-- local is_windows = wezterm.target_triple:find("windows") ~= nil
+-- local is_mac = wezterm.target_triple:find("apple") ~= nil
+local is_linux = wezterm.target_triple:find("linux") ~= nil
+
+local preferred_adapter
+for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
+    if is_linux then
+        if not gpu.name:find("NVIDIA") then
+            preferred_adapter = gpu
+            break
+        end
+    else
+        preferred_adapter = gpu
+    end
+end
+
 -- This will hold the configuration
 local config = {
     automatically_reload_config = true,
@@ -9,6 +26,7 @@ local config = {
 
     front_end = "WebGpu",
     webgpu_power_preference = "HighPerformance",
+    webgpu_preferred_adapter = preferred_adapter,
 
     window_close_confirmation = "NeverPrompt",
     window_decorations = "RESIZE",
