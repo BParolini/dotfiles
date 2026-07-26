@@ -15,6 +15,7 @@ for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
         end
     else
         preferred_adapter = gpu
+        break
     end
 end
 
