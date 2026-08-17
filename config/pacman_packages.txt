@@ -29,6 +29,7 @@ easytag
 efibootmgr
 elisa
 exfatprogs
+extra-cmake-modules
 fastfetch
 fd
 filelight
@@ -101,6 +102,7 @@ nano
 neovim
 network-manager-applet
 networkmanager
+ninja
 noto-fonts-cjk
 nvidia-container-toolkit
 nvidia-open-dkms
@@ -112,6 +114,7 @@ okular
 opam
 pacman-contrib
 partitionmanager
+patchelf
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -199,6 +202,7 @@ vlc-plugin-zvbi
 vlc-plugins-all
 vlc-plugins-extra
 vlc-plugins-visualization
+vulkan-headers
 vulkan-mesa-layers
 wezterm
 wget
