@@ -1,95 +1,204 @@
-tap "melisource/yaci", "https://github.com/melisource/fury_homebrew-yaci"
+tap "melisource/yaci", "https://github.com/melisource/fury_homebrew-yaci", trusted: true
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-brew "bat"
-brew "bfg"
-brew "cmake"
-brew "colima"
-brew "colordiff"
-brew "coreutils"
-brew "diff-so-fancy"
-brew "direnv"
-brew "easy-tag"
-brew "fd"
-brew "ffmpeg"
-brew "findutils"
-brew "fzf"
-brew "gh"
-brew "git"
-brew "git-extras"
-brew "git-filter-repo"
-brew "git-secrets"
-brew "gitleaks"
-brew "gnu-sed"
-brew "gnu-tar"
-brew "gnupg"
-brew "go"
-brew "gpatch"
-brew "gradle-completion"
-brew "htop"
-brew "hunspell"
-brew "hurl"
-brew "imagemagick"
-brew "jj"
-brew "jq"
-brew "jql"
-brew "julia"
-brew "kubernetes-cli"
-brew "lapack"
-brew "libpq", link: true
-brew "librdkafka"
-brew "lld"
-brew "llvm"
-brew "lua"
-brew "luarocks"
-brew "make"
-brew "melisource/yaci/yaci"
-brew "mono"
-brew "mp3gain"
-brew "mysql-client"
-brew "neovim"
-brew "ninja"
-brew "nvm"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-brew "openssl@3.0"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Remove large files or passwords from Git history like git-filter-branch
+brew "bfg"
+# Cross-platform make
+brew "cmake"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Color-highlighted diff(1) output
+brew "colordiff"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Application for viewing and editing audio file tags
+brew "easy-tag"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Small git utilities
+brew "git-extras"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# Prevents you from committing sensitive information to a git repo
+brew "git-secrets"
+# Audit git repos for secrets
+brew "gitleaks"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Apply a diff file to an original
+brew "gpatch"
+# Bash and Zsh completion for Gradle
+brew "gradle-completion"
+# Improved top (interactive process viewer)
+brew "htop"
+# Spell checker and morphological analyzer
+brew "hunspell"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Git-compatible distributed version control system
+brew "jj"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# JSON query language CLI tool
+brew "jql"
+# 7-Zip (high compression file archiver) implementation
 brew "p7zip"
-brew "pandoc"
-brew "pass"
-brew "pinentry-mac"
-brew "pipenv"
-brew "pipx"
-brew "pkgconf"
-brew "podman"
-brew "poppler"
-brew "postgresql@15"
-brew "pyenv"
+# Fast, Dynamic Programming Language
+brew "julia"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Linear Algebra PACKage
+brew "lapack"
+# Postgres C API library
+brew "libpq", link: true
+# Apache Kafka C/C++ library
+brew "librdkafka"
+# Next-gen compiler infrastructure
+brew "llvm"
+# LLVM Project Linker
+brew "lld"
+# Powerful, lightweight programming language
+brew "lua"
+# Package manager for the Lua programming language
+brew "luarocks"
+# Utility for directing compilation
+brew "make"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
-brew "redis"
-brew "resvg"
-brew "ripgrep"
-brew "rom-tools"
-brew "starship"
-brew "stow"
-brew "stylua"
-brew "tflint"
-brew "tmux"
+# Cross platform, open source .NET development framework
+brew "mono"
+# Lossless mp3 normalizer with statistical analysis
+brew "mp3gain"
+# Open source relational database management system
+brew "mysql-client"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
+# General purpose programming language in the ML family
+brew "ocaml"
+# OCaml package manager
+brew "opam"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3.0"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Password manager
+brew "pass"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Python dependency management tool
+brew "pipenv"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Tool for managing OCI containers and pods
+brew "podman"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Object-relational database system
+brew "postgresql@15"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Python version management
+brew "pyenv"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# SVG rendering tool and library
+brew "resvg"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Tools for Multiple Arcade Machine Emulator
+brew "rom-tools"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Opinionated Lua code formatter
+brew "stylua"
+# Linter for Terraform files
+brew "tflint"
+# Terminal multiplexer
+brew "tmux"
+# Parser generator tool
 brew "tree-sitter-cli"
+# Vulnerability scanner for container images, file systems, and Git repos
 brew "trivy"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Internet file retriever
 brew "wget"
+# Port of OpenAI's Whisper model in C/C++
 brew "whisper-cpp"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# General-purpose lossless data-compression library
+brew "zlib", link: true
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Yet another CI tool for building and deploying applications
+brew "melisource/yaci/yaci"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# PDF reader
 cask "foxitreader"
+# Free and open-source image editor
 cask "gimp"
+# Utility for comparing and merging files and directories
 cask "kdiff3"
+# Password manager app
 cask "keepassxc"
+# Free cross-platform office suite, fresh version
 cask "libreoffice"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Collaboration platform for API development
 cask "postman"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+npm "corepack"
