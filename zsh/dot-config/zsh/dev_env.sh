@@ -14,7 +14,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=1
     export HOMEBREW_BUNDLE_DUMP_NO_GO=1
     export HOMEBREW_BUNDLE_DUMP_NO_CARGO=1
-    export HOMEBREW_BUNDLE_NO_SECRETS=1
     export HOMEBREW_BUNDLE_DUMP_NO_FLATPAK=1
 
     # nordic-doctor
