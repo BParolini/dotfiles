@@ -26,3 +26,6 @@ alias nvimdiff='nvim -d'
 alias steam="prime-run steam"
 # endregion
 
+# region glow
+alias glow="glow -t"
+# endregion
