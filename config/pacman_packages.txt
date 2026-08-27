@@ -29,7 +29,6 @@ easytag
 efibootmgr
 elisa
 exfatprogs
-extra-cmake-modules
 fastfetch
 fd
 filelight
@@ -43,6 +42,7 @@ gamescope
 gimp
 gimp-help-pt_br
 git
+glow
 go
 gst-plugin-pipewire
 gvfs-gphoto2
@@ -74,7 +74,6 @@ less
 lhasa
 lib32-flac
 lib32-gamemode
-lib32-libcaca
 lib32-mangohud
 lib32-vkd3d
 libc++
@@ -102,7 +101,6 @@ nano
 neovim
 network-manager-applet
 networkmanager
-ninja
 noto-fonts-cjk
 nvidia-container-toolkit
 nvidia-open-dkms
@@ -114,7 +112,6 @@ okular
 opam
 pacman-contrib
 partitionmanager
-patchelf
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -142,6 +139,7 @@ sigil
 smartmontools
 sof-firmware
 solaar
+spirv-headers
 starship
 steam
 stow
@@ -202,8 +200,14 @@ vlc-plugin-zvbi
 vlc-plugins-all
 vlc-plugins-extra
 vlc-plugins-visualization
-vulkan-headers
+volk
+vulkan-extra-layers
+vulkan-extra-tools
+vulkan-html-docs
 vulkan-mesa-layers
+vulkan-profiles
+vulkan-utility-libraries
+vulkan-validation-layers
 wezterm
 wget
 wine
