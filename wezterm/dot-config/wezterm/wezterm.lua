@@ -21,7 +21,16 @@ for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
     end
 end
 
+--- @type WindowDecorations
+local w_decorations
+if is_linux then
+    w_decorations = "TITLE|RESIZE"
+else
+    w_decorations = "RESIZE"
+end
+
 --- This will hold the configuration
+--- @type Config
 local config = {
     automatically_reload_config = true,
     enable_tab_bar = false,
@@ -32,7 +41,7 @@ local config = {
     webgpu_preferred_adapter = preferred_adapter,
 
     window_close_confirmation = "NeverPrompt",
-    -- window_decorations = "RESIZE",
+    window_decorations = w_decorations,
     window_padding = {
         left = "3px",
         right = "3px",
