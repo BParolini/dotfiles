@@ -6,6 +6,8 @@ local wezterm = require("wezterm")
 -- local is_mac = wezterm.target_triple:find("apple") ~= nil
 local is_linux = wezterm.target_triple:find("linux") ~= nil
 
+--- Holds the gpu adapter to be used by WezTerm
+--- @type GpuInfo
 local preferred_adapter
 for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
     if is_linux then
@@ -19,7 +21,7 @@ for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
     end
 end
 
--- This will hold the configuration
+--- This will hold the configuration
 local config = {
     automatically_reload_config = true,
     enable_tab_bar = false,
@@ -30,7 +32,7 @@ local config = {
     webgpu_preferred_adapter = preferred_adapter,
 
     window_close_confirmation = "NeverPrompt",
-    window_decorations = "RESIZE",
+    -- window_decorations = "RESIZE",
     window_padding = {
         left = "3px",
         right = "3px",
