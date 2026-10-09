@@ -1,4 +1,8 @@
+neocd_aspect_ratio = "1:1 PAR"
+neocd_bios = "front-sp1.bin (Front Loader)"
 neocd_cdspeedhack = "On"
+neocd_cpu_overclock = "100%"
 neocd_loadskip = "On"
+neocd_overscan_h = "8"
 neocd_per_content_saves = "Off"
 neocd_region = "Japan"
