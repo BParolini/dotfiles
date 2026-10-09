@@ -62,6 +62,7 @@ kdiff3
 keepassxc
 kfind
 kigo
+kio-admin
 kio-gdrive
 kleopatra
 kmahjongg
@@ -97,6 +98,7 @@ mame-tools
 man-db
 mangohud
 minder
+mono
 nano
 neovim
 network-manager-applet
@@ -149,6 +151,7 @@ tmux
 tree
 tree-sitter-cli
 ufw
+unison
 unzip
 vim
 vkd3d
