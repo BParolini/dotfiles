@@ -22,8 +22,9 @@ alias nfd='nvim $(fd . --type d --hidden --follow --exclude ".git" --exclude ".c
 alias nvimdiff='nvim -d'
 # endregion
 
-# region steam
+# region games
 alias steam="prime-run steam"
+alias es-de="~/apps/ES-DE_x64.AppImage"
 # endregion
 
 # region glow
