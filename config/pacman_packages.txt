@@ -146,6 +146,8 @@ starship
 steam
 stow
 sudo
+syncthing
+syncthing-discosrv
 testdisk
 tmux
 tree
