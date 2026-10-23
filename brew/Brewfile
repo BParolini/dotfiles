@@ -1,8 +1,7 @@
+tap "melisource/rp-local", "https://github.com/melisource/fury_hombrew-rp-local", trusted: true
 tap "melisource/yaci", "https://github.com/melisource/fury_homebrew-yaci", trusted: true
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Remove large files or passwords from Git history like git-filter-branch
@@ -17,6 +16,8 @@ brew "colordiff"
 brew "coreutils"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Git diff pager based on delta but with a file tree
+brew "diffnav"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Application for viewing and editing audio file tags
@@ -91,8 +92,6 @@ brew "lua"
 brew "luarocks"
 # Utility for directing compilation
 brew "make"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Cross platform, open source .NET development framework
 brew "mono"
 # Lossless mp3 normalizer with statistical analysis
@@ -112,6 +111,8 @@ brew "ocaml"
 # OCaml package manager
 brew "opam"
 # Cryptography and SSL/TLS Toolkit
+brew "openssl@3", link: true
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3.0"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
@@ -125,8 +126,6 @@ brew "pinentry-mac"
 brew "pipenv"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Tool for managing OCI containers and pods
 brew "podman"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -137,6 +136,8 @@ brew "postgresql@15"
 brew "pre-commit"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # SVG rendering tool and library
@@ -151,8 +152,8 @@ brew "starship"
 brew "stow"
 # Opinionated Lua code formatter
 brew "stylua"
-# Linter for Terraform files
-brew "tflint"
+# Open source continuous file synchronization application
+brew "syncthing", restart_service: :changed
 # Terminal multiplexer
 brew "tmux"
 # Parser generator tool
@@ -164,7 +165,7 @@ brew "vim"
 # Internet file retriever
 brew "wget"
 # Port of OpenAI's Whisper model in C/C++
-brew "whisper-cpp"
+brew "whisper.cpp"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -177,8 +178,18 @@ brew "zlib", link: true
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fury local Release Process CLI
+brew "melisource/rp-local/rp-local-cli@1.1.4", link: true
+# Fury local Release Process CLI
+brew "melisource/rp-local/rp-local-cli@1.1.6"
+# Fury local Release Process CLI
+brew "melisource/rp-local/rp-local-cli@1.1.7", link: true
+# Fury local Release Process CLI
+brew "melisource/rp-local/rp-local-cli@1.1.8", link: true
 # Yet another CI tool for building and deploying applications
-brew "melisource/yaci/yaci"
+brew "melisource/yaci/yaci@0.2.13", link: true
+# Display management tool
+cask "betterdisplay"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
@@ -203,4 +214,6 @@ cask "visual-studio-code"
 cask "vlc"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+# View output from scripts in the menu bar
+cask "xbar"
 npm "corepack"
