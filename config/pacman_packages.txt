@@ -138,6 +138,9 @@ retroarch-assets-glui
 retroarch-assets-ozone
 retroarch-assets-xmb
 rsync
+sdl3_image
+sdl3_mixer
+sdl3_net
 sigil
 smartmontools
 sof-firmware
