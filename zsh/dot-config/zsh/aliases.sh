@@ -24,7 +24,8 @@ alias nvimdiff='nvim -d'
 
 # region games
 alias steam="prime-run steam"
-alias es-de="~/apps/ES-DE_x64.AppImage"
+alias es-de="prime-run ~/apps/ES-DE_x64.AppImage"
+alias retroarch="prime-run gamemoderun retroarch"
 # endregion
 
 # region glow
