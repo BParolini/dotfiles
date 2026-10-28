@@ -12,11 +12,11 @@ packages=(
     "starship"
     "wezterm"
     "vim"
-    "helix"
     "tmux"
     "gradle"
     "sdkman"
     "bat"
+    "yazi"
 )
 
 # Run GNU stow in all repo packages
@@ -48,7 +48,6 @@ else
         "discord"
         "ghostty"
         "git"
-        "i3"
         "plasma"
         "rust"
         "steam"
@@ -68,7 +67,7 @@ else
     sudo_packages=(
         "ipv6"
         "iwlwifi"
-        "nework_manager"
+        "network_manager"
         "pacman"
         "podman"
     )
@@ -78,15 +77,36 @@ else
 fi
 
 # Installs ZSH external plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Installs or updates tpm
-if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+SYNTAX_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+if [ ! -d "$SYNTAX_DIR" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$SYNTAX_DIR"
 else
     (
-        cd "$HOME/.tmux/plugins/tpm" || exit
+        cd "$SYNTAX_DIR" || exit
+        echo "$SYNTAX_DIR"
+        git pull
+    )
+fi
+
+SUGGESTIONS="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+if [ ! -d "$SUGGESTIONS" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git "$SUGGESTIONS"
+else
+    (
+        cd "$SUGGESTIONS" || exit
+        echo "$SUGGESTIONS"
+        git pull
+    )
+fi
+
+# Installs or updates tpm
+TPM_DIR="$HOME/.tmux/plugins/tpm"
+if [ ! -d "$TPM_DIR" ]; then
+    git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
+else
+    (
+        cd "$TPM_DIR" || exit
+        echo "$TPM_DIR"
         git pull
     )
 fi
