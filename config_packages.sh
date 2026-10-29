@@ -45,7 +45,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     packages=(
         "alacritty"
-        "discord"
         "ghostty"
         "git"
         "plasma"
