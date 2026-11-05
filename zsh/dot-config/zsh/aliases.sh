@@ -3,7 +3,6 @@ alias ls='ls --color'
 alias ll='ls -lah'
 
 alias d='dirs -v'
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
 # endregion
 
 # region fd-find
@@ -30,4 +29,8 @@ alias retroarch="prime-run gamemoderun retroarch"
 
 # region glow
 alias glow="glow -t"
+# endregion
+
+# region zeal
+alias zeal="QTWEBENGINE_CHROMIUM_FLAGS=\"--disable-gpu\" zeal"
 # endregion
