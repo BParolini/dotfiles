@@ -78,6 +78,7 @@ lhasa
 lib32-flac
 lib32-gamemode
 lib32-mangohud
+lib32-opencl-nvidia
 lib32-vkd3d
 libc++
 libcaca
@@ -98,6 +99,8 @@ lutris
 lvm2
 mame-tools
 man-db
+man-pages
+man-pages-utils
 mangohud
 minder
 mono
@@ -114,6 +117,7 @@ nvm
 obsidian
 okular
 opam
+opencl-nvidia
 pacman-contrib
 partitionmanager
 pipewire
@@ -231,6 +235,7 @@ xorg-xinit
 yazi
 yq
 yt-dlp
+zeal
 zip
 zoxide
 zram-generator
