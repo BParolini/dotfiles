@@ -51,6 +51,7 @@ else
         "rust"
         "steam"
         "ssh"
+        "wayland"
     )
     for p in "${packages[@]}"; do
         stow -d "$BASEDIR" -t "$HOME" --no-folding --dotfiles "$p"
