@@ -56,9 +56,9 @@ local config = {
     -- color_scheme = "rose-pine",
 
     font = wezterm.font_with_fallback({
-        { family = "JetBrainsMono Nerd Font", weight = "DemiBold" },
-        { family = "Iosevka Nerd Font", weight = "DemiBold" },
-        { family = "FiraCode Nerd Font", weight = "DemiBold" },
+        { family = "JetBrainsMono Nerd Font", weight = "Regular" },
+        { family = "Iosevka Nerd Font", weight = "Regular" },
+        { family = "FiraCode Nerd Font", weight = "Regular" },
     }),
 
     keys = {
