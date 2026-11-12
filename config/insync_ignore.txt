@@ -12,3 +12,5 @@
 .vscode
 Thumbs.db
 desktop.ini
+Emulation/Retroarch Saves/saves/gc/User/Load/Textures/*
+Emulation/Retroarch Saves/saves/gc/User/Cache/*
