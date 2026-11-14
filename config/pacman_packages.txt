@@ -15,7 +15,6 @@ btrfs-progs
 buildah
 clang
 cmake
-code
 detox
 diff-so-fancy
 diffnav
