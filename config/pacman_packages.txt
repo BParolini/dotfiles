@@ -45,6 +45,7 @@ gimp-help-pt_br
 git
 glow
 go
+godot
 gst-plugin-pipewire
 gvfs-gphoto2
 gvfs-mtp
