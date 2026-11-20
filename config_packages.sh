@@ -48,6 +48,7 @@ else
         "gamemode"
         "ghostty"
         "git"
+        "mangohud"
         "plasma"
         "rust"
         "steam"
